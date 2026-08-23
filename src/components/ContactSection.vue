@@ -10,17 +10,39 @@ const form = reactive({
   consent: false,
 })
 
-const status = ref('idle') // idle | sending | success | error
+const status = ref('idle')
+
+const EMAILJS_ENDPOINT = 'https://api.emailjs.com/api/v1.0/email/send'
+
+function sendEmail(templateId, templateParams) {
+  return fetch(EMAILJS_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      service_id: site.emailjsServiceId,
+      template_id: templateId,
+      user_id: site.emailjsPublicKey,
+      template_params: templateParams,
+    }),
+  })
+}
 
 async function submit() {
   status.value = 'sending'
   try {
-    const res = await fetch(site.formspreeEndpoint, {
-      method: 'POST',
-      headers: { Accept: 'application/json' },
-      body: new FormData(document.querySelector('#booking-form')),
-    })
-    if (res.ok) {
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      to_email: form.email,
+      message: form.message || '(nincs kísérő üzenet)',
+    }
+
+    const [ownerRes, clientRes] = await Promise.all([
+      sendEmail(site.emailjsOwnerTemplateId, templateParams),
+      sendEmail(site.emailjsClientTemplateId, templateParams),
+    ])
+
+    if (ownerRes.ok && clientRes.ok) {
       status.value = 'success'
       form.name = ''
       form.email = ''
@@ -43,7 +65,7 @@ async function submit() {
 
     <form
       id="booking-form"
-      class="rounded-card bg-ink/[0.03] border border-ink/10 p-6 md:p-9"
+      class="rounded-card bg-ink/3 border border-ink/10 p-6 md:p-9"
       @submit.prevent="submit"
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">

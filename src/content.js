@@ -1,36 +1,33 @@
-// ============================================================
-// SKIPINTRO COACHING – TARTALOM
-// ------------------------------------------------------------
-// Ez a fájl gyűjti össze az oldal ÖSSZES szövegét, árát és
-// elérhetőségét egy helyen. A [szögletes zárójelben] lévő
-// részeket mindenképp cseréld ki valós adatra – a többi csak
-// példaszöveg, bármikor átírható.
-// ============================================================
-
 export const site = {
   brandName: 'Skipintro',
   brandSuffix: 'Coaching',
-  // Ez az email jelenik meg a láblécben (nem a Formspree-hez kell)
   contactEmail: '[email cím]',
-  // Cseréld ki a saját Formspree űrlap-azonosítódra:
-  // https://formspree.io/ -> New Form -> "Your form endpoint"
-  // pl. 'https://formspree.io/f/abcdwxyz'
-  formspreeEndpoint: 'https://formspree.io/f/YOUR_FORM_ID',
+  // ------------------------------------------------------------
+  // EMAILJS BEÁLLÍTÁSOK
+  // ------------------------------------------------------------
+  // Ez a 4 érték az emailjs.com fiókodból származik (mind ingyenes):
+  // 1. Regisztrálj: https://www.emailjs.com/
+  // 2. "Email Services" -> Add New Service -> kösd be a saját email
+  //    fiókodat (Gmail/Outlook/stb) -> ez adja az emailjsServiceId-t
+  // 3. "Email Templates" -> hozz létre KÉT sablont:
+  //    a) egy Ő KAPJA sablont (neked szóló értesítő, hogy jelentkezett
+  //       valaki) -> ez adja az emailjsOwnerTemplateId-t
+  //    b) egy visszaigazoló sablont (a kliensnek szóló autómatikus
+  //       válasz) -> ez adja az emailjsClientTemplateId-t
+  //    A kliens-sablonnál a "To Email" mezőbe írd be: {{to_email}}
+  //    (így mindig a jelentkező saját címére megy ki a visszaigazolás)
+  // 4. "Account" -> "General" -> "Public Key" -> ez az emailjsPublicKey
+  emailjsServiceId: 'YOUR_EMAILJS_SERVICE_ID',
+  emailjsOwnerTemplateId: 'YOUR_EMAILJS_OWNER_TEMPLATE_ID',
+  emailjsClientTemplateId: 'YOUR_EMAILJS_CLIENT_TEMPLATE_ID',
+  emailjsPublicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
   facebookUrl: '#',
   privacyPolicyUrl: '#',
 }
 
-// ------------------------------------------------------------
-// KÉPEK
-// ------------------------------------------------------------
-// Illeszd be ide a saját Unsplash (vagy egyéb) képlinkjeidet –
-// amíg egy 'url' üres, addig a helyén egy szép szaggatott keretes
-// helykitöltő látszik, hogy tudd, hova kerül majd a kép.
-// Unsplash linkelés menete: keress egy képet unsplash.com-on ->
-// "Copy image address" -> illeszd be ide a url mezőbe.
 export const images = {
   hero: {
-    url: '',
+    url: '/AndreMeli1798.jpg',
     alt: 'A coach portréja természetes környezetben',
   },
   about: {
@@ -38,13 +35,13 @@ export const images = {
     alt: 'Rólam fotó természetes fényben',
   },
   divider1: {
-    url: '',
-    alt: 'Panorámás természetkép – erdő vagy hegyvidék',
+    url: '/ann-gogoleva-MUq7BTMWwZc-unsplash.jpg',
+    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
     quote: 'A csend is tud válasz lenni.',
   },
   divider2: {
-    url: '',
-    alt: 'Panorámás természetkép – víz vagy horizont',
+    url: '/dan-freeman-WHPsxhB4mWQ-unsplash.jpg',
+    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
     quote: 'Minden nagy út egyetlen lépéssel kezdődik.',
   },
 }
