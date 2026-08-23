@@ -44,12 +44,12 @@ export const images = {
   divider1: {
     url: '/ann-gogoleva-MUq7BTMWwZc-unsplash.jpg',
     alt: 'Virágok bújnak elő egy fa deszkapadló résein',
-    quote: 'A csend is tud válasz lenni.',
+    quote: 'Szép ez a virág',
   },
   divider2: {
     url: '/dan-freeman-WHPsxhB4mWQ-unsplash.jpg',
     alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
-    quote: 'Minden nagy út egyetlen lépéssel kezdődik.',
+    quote: 'Le vagy fel?',
   },
 }
 
@@ -66,41 +66,41 @@ export const hero = {
   eyebrowTime: '00:00',
   title: 'Hagyjuk a bevezetőt.\nVágjunk bele abba, ami tényleg számít.',
   paragraph:
-    'A Skipintro Coaching abban segít, hogy ne csak beszélj a változásról, hanem meg is történjen. Személyre szabott coaching azoknak, akik készen állnak túllépni a felszínes megoldásokon, és valódi elmozdulást szeretnének a mindennapjaikban.',
+    'A Skipintro Coaching jó',
   primaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
   secondaryCta: { label: 'Ismerd meg a folyamatot', href: '#szolgaltatasok' },
-  photoCaption: '[Ide kerül a fotód]',
-  coachName: '[Név]',
-  coachRole: 'a Skipintro Coaching megalkotója',
+  photoCaption: 'Portré',
+  coachName: 'André Melinda',
+  coachRole: 'Life és Buisness Coach',
 }
 
 export const audience = {
   chapterMark: '01:12',
   title: 'Kinek szól a Skipintro Coaching?',
   intro:
-    'A coaching nem csodaszer, és nem mindenkinek ugyanaz kell. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
+    'A coaching nem csodaszer, de cserébe jó. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
   forTitle: 'Kinek szól',
   for: [
-    'Akik szeretnének könnyebben, tudatosabban élni a mindennapjaikat',
-    'Akik éreznek egy visszatérő elakadást, de nem tudják, honnan induljanak el',
-    'Akik nyitottak arra, hogy kérdéseket kapjanak megoldás helyett, és maguk találjanak rá a válaszra',
-    'Akik szeretnék jobban megérteni a saját reakcióikat és döntéseiket',
-    'Akik hajlandóak tenni is a változásért, nem csak beszélni róla',
+    'Petike',
+    'Janika',
+    'Zsoltika',
+    'Pistike',
+    'Lillácska',
   ],
   notForTitle: 'Kinek nem javasolt',
   notFor: [
-    'Akut pszichiátriai tünetekkel, súlyos depresszióval vagy szorongással élők – ilyenkor mindenképp forduljon szakorvoshoz',
-    'Akik azonnali, egyetlen alkalom alatt megoldást várnak',
-    'Sürgős, életveszélyes állapot esetén – ilyenkor azonnal orvoshoz kell fordulni',
+    'Gáborka',
+    'Gergőke',
+    'Dórácska',
   ],
   disclaimer:
-    'Fontos: a Skipintro Coaching program nem diagnosztizál betegségeket, és nem helyettesíti az orvosi vagy pszichológiai kezelést – jól megfér mellette kiegészítésként.',
+    'Fontos: UFOknak nem tartok',
 }
 
 export const pricing = {
   chapterMark: '02:30',
   title: 'Szolgáltatások és árak',
-  intro: 'Az alábbi árak és időtartamok tájékoztató jellegűek – bármikor módosíthatók.',
+  intro: 'Az alábbi árak és időtartamok tájékoztatók.',
   plans: [
     {
       name: 'Ismerkedős beszélgetés',
@@ -138,16 +138,16 @@ export const about = {
   chapterMark: '03:45',
   title: 'Rólam',
   paragraphs: [
-    'Szia, [Név] vagyok, a Skipintro Coaching megalkotója. [Rövid szakmai háttér – pár mondat arról, hogyan lettél coach, és mi hozott ide.]',
-    '[Egy-két mondat arról, hogyan dolgozol, mit tapasztalsz a klienseidnél, mi a legfontosabb neked ebben a munkában.]',
+    'Szia, André Melinda vagyok, a Skipintro Coaching megalkotója. Ember vagyok',
+    'Ember vagyok, még mindig',
   ],
-  quote: 'Hiszem, hogy a válasz mindig benned van – a coaching csak segít meglátni.',
+  quote: 'Nagyon menő idézet',
   credentialsTitle: 'Szakmai hátterem',
   credentials: [
-    '[Végzettség / diploma neve]',
-    '[Coaching képzés neve, intézmény]',
-    '[További releváns képzés]',
-    '[Tapasztalat, pl. „X éve foglalkozom...”]',
+    'Emberként végeztem',
+    'Life és Buisness Coach ... iskola',
+    'Szerkesztő voltam',
+    'Újságíró voltam 20 évig',
   ],
 }
 
@@ -173,7 +173,7 @@ export const faq = {
     {
       question: 'Mi történik, ha mégsem ez nekem való?',
       answer:
-        'Semmi gond – az ismerkedős beszélgetés pont arra való, hogy ezt kiderítsük kötelezettség nélkül. Ha útközben úgy érzed, mégsem passzol, ezt bármikor jelezheted.',
+        'Így jártál...',
     },
     {
       question: 'Kapok számlát a szolgáltatásról?',
