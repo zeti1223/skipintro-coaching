@@ -15,7 +15,7 @@ import NatureImage from './NatureImage.vue'
         <div
           class="inline-flex items-center gap-2 chapter-mark text-xs bg-paper/10 border border-paper/20 text-gold-soft px-3 py-1.5 rounded-full mb-8"
         >
-          <span class="inline-block w-0 h-0 border-y-[5px] border-y-transparent border-l-[8px] border-l-gold-soft" />
+          <span class="inline-block w-0 h-0 border-y-[5px] border-y-transparent border-l-8 border-l-gold-soft" />
           {{ hero.eyebrow }}
           <span class="opacity-50">·</span>
           {{ hero.eyebrowTime }}

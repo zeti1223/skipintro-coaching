@@ -6,7 +6,7 @@ const open = ref(false)
 </script>
 
 <template>
-  <header class="sticky top-[3px] z-40 bg-paper/90 backdrop-blur-sm border-b border-ink/10">
+  <header class="sticky top-0.75 z-40 bg-paper/90 backdrop-blur-sm border-b border-ink/10">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="#hero" class="font-display text-xl tracking-tight text-ink">
         {{ site.brandName }}<span class="text-gold">.</span

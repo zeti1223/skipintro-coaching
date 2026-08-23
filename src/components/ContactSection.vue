@@ -2,6 +2,8 @@
 import { reactive, ref } from 'vue'
 import { contact, site } from '../content.js'
 import ChapterMark from './ChapterMark.vue'
+import { buildOwnerEmail } from '../email-templates/ownerNotification.js'
+import { buildClientEmail } from '../email-templates/clientConfirmation.js'
 
 const form = reactive({
   name: '',
@@ -30,16 +32,25 @@ function sendEmail(templateId, templateParams) {
 async function submit() {
   status.value = 'sending'
   try {
-    const templateParams = {
-      from_name: form.name,
-      from_email: form.email,
-      to_email: form.email,
+    const data = {
+      name: form.name,
+      email: form.email,
       message: form.message || '(nincs kísérő üzenet)',
     }
 
+    const ownerEmail = buildOwnerEmail(data)
+    const clientEmail = buildClientEmail(data)
+
     const [ownerRes, clientRes] = await Promise.all([
-      sendEmail(site.emailjsOwnerTemplateId, templateParams),
-      sendEmail(site.emailjsClientTemplateId, templateParams),
+      sendEmail(site.emailjsOwnerTemplateId, {
+        subject: ownerEmail.subject,
+        message: ownerEmail.message,
+      }),
+      sendEmail(site.emailjsClientTemplateId, {
+        to_email: form.email,
+        subject: clientEmail.subject,
+        message: clientEmail.message,
+      }),
     ])
 
     if (ownerRes.ok && clientRes.ok) {

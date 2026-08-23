@@ -9,13 +9,20 @@ export const site = {
   // 1. Regisztrálj: https://www.emailjs.com/
   // 2. "Email Services" -> Add New Service -> kösd be a saját email
   //    fiókodat (Gmail/Outlook/stb) -> ez adja az emailjsServiceId-t
-  // 3. "Email Templates" -> hozz létre KÉT sablont:
-  //    a) egy Ő KAPJA sablont (neked szóló értesítő, hogy jelentkezett
-  //       valaki) -> ez adja az emailjsOwnerTemplateId-t
-  //    b) egy visszaigazoló sablont (a kliensnek szóló autómatikus
-  //       válasz) -> ez adja az emailjsClientTemplateId-t
-  //    A kliens-sablonnál a "To Email" mezőbe írd be: {{to_email}}
-  //    (így mindig a jelentkező saját címére megy ki a visszaigazolás)
+  // 3. "Email Templates" -> hozz létre KÉT üres, "generikus" sablont
+  //    (a tényleges szöveg NEM itt, hanem a
+  //    src/email-templates/ownerNotification.js és
+  //    clientConfirmation.js fájlokban van, onnan szabadon átírható):
+  //    a) "Owner" sablon (neked szóló értesítő):
+  //       - Subject mező:   {{subject}}
+  //       - Body mező:      {{message}}
+  //       - To Email mező:  a saját email címed, fixen beírva
+  //       -> ez adja az emailjsOwnerTemplateId-t
+  //    b) "Client" sablon (a kliensnek szóló visszaigazolás):
+  //       - Subject mező:   {{subject}}
+  //       - Body mező:      {{message}}
+  //       - To Email mező:  {{to_email}}
+  //       -> ez adja az emailjsClientTemplateId-t
   // 4. "Account" -> "General" -> "Public Key" -> ez az emailjsPublicKey
   emailjsServiceId: 'YOUR_EMAILJS_SERVICE_ID',
   emailjsOwnerTemplateId: 'YOUR_EMAILJS_OWNER_TEMPLATE_ID',

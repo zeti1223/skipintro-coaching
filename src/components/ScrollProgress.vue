@@ -17,7 +17,7 @@ onUnmounted(() => window.removeEventListener('scroll', updateProgress))
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 right-0 z-50 h-[3px] bg-ink/10">
+  <div class="fixed top-0 left-0 right-0 z-50 h-0.75 bg-ink/10">
     <div
       class="h-full bg-gradient-progress relative transition-[width] duration-150 ease-out"
       :style="{ width: progress + '%' }"

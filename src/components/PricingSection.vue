@@ -18,7 +18,7 @@ import ChapterMark from './ChapterMark.vue'
           v-for="plan in pricing.plans"
           :key="plan.name"
           class="rounded-card p-6 flex flex-col"
-          :class="plan.featured ? 'bg-gradient-primary text-ink' : 'bg-paper/[0.06] border border-paper/10'"
+          :class="plan.featured ? 'bg-gradient-primary text-ink' : 'bg-paper/6 border border-paper/10'"
         >
           <p
             class="chapter-mark text-xs uppercase tracking-[0.12em] mb-6"

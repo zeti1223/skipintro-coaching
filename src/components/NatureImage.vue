@@ -24,7 +24,7 @@ defineProps({
         'absolute inset-0 flex flex-col items-center justify-center text-center px-8 gap-3 border-2 border-dashed',
         variant === 'dark'
           ? 'border-aqua/40 bg-paper/5'
-          : 'border-aqua/40 bg-aqua/[0.08]',
+          : 'border-aqua/40 bg-aqua/8',
       ]"
     >
       <span class="w-11 h-11 rounded-full bg-gradient-primary flex items-center justify-center">
@@ -42,7 +42,7 @@ defineProps({
         class="chapter-mark text-xs uppercase tracking-[0.15em] leading-relaxed"
         :class="variant === 'dark' ? 'text-paper/50' : 'text-ink/35'"
       >
-        {{ alt || 'Ide jön egy természetfotó – illeszd be az Unsplash linket a content.js-ben' }}
+        {{ alt || 'Fotó' }}
       </p>
     </div>
   </div>

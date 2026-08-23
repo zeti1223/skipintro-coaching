@@ -23,7 +23,7 @@ import NatureImage from './NatureImage.vue'
             „{{ about.quote }}”
           </blockquote>
 
-          <h3 class="text-sm font-semibold uppercase tracking-[0.1em] text-ink/50 mb-4">
+          <h3 class="text-sm font-semibold uppercase tracking-widest text-ink/50 mb-4">
             {{ about.credentialsTitle }}
           </h3>
           <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3">

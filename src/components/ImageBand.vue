@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="relative w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[3/1] overflow-hidden">
+  <div class="relative w-full aspect-video sm:aspect-21/9 md:aspect-3/1 overflow-hidden">
     <img
       v-if="url"
       :src="url"
@@ -17,10 +17,10 @@ defineProps({
     />
     <div
       v-else
-      class="absolute inset-0 flex items-center justify-center border-y-2 border-dashed border-aqua/30 bg-aqua/[0.06] px-6"
+      class="absolute inset-0 flex items-center justify-center border-y-2 border-dashed border-aqua/30 bg-aqua/6 px-6"
     >
       <p class="chapter-mark text-xs uppercase tracking-[0.15em] text-ink/35 text-center max-w-md">
-        {{ alt || 'Ide jön egy panorámás természetfotó – illeszd be az Unsplash linket a content.js images objektumában' }}
+        {{ alt || 'Fotó' }}
       </p>
     </div>
 
