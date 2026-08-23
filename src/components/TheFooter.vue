@@ -33,5 +33,19 @@ const year = new Date().getFullYear()
         <a :href="site.privacyPolicyUrl" class="underline underline-offset-2">Adatkezelési tájékoztató</a>
       </div>
     </div>
+
+    <div class="mt-8 pt-6 border-t border-paper/5">
+      <p class="text-center text-xs text-paper/30">
+        A weboldalt a
+        <a
+          :href="site.creatorUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline underline-offset-2 hover:text-paper/50 transition-colors"
+          >{{ site.creatorLabel }}</a
+        >
+        készítette.
+      </p>
+    </div>
   </footer>
 </template>

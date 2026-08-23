@@ -28,8 +28,10 @@ export const site = {
   emailjsOwnerTemplateId: 'YOUR_EMAILJS_OWNER_TEMPLATE_ID',
   emailjsClientTemplateId: 'YOUR_EMAILJS_CLIENT_TEMPLATE_ID',
   emailjsPublicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
+  creatorUrl: 'https://zeteny.cigoria.eu',
+  creatorLabel: 'zeteny.cigoria.eu',
   facebookUrl: '#',
-  privacyPolicyUrl: '#',
+  privacyPolicyUrl: '/adatkezeles',
 }
 
 export const images = {
@@ -54,11 +56,11 @@ export const images = {
 }
 
 export const nav = [
-  { label: 'Kezdőlap', href: '#hero' },
-  { label: 'Kinek szól', href: '#kineknek' },
-  { label: 'Szolgáltatások', href: '#szolgaltatasok' },
-  { label: 'Rólam', href: '#rolam' },
-  { label: 'GYIK', href: '#gyik' },
+  { label: 'Kezdőlap', href: '/#hero' },
+  { label: 'Kinek szól', href: '/#kineknek' },
+  { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
+  { label: 'Rólam', href: '/#rolam' },
+  { label: 'GYIK', href: '/#gyik' },
 ]
 
 export const hero = {
@@ -183,6 +185,47 @@ export const faq = {
       question: 'Mi történik az adataimmal, amiket az űrlapon megadok?',
       answer:
         'Az adataidat bizalmasan kezelem, kizárólag a kapcsolatfelvétel és az időpont-egyeztetés céljából használom. Részletek az adatkezelési tájékoztatóban.',
+    },
+  ],
+}
+
+export const privacyPolicy = {
+  title: 'Adatkezelési tájékoztató',
+  intro:
+    'Az alábbi tájékoztató azt mutatja be, hogy a Skipintro Coaching honlapján keresztül megadott személyes adatokat hogyan kezelem. A tájékoztatót bármikor frissítem, amennyiben a szolgáltatás vagy a jogszabályi környezet ezt indokolja.',
+  lastUpdated: '2026. augusztus',
+  sections: [
+    {
+      heading: 'Az adatkezelő adatai',
+      body: `Adatkezelő: ${site.brandName} ${site.brandSuffix}\nKapcsolat: ${site.contactEmail}`,
+    },
+    {
+      heading: 'Milyen adatokat kezelek?',
+      body: 'A kapcsolatfelvételi űrlap kitöltésekor megadott nevet, email címet, telefonszámot és az üzenetben megadott egyéb adatokat kezelem.',
+    },
+    {
+      heading: 'Az adatkezelés célja',
+      body: 'A megadott adatokat kizárólag a kapcsolatfelvétel, az időpont-egyeztetés és a coaching szolgáltatás nyújtásával kapcsolatos kommunikáció céljából használom fel.',
+    },
+    {
+      heading: 'Az adatkezelés jogalapja',
+      body: 'Az adatkezelés az érintett önkéntes hozzájárulásán alapul, amelyet az űrlap kitöltésével és elküldésével ad meg.',
+    },
+    {
+      heading: 'Az adatok tárolásának időtartama',
+      body: 'A megadott adatokat a kapcsolatfelvételtől, illetve az együttműködés lezárultától számított ésszerű ideig, de legfeljebb a jogszabályi kötelezettségek (pl. számlázás) által előírt ideig őrzöm meg.',
+    },
+    {
+      heading: 'Adatfeldolgozók',
+      body: 'Az űrlap elküldését és az email értesítéseket az EmailJS szolgáltatás továbbítja. Az adatok kezelése és tárolása során az adatfeldolgozók mindenkori adatvédelmi szabályzata is irányadó.',
+    },
+    {
+      heading: 'Az érintett jogai',
+      body: 'Bármikor kérheted a rád vonatkozó adatok helyesbítését, törlését vagy az adatkezelés korlátozását, valamint tájékoztatást kérhetsz a kezelt adatok köréről. Kéréseidet a fent megadott email címen jelezheted.',
+    },
+    {
+      heading: 'Jogorvoslat',
+      body: 'Amennyiben úgy ítéled meg, hogy adataid kezelése nem megfelelő, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH), vagy bírósághoz fordulhatsz.',
     },
   ],
 }
