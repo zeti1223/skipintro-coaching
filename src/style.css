@@ -1,0 +1,151 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   SKIPINTRO COACHING – DESIGN TOKENOK
+   ------------------------------------------------------------
+   Ez itt a "Tailwind config" – innen tudsz bármikor színt,
+   betűtípust vagy sarokgörbítést módosítani. Minden itt
+   megadott érték Tailwind class-ként is elérhető lesz, pl.
+   --color-ink -> bg-ink / text-ink / border-ink
+   ============================================================ */
+@theme {
+  /* --- Színek (bővített paletta) -------------------------------
+     Blue Slate, Pearl Aqua, Frozen Water, Royal Gold, Cotton Rose.
+     Minden family teljes 50–950 skálával elérhető (pl. bg-blue-slate-200),
+     a lenti szemantikus nevek (ink, gold, aqua, rose, paper, body) pedig
+     a komponensekben ténylegesen használt "becenevek" ezekből a skálákból. */
+
+  --color-blue-slate-50: #eef3f6;
+  --color-blue-slate-100: #dee6ed;
+  --color-blue-slate-200: #bccedc;
+  --color-blue-slate-300: #9bb5ca;
+  --color-blue-slate-400: #799cb9;
+  --color-blue-slate-500: #5883a7;
+  --color-blue-slate-600: #466986;
+  --color-blue-slate-700: #354f64;
+  --color-blue-slate-800: #233543;
+  --color-blue-slate-900: #121a21;
+  --color-blue-slate-950: #0c1217;
+
+  --color-pearl-aqua-50: #eafaf9;
+  --color-pearl-aqua-100: #d5f6f3;
+  --color-pearl-aqua-200: #acece8;
+  --color-pearl-aqua-300: #82e3dc;
+  --color-pearl-aqua-400: #59d9d1;
+  --color-pearl-aqua-500: #2fd0c5;
+  --color-pearl-aqua-600: #26a69e;
+  --color-pearl-aqua-700: #1c7d76;
+  --color-pearl-aqua-800: #13534f;
+  --color-pearl-aqua-900: #092a27;
+  --color-pearl-aqua-950: #071d1c;
+
+  --color-frozen-water-50: #e5fff8;
+  --color-frozen-water-100: #ccfff1;
+  --color-frozen-water-200: #99ffe2;
+  --color-frozen-water-300: #66ffd4;
+  --color-frozen-water-400: #33ffc5;
+  --color-frozen-water-500: #00ffb7;
+  --color-frozen-water-600: #00cc92;
+  --color-frozen-water-700: #00996e;
+  --color-frozen-water-800: #006649;
+  --color-frozen-water-900: #003325;
+  --color-frozen-water-950: #00241a;
+
+  --color-royal-gold-50: #fff9e5;
+  --color-royal-gold-100: #fff3cc;
+  --color-royal-gold-200: #ffe799;
+  --color-royal-gold-300: #ffdb66;
+  --color-royal-gold-400: #ffcf33;
+  --color-royal-gold-500: #ffc300;
+  --color-royal-gold-600: #cc9c00;
+  --color-royal-gold-700: #997500;
+  --color-royal-gold-800: #664e00;
+  --color-royal-gold-900: #332700;
+  --color-royal-gold-950: #241b00;
+
+  --color-cotton-rose-50: #ffe5e7;
+  --color-cotton-rose-100: #ffcccf;
+  --color-cotton-rose-200: #ff99a0;
+  --color-cotton-rose-300: #ff6670;
+  --color-cotton-rose-400: #ff3341;
+  --color-cotton-rose-500: #ff0011;
+  --color-cotton-rose-600: #cc000e;
+  --color-cotton-rose-700: #99000a;
+  --color-cotton-rose-800: #660007;
+  --color-cotton-rose-900: #330003;
+  --color-cotton-rose-950: #240002;
+
+  /* Szemantikus becenevek – ezeket használják a komponensek ténylegesen */
+
+  /* Blue Slate – sötét szekciók, fő szöveg háttere */
+  --color-ink: var(--color-blue-slate-700);
+  --color-ink-soft: var(--color-blue-slate-600);
+
+  /* Royal Gold – elsődleges akcent, fő gombok, progress sáv */
+  --color-gold: var(--color-royal-gold-300);
+  --color-gold-soft: var(--color-royal-gold-200);
+
+  /* Pearl Aqua – másodlagos akcent, ikonok, keretek, gradiensek */
+  --color-aqua: var(--color-pearl-aqua-400);
+  --color-aqua-soft: var(--color-pearl-aqua-200);
+  --color-aqua-deep: var(--color-pearl-aqua-700); /* olvasható szöveghez, pl. sikeres állapot */
+
+  /* Cotton Rose – harmadlagos akcent, kiemelések */
+  --color-rose: var(--color-cotton-rose-100);
+  --color-rose-deep: var(--color-cotton-rose-600); /* olvasható szöveghez, pl. hibaüzenet, ikonok */
+
+  /* Frozen Water – fő világos háttér */
+  --color-paper: var(--color-frozen-water-50);
+  --color-paper-dark: var(--color-frozen-water-100);
+
+  /* Szövegszín világos hátteren (Blue Slate-ből sötétítve) */
+  --color-body: var(--color-blue-slate-800);
+
+  /* --- Gradiensek ------------------------------------------------
+     A három kiemelt helyen használjuk őket (lásd lejjebb a
+     .bg-gradient-* class-okat): görgetési sáv, elsődleges gombok,
+     kiemelt ártábla kártya. */
+  --gradient-primary: linear-gradient(135deg, var(--color-gold), var(--color-rose));
+  --gradient-progress: linear-gradient(90deg, var(--color-gold), var(--color-aqua), var(--color-rose));
+  --gradient-cool: linear-gradient(135deg, var(--color-aqua), var(--color-paper-dark));
+
+  /* --- Betűtípusok --------------------------------------------
+     A Google Fonts betöltés az index.html-ben van.
+     Csere esetén ott is módosítsd a linket! */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Menlo', monospace;
+
+  /* --- Egyéb ---------------------------------------------------- */
+  --radius-card: 1.25rem;
+}
+
+/* Gradiens segédosztályok – bármelyik elemre rátehetők */
+.bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+.bg-gradient-progress {
+  background-image: var(--gradient-progress);
+}
+.bg-gradient-cool {
+  background-image: var(--gradient-cool);
+}
+
+/* Alap beállítások */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-body);
+  font-family: var(--font-body);
+}
+
+/* Segéd class a "fejezet időbélyeg" motívumhoz, amit minden
+   szekció elején használunk (pl. 00:00, 01:24 ...) */
+.chapter-mark {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+}
