@@ -37,11 +37,11 @@ export const site = {
 export const images = {
   hero: {
     url: '/AndreMeli1798.jpg',
-    alt: 'A coach portréja természetes környezetben',
+    alt: 'André Melinda',
   },
   about: {
     url: '',
-    alt: 'Rólam fotó természetes fényben',
+    alt: 'Fotó',
   },
   divider1: {
     url: '/ann-gogoleva-MUq7BTMWwZc-unsplash.jpg',
