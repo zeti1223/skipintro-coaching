@@ -19,9 +19,7 @@ import ChapterMark from './ChapterMark.vue'
           <ul class="space-y-4">
             <li v-for="(item, i) in audience.for" :key="i" class="flex gap-3">
               <span class="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-ink/15 text-ink flex items-center justify-center">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
+                <i class="fa-solid fa-check text-[10px]" />
               </span>
               <span class="text-sm md:text-[15px] text-body leading-relaxed">{{ item }}</span>
             </li>
@@ -33,9 +31,7 @@ import ChapterMark from './ChapterMark.vue'
           <ul class="space-y-4">
             <li v-for="(item, i) in audience.notFor" :key="i" class="flex gap-3">
               <span class="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-rose-deep text-paper flex items-center justify-center">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
-                </svg>
+                <i class="fa-solid fa-xmark text-[10px]" />
               </span>
               <span class="text-sm md:text-[15px] text-body leading-relaxed">{{ item }}</span>
             </li>

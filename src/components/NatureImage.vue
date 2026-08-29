@@ -28,15 +28,7 @@ defineProps({
       ]"
     >
       <span class="w-11 h-11 rounded-full bg-gradient-primary flex items-center justify-center">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path
-            class="text-ink"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3 17l5-6 4 4 3-4 6 6M5 7l1.5-2L8 7"
-          />
-          <circle cx="17" cy="6" r="1.4" class="text-ink" fill="currentColor" stroke="none" />
-        </svg>
+        <i class="fa-solid fa-image text-ink text-base" />
       </span>
       <p
         class="chapter-mark text-xs uppercase tracking-[0.15em] leading-relaxed"

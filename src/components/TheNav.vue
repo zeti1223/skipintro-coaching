@@ -34,16 +34,12 @@ const open = ref(false)
       </a>
 
       <button
-        class="md:hidden text-ink p-2 -mr-2"
+        class="md:hidden text-ink p-2 -mr-2 flex items-center justify-center w-10 h-10"
         aria-label="Menü megnyitása"
         @click="open = !open"
       >
-        <svg v-if="!open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg v-else width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
-        </svg>
+        <i v-if="!open" class="fa-solid fa-bars text-xl" />
+        <i v-else class="fa-solid fa-xmark text-xl" />
       </button>
     </div>
 

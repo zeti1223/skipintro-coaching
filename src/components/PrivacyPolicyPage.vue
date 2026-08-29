@@ -9,9 +9,7 @@ import { site, privacyPolicy } from '../content.js'
         href="/"
         class="inline-flex items-center gap-2 text-sm font-medium text-ink/60 hover:text-ink transition-colors mb-10"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6" />
-        </svg>
+        <i class="fa-solid fa-arrow-left text-xs" />
         Vissza a főoldalra
       </a>
 

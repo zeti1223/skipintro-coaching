@@ -28,9 +28,7 @@ function toggle(i) {
               class="shrink-0 w-7 h-7 rounded-full border border-ink/15 flex items-center justify-center text-ink/60 transition-transform duration-200"
               :class="{ 'rotate-45': openIndex === i }"
             >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" d="M12 5v14M5 12h14" />
-              </svg>
+              <i class="fa-solid fa-plus text-xs" />
             </span>
           </button>
           <div
