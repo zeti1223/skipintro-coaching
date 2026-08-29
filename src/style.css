@@ -1,83 +1,23 @@
 @import 'tailwindcss';
 
-@theme {
-  --color-blue-slate-50: #eef3f6;
-  --color-blue-slate-100: #dee6ed;
-  --color-blue-slate-200: #bccedc;
-  --color-blue-slate-300: #9bb5ca;
-  --color-blue-slate-400: #799cb9;
-  --color-blue-slate-500: #5883a7;
-  --color-blue-slate-600: #466986;
-  --color-blue-slate-700: #354f64;
-  --color-blue-slate-800: #233543;
-  --color-blue-slate-900: #121a21;
-  --color-blue-slate-950: #0c1217;
+:root {
+  --color-ink: #354f64;
+  --color-ink-soft: #466986;
 
-  --color-pearl-aqua-50: #eafaf9;
-  --color-pearl-aqua-100: #d5f6f3;
-  --color-pearl-aqua-200: #acece8;
-  --color-pearl-aqua-300: #82e3dc;
-  --color-pearl-aqua-400: #59d9d1;
-  --color-pearl-aqua-500: #2fd0c5;
-  --color-pearl-aqua-600: #26a69e;
-  --color-pearl-aqua-700: #1c7d76;
-  --color-pearl-aqua-800: #13534f;
-  --color-pearl-aqua-900: #092a27;
-  --color-pearl-aqua-950: #071d1c;
+  --color-gold: #ffdb66;
+  --color-gold-soft: #ffe799;
 
-  --color-frozen-water-50: #e5fff8;
-  --color-frozen-water-100: #ccfff1;
-  --color-frozen-water-200: #99ffe2;
-  --color-frozen-water-300: #66ffd4;
-  --color-frozen-water-400: #33ffc5;
-  --color-frozen-water-500: #00ffb7;
-  --color-frozen-water-600: #00cc92;
-  --color-frozen-water-700: #00996e;
-  --color-frozen-water-800: #006649;
-  --color-frozen-water-900: #003325;
-  --color-frozen-water-950: #00241a;
+  --color-aqua: #59d9d1;
+  --color-aqua-soft: #acece8;
+  --color-aqua-deep: #1c7d76;
 
-  --color-royal-gold-50: #fff9e5;
-  --color-royal-gold-100: #fff3cc;
-  --color-royal-gold-200: #ffe799;
-  --color-royal-gold-300: #ffdb66;
-  --color-royal-gold-400: #ffcf33;
-  --color-royal-gold-500: #ffc300;
-  --color-royal-gold-600: #cc9c00;
-  --color-royal-gold-700: #997500;
-  --color-royal-gold-800: #664e00;
-  --color-royal-gold-900: #332700;
-  --color-royal-gold-950: #241b00;
+  --color-rose: #ffcccf;
+  --color-rose-deep: #cc000e;
 
-  --color-cotton-rose-50: #ffe5e7;
-  --color-cotton-rose-100: #ffcccf;
-  --color-cotton-rose-200: #ff99a0;
-  --color-cotton-rose-300: #ff6670;
-  --color-cotton-rose-400: #ff3341;
-  --color-cotton-rose-500: #ff0011;
-  --color-cotton-rose-600: #cc000e;
-  --color-cotton-rose-700: #99000a;
-  --color-cotton-rose-800: #660007;
-  --color-cotton-rose-900: #330003;
-  --color-cotton-rose-950: #240002;
+  --color-paper: #e5fff8;
+  --color-paper-dark: #ccfff1;
 
-  --color-ink: var(--color-blue-slate-700);
-  --color-ink-soft: var(--color-blue-slate-600);
-
-  --color-gold: var(--color-royal-gold-300);
-  --color-gold-soft: var(--color-royal-gold-200);
-
-  --color-aqua: var(--color-pearl-aqua-400);
-  --color-aqua-soft: var(--color-pearl-aqua-200);
-  --color-aqua-deep: var(--color-pearl-aqua-700);
-
-  --color-rose: var(--color-cotton-rose-100);
-  --color-rose-deep: var(--color-cotton-rose-600);
-
-  --color-paper: var(--color-frozen-water-50);
-  --color-paper-dark: var(--color-frozen-water-100);
-
-  --color-body: var(--color-blue-slate-800);
+  --color-body: #233543;
 
   --gradient-primary: linear-gradient(135deg, var(--color-gold), var(--color-rose));
   --gradient-progress: linear-gradient(
@@ -87,6 +27,26 @@
     var(--color-rose)
   );
   --gradient-cool: linear-gradient(135deg, var(--color-aqua), var(--color-paper-dark));
+}
+
+@theme {
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+
+  --color-aqua: var(--color-aqua);
+  --color-aqua-soft: var(--color-aqua-soft);
+  --color-aqua-deep: var(--color-aqua-deep);
+
+  --color-rose: var(--color-rose);
+  --color-rose-deep: var(--color-rose-deep);
+
+  --color-paper: var(--color-paper);
+  --color-paper-dark: var(--color-paper-dark);
+
+  --color-body: var(--color-body);
 
   --font-display: 'Fraunces', 'Georgia', serif;
   --font-body: 'Manrope', 'Segoe UI', sans-serif;

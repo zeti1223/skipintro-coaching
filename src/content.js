@@ -1,3 +1,28 @@
+export const theme = {
+  colors: {
+    ink: '#354f64',
+    inkSoft: '#466986',
+    paper: '#e5fff8',
+    paperDark: '#ccfff1',
+    body: '#233543',
+    gold: '#ffdb66',
+    goldSoft: '#ffe799',
+    aqua: '#59d9d1',
+    aquaSoft: '#acece8',
+    aquaDeep: '#1c7d76',
+    rose: '#ffcccf',
+    roseDeep: '#cc000e',
+  },
+
+  gradients: {
+    primary: 'linear-gradient(135deg, var(--color-gold), var(--color-rose))',
+    progress: 'linear-gradient(90deg, var(--color-gold), var(--color-aqua), var(--color-rose))',
+    cool: 'linear-gradient(135deg, var(--color-aqua), var(--color-paper-dark))',
+  },
+}
+
+export const colors = theme.colors
+
 export const site = {
   brandName: 'Skipintro',
   brandSuffix: 'Coaching',
@@ -67,8 +92,7 @@ export const hero = {
   eyebrow: 'SKIP INTRO',
   eyebrowTime: '00:00',
   title: 'Hagyjuk a bevezetőt.\nVágjunk bele abba, ami tényleg számít.',
-  paragraph:
-    'A Skipintro Coaching jó',
+  paragraph: 'A Skipintro Coaching jó',
   primaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
   secondaryCta: { label: 'Ismerd meg a folyamatot', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
@@ -82,21 +106,10 @@ export const audience = {
   intro:
     'A coaching nem csodaszer, de cserébe jó. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
   forTitle: 'Kinek szól',
-  for: [
-    'Petike',
-    'Janika',
-    'Zsoltika',
-    'Pistike',
-    'Lillácska',
-  ],
+  for: ['Petike', 'Janika', 'Zsoltika', 'Pistike', 'Lillácska'],
   notForTitle: 'Kinek nem javasolt',
-  notFor: [
-    'Gáborka',
-    'Gergőke',
-    'Dórácska',
-  ],
-  disclaimer:
-    'Fontos: UFOknak nem tartok',
+  notFor: ['Gáborka', 'Gergőke', 'Dórácska'],
+  disclaimer: 'Fontos: UFOknak nem tartok',
 }
 
 export const pricing = {
@@ -174,8 +187,7 @@ export const faq = {
     },
     {
       question: 'Mi történik, ha mégsem ez nekem való?',
-      answer:
-        'Így jártál...',
+      answer: 'Így jártál...',
     },
     {
       question: 'Kapok számlát a szolgáltatásról?',
@@ -236,5 +248,6 @@ export const contact = {
   intro:
     'Töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
   successMessage: 'Köszönöm a jelentkezést! Hamarosan jelentkezem a megadott elérhetőségen.',
-  errorMessage: 'Hoppá, valami félrement a küldés közben. Próbáld újra, vagy írj közvetlenül emailt.',
+  errorMessage:
+    'Hoppá, valami félrement a küldés közben. Próbáld újra, vagy írj közvetlenül emailt.',
 }
