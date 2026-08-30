@@ -8,7 +8,7 @@ export function buildOwnerEmail({ name, email, message }) {
       'Üzenet:',
       message,
       '',
-      '— Skipintro Coaching időpontfoglaló űrlap',
+      '- Skipintro Coaching időpontfoglaló űrlap',
     ].join('\n'),
   }
 }
