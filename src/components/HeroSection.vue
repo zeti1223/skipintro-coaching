@@ -21,7 +21,7 @@ import NatureImage from './NatureImage.vue'
           {{ hero.eyebrowTime }}
         </div>
 
-        <h1 class="font-display font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.08] whitespace-pre-line mb-6">
+        <h1 class="font-display font-medium text-3xl md:text-4xl lg:text-5xl leading-[1.08] whitespace-pre-line mb-6">
           {{ hero.title }}
         </h1>
 

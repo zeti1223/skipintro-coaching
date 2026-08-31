@@ -4,7 +4,7 @@ import ChapterMark from './ChapterMark.vue'
 </script>
 
 <template>
-  <section id="kineknek" class="relative py-20 md:py-28">
+  <section id="kiknek" class="relative py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
       <ChapterMark :time="audience.chapterMark" label="Kinek szól" />
 

@@ -24,7 +24,7 @@ export const theme = {
 export const colors = theme.colors
 
 export const site = {
-  brandName: 'Skipintro',
+  brandName: 'Skip Intro',
   brandSuffix: 'Coaching',
   contactEmail: '[email cím]',
   // ------------------------------------------------------------
@@ -61,7 +61,7 @@ export const site = {
 
 export const images = {
   hero: {
-    url: '/AndreMeli1798.jpg',
+    url: '/AndreMeli1720.jpg',
     alt: 'André Melinda',
   },
   about: {
@@ -82,7 +82,7 @@ export const images = {
 
 export const nav = [
   { label: 'Kezdőlap', href: '/#hero' },
-  { label: 'Kinek szól', href: '/#kineknek' },
+  { label: 'Kinek szól', href: '/#kiknek' },
   { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
   { label: 'Rólam', href: '/#rolam' },
   { label: 'GYIK', href: '/#gyik' },
@@ -91,25 +91,25 @@ export const nav = [
 export const hero = {
   eyebrow: 'SKIP INTRO',
   eyebrowTime: '00:00',
-  title: 'Hagyjuk a bevezetőt.\nVágjunk bele abba, ami tényleg számít.',
-  paragraph: 'A Skipintro Coaching jó',
-  primaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
-  secondaryCta: { label: 'Ismerd meg a folyamatot', href: '#szolgaltatasok' },
+  title: 'André Melinda\nLife- és Business Coach,\nkommunikációs specialista',
+  paragraph: 'A Skip Intro Coaching jóLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies tellus. Sed ipsum elit, bibendum a eros quis, cursus venenatis leo. Donec ac diam ut velit ullamcorper dignissim. Aenean commodo efficitur suscipit. Vivamus feugiat lacus sed elit suscipit, quis facilisis orci laoreet. In hac habitasse platea dictumst.',
+  primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
+  secondaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
   photoCaption: 'Portré',
   coachName: 'André Melinda',
-  coachRole: 'Life és Buisness Coach',
+  coachRole: 'Life- és Business Coach',
 }
 
 export const audience = {
   chapterMark: '01:12',
-  title: 'Kinek szól a Skipintro Coaching?',
+  title: 'Mire számíthatsz a közös munka során?',
   intro:
     'A coaching nem csodaszer, de cserébe jó. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
-  forTitle: 'Kinek szól',
+  forTitle: 'Amiben támogatni tudlak',
   for: ['Petike', 'Janika', 'Zsoltika', 'Pistike', 'Lillácska'],
-  notForTitle: 'Kinek nem javasolt',
+  notForTitle: 'Ami kizáró ok a coachingban',
   notFor: ['Gáborka', 'Gergőke', 'Dórácska'],
-  disclaimer: 'Fontos: UFOknak nem tartok',
+  disclaimer: 'Ami kizáró ok a coaching folyamat során',
 }
 
 export const pricing = {
@@ -138,14 +138,7 @@ export const pricing = {
       price: '65 000 Ft',
       description: 'Öt egymásra épülő alkalom, amikor egy nagyobb változáson dolgozunk együtt.',
       featured: false,
-    },
-    {
-      name: 'Online coaching',
-      duration: '60 perc',
-      price: '13 000 Ft',
-      description: 'Ugyanaz a program, videóhívásban – bárhol is vagy éppen.',
-      featured: false,
-    },
+    }
   ],
 }
 
@@ -153,7 +146,7 @@ export const about = {
   chapterMark: '03:45',
   title: 'Rólam',
   paragraphs: [
-    'Szia, André Melinda vagyok, a Skipintro Coaching megalkotója. Ember vagyok',
+    'Szia, André Melinda vagyok, a Skip Intro Coaching megalkotója. Ember vagyok',
     'Ember vagyok, még mindig',
   ],
   quote: 'Nagyon menő idézet',
@@ -168,33 +161,33 @@ export const about = {
 
 export const faq = {
   chapterMark: '04:50',
-  title: 'Gyakori kérdések',
+  title: 'Ha még maradt kérdésed',
   items: [
     {
       question: 'Hogyan tudok időpontot foglalni?',
       answer:
-        'Az oldal alján található űrlap kitöltésével tudsz jelentkezni. A megadott elérhetőségeden hamarosan visszajelzek, és egyeztetünk egy időpontot.',
+        'Az oldalon található űrlap kitöltésével tudsz jelentkezni. A megadott elérhetőségeden hamarosan visszajelzek, és egyeztetünk egy időpontot.',
     },
     {
-      question: 'Mennyi idő alatt várható eredmény?',
+      question: 'Mitől függ, hogy hány alkalmas lesz a coaching folyamat?',
       answer:
         'Ez mindenkinél más – van, aki már az első alkalom után érez elmozdulást, másnak több ülésre van szüksége. Az ismerkedős beszélgetésen erről is beszélünk.',
     },
     {
-      question: 'Online vagy személyesen találkozunk?',
+      question: 'Online vagy személyesen találkozzunk?',
       answer:
         'Mindkettőre van lehetőség: választhatsz személyes találkozót vagy online coachingot, ami neked kényelmesebb.',
     },
     {
-      question: 'Mi történik, ha mégsem ez nekem való?',
+      question: 'Milyen gyakran tartjuk az üléseket?',
       answer: 'Így jártál...',
     },
     {
-      question: 'Kapok számlát a szolgáltatásról?',
+      question: 'Mi történik, ha nem tudok részt venni a korábban megbeszélt alkalmon?',
       answer: 'Igen, minden alkalomról számlát állítok ki.',
     },
     {
-      question: 'Mi történik az adataimmal, amiket az űrlapon megadok?',
+      question: 'Hogyan fizethetem a szolgáltatást?',
       answer:
         'Az adataidat bizalmasan kezelem, kizárólag a kapcsolatfelvétel és az időpont-egyeztetés céljából használom. Részletek az adatkezelési tájékoztatóban.',
     },
@@ -204,7 +197,7 @@ export const faq = {
 export const privacyPolicy = {
   title: 'Adatkezelési tájékoztató',
   intro:
-    'Az alábbi tájékoztató azt mutatja be, hogy a Skipintro Coaching honlapján keresztül megadott személyes adatokat hogyan kezelem. A tájékoztatót bármikor frissítem, amennyiben a szolgáltatás vagy a jogszabályi környezet ezt indokolja.',
+    'Az alábbi tájékoztató azt mutatja be, hogy a Skip Intro Coaching honlapján keresztül megadott személyes adatokat hogyan kezelem. A tájékoztatót bármikor frissítem, amennyiben a szolgáltatás vagy a jogszabályi környezet ezt indokolja.',
   lastUpdated: '2026. augusztus',
   sections: [
     {
