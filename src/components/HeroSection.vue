@@ -1,5 +1,5 @@
 <script setup>
-import { hero, images } from '../content.js'
+import { hero, images, site } from '../content.js'
 import NatureImage from './NatureImage.vue'
 </script>
 
@@ -10,8 +10,14 @@ import NatureImage from './NatureImage.vue'
     <div class="pointer-events-none absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-aqua/20 blur-3xl" />
     <div class="pointer-events-none absolute top-1/3 left-1/3 w-64 h-64 rounded-full bg-gradient-primary opacity-10 blur-3xl" />
 
-    <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-center">
+    <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-start">
       <div>
+        <div class="font-display text-2xl md:text-4xl tracking-tight text-paper mb-10">
+          {{ site.brandName }}<span class="text-gold">.</span
+          ><span class="hidden sm:inline text-paper font-body text-sm md:text-2xl ml-1 opacity-70">{{
+            site.brandSuffix
+          }}</span>
+        </div>
 
         <h1 class="font-display font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.08] mb-6">
           {{ hero.name }}
