@@ -74,30 +74,30 @@ async function submit() {
 
     <form
       id="booking-form"
-      class="rounded-card bg-ink/3 border border-ink/10 p-6 md:p-9"
+      class="rounded-card bg-rose/25 border border-rose/50 p-8 md:p-10 shadow-lg shadow-rose/10"
       @submit.prevent="submit"
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">
         <div>
-          <label for="name" class="block text-sm font-medium text-ink/70 mb-1.5">Név *</label>
+          <label for="name" class="block text-sm font-medium text-ink/70 mb-1.5">Név <span class="text-rose-700">*</span></label>
           <input
             id="name"
             v-model="form.name"
             name="name"
             type="text"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aqua"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose"
           />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-ink/70 mb-1.5">E-mail cím *</label>
+          <label for="email" class="block text-sm font-medium text-ink/70 mb-1.5">E-mail cím <span class="text-rose-700">*</span></label>
           <input
             id="email"
             v-model="form.email"
             name="email"
             type="email"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aqua"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose"
           />
         </div>
       </div>
@@ -109,7 +109,7 @@ async function submit() {
           v-model="form.message"
           name="message"
           rows="4"
-          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-aqua resize-none"
+          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose resize-none"
         />
       </div>
 
@@ -118,24 +118,24 @@ async function submit() {
           v-model="form.consent"
           type="checkbox"
           required
-          class="mt-0.5 rounded border-ink/30 text-aqua-deep focus:ring-aqua"
+          class="mt-0.5 rounded border-ink/30 text-rose-deep focus:ring-rose"
         />
         <span>
           Elfogadom az
-          <a :href="site.privacyPolicyUrl" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
-          és hozzájárulok adataim feldolgozásához. *
+          <a :href="site.privacyPolicyUrl" class="underline decoration-rose underline-offset-2">adatkezelési tájékoztatót</a>
+          és hozzájárulok adataim feldolgozásához.<span class="text-rose-700">*</span>
         </span>
       </label>
 
       <button
         type="submit"
         :disabled="status === 'sending'"
-        class="inline-flex items-center gap-2 bg-ink text-paper font-semibold px-6 py-3 rounded-full hover:bg-ink-soft transition-colors disabled:opacity-50"
+        class="inline-flex items-center gap-2 bg-rose text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 transition disabled:opacity-50 cursor-pointer"
       >
         {{ status === 'sending' ? 'Küldés…' : 'Elküldöm' }}
       </button>
 
-      <p v-if="status === 'success'" class="mt-4 text-sm text-aqua-deep">{{ contact.successMessage }}</p>
+      <p v-if="status === 'success'" class="mt-4 text-sm text-rose-deep">{{ contact.successMessage }}</p>
       <p v-if="status === 'error'" class="mt-4 text-sm text-rose-deep">{{ contact.errorMessage }}</p>
     </form>
   </section>
