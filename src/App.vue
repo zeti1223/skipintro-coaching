@@ -22,9 +22,9 @@ const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/adatkez
     <PrivacyPolicyPage v-if="isPrivacyPage" />
     <template v-else>
       <HeroSection />
-      <AboutSection />
-      <ImageBand :url="images.divider1.url" :alt="images.divider1.alt" :quote="images.divider1.quote" />
       <AudienceSection />
+      <ImageBand :url="images.divider1.url" :alt="images.divider1.alt" :quote="images.divider1.quote" />
+      <AboutSection />
       <PricingSection />
       <ContactSection />
       <ImageBand :url="images.divider2.url" :alt="images.divider2.alt" :quote="images.divider2.quote" />

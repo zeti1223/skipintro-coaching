@@ -89,7 +89,8 @@ export const nav = [
 ]
 
 export const hero = {
-  title: 'André Melinda\nLife- és Business Coach,\nkommunikációs specialista',
+  name: 'André Melinda',
+  subtitle: 'Life- és Business Coach,\nkommunikációs specialista',
   paragraph: 'A Skip Intro Coaching jóLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies tellus. Sed ipsum elit, bibendum a eros quis, cursus venenatis leo. Donec ac diam ut velit ullamcorper dignissim. Aenean commodo efficitur suscipit. Vivamus feugiat lacus sed elit suscipit, quis facilisis orci laoreet. In hac habitasse platea dictumst.',
   primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
   secondaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },

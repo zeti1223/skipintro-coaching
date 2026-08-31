@@ -13,8 +13,9 @@ import NatureImage from './NatureImage.vue'
     <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-center">
       <div>
 
-        <h1 class="font-display font-medium text-3xl md:text-4xl lg:text-5xl leading-[1.08] whitespace-pre-line mb-6">
-          {{ hero.title }}
+        <h1 class="font-display font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.08] mb-6">
+          {{ hero.name }}
+          <span class="font-thin block text-2xl md:text-3xl lg:text-4xl whitespace-pre-line">{{ hero.subtitle }}</span>
         </h1>
 
         <p class="text-paper/70 text-lg leading-relaxed mb-10 max-w-lg">
@@ -30,7 +31,7 @@ import NatureImage from './NatureImage.vue'
           </a>
           <a
             :href="hero.secondaryCta.href"
-            class="inline-flex items-center gap-2 text-paper font-medium px-6 py-3.5 rounded-full border border-paper/30 hover:border-aqua/70 transition-colors"
+            class="inline-flex items-center gap-2 bg-rose text-ink font-medium px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 transition"
           >
             {{ hero.secondaryCta.label }}
           </a>
