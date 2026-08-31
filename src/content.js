@@ -61,20 +61,20 @@ export const site = {
 
 export const images = {
   hero: {
-    url: '/AndreMeli1720.jpg',
+    url: '/Melinda.jpg',
     alt: 'André Melinda',
   },
   about: {
-    url: '',
-    alt: 'Fotó',
+    url: '/Melinda_2.jpg',
+    alt: 'André Melinda',
   },
   divider1: {
-    url: '/ann-gogoleva-MUq7BTMWwZc-unsplash.jpg',
+    url: '/flower.jpg',
     alt: 'Virágok bújnak elő egy fa deszkapadló résein',
     quote: 'Szép ez a virág',
   },
   divider2: {
-    url: '/dan-freeman-WHPsxhB4mWQ-unsplash.jpg',
+    url: '/stairs.jpg',
     alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
     quote: 'Le vagy fel?',
   },
@@ -83,8 +83,8 @@ export const images = {
 export const nav = [
   { label: 'Kezdőlap', href: '/#hero' },
   { label: 'Kinek szól', href: '/#kiknek' },
-  { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
   { label: 'Rólam', href: '/#rolam' },
+  { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
   { label: 'GYIK', href: '/#gyik' },
 ]
 
