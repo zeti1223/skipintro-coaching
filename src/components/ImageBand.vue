@@ -28,7 +28,7 @@ defineProps({
       <div class="absolute inset-0 bg-ink/35" />
       <p
         v-if="quote"
-        class="absolute inset-0 flex items-center justify-center text-center px-6 font-display italic text-xl md:text-3xl text-paper max-w-2xl mx-auto"
+        class="absolute inset-0 flex items-center justify-center text-center px-6 font-display italic text-2xl md:text-3xl text-paper max-w-2xl mx-auto"
       >
         „{{ quote }}”
       </p>
