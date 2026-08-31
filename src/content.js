@@ -71,7 +71,7 @@ export const images = {
   divider1: {
     url: '/flower.jpg',
     alt: 'Virágok bújnak elő egy fa deszkapadló résein',
-    quote: 'Szép ez a virág',
+    quote: 'Bármi, aminek hatalma van feletted, valójában arra tanít, hogyan nyerheted vissza a hatalmad',
   },
   divider2: {
     url: '/stairs.jpg',
