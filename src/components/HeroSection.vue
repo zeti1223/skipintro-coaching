@@ -12,14 +12,6 @@ import NatureImage from './NatureImage.vue'
 
     <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-center">
       <div>
-        <div
-          class="inline-flex items-center gap-2 chapter-mark text-xs bg-paper/10 border border-paper/20 text-gold-soft px-3 py-1.5 rounded-full mb-8"
-        >
-          <span class="inline-block w-0 h-0 border-y-[5px] border-y-transparent border-l-8 border-l-gold-soft" />
-          {{ hero.eyebrow }}
-          <span class="opacity-50">·</span>
-          {{ hero.eyebrowTime }}
-        </div>
 
         <h1 class="font-display font-medium text-3xl md:text-4xl lg:text-5xl leading-[1.08] whitespace-pre-line mb-6">
           {{ hero.title }}

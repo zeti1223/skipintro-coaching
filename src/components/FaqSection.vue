@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import { faq } from '../content.js'
-import ChapterMark from './ChapterMark.vue'
 
 const openIndex = ref(0)
 
@@ -13,7 +12,6 @@ function toggle(i) {
 <template>
   <section id="gyik" class="relative pt-20 pb-10 md:pt-28 md:pb-14">
     <div class="max-w-3xl mx-auto px-6">
-      <ChapterMark :time="faq.chapterMark" label="GYIK" />
       <h2 class="font-display text-3xl md:text-4xl text-ink mb-10">{{ faq.title }}</h2>
 
       <div class="divide-y divide-ink/10 border-t border-b border-ink/10">

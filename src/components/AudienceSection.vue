@@ -1,13 +1,10 @@
 <script setup>
 import { audience } from '../content.js'
-import ChapterMark from './ChapterMark.vue'
 </script>
 
 <template>
   <section id="kiknek" class="relative py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
-      <ChapterMark :time="audience.chapterMark" label="Kinek szól" />
-
       <div class="md:max-w-2xl mb-14">
         <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ audience.title }}</h2>
         <p class="text-body/80 leading-relaxed">{{ audience.intro }}</p>

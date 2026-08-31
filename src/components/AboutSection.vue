@@ -1,14 +1,11 @@
 <script setup>
 import { about, images } from '../content.js'
-import ChapterMark from './ChapterMark.vue'
 import NatureImage from './NatureImage.vue'
 </script>
 
 <template>
   <section id="rolam" class="relative py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
-      <ChapterMark :time="about.chapterMark" label="Rólam" />
-
       <div class="grid md:grid-cols-[minmax(0,280px)_1fr] gap-12 md:gap-16 items-start">
         <NatureImage :url="images.about.url" :alt="images.about.alt" rounded="rounded-card" />
 

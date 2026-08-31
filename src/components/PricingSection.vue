@@ -1,13 +1,10 @@
 <script setup>
 import { pricing } from '../content.js'
-import ChapterMark from './ChapterMark.vue'
 </script>
 
 <template>
   <section id="szolgaltatasok" class="relative bg-ink text-paper py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
-      <ChapterMark :time="pricing.chapterMark" label="Szolgáltatások" dark />
-
       <div class="md:max-w-2xl mb-4">
         <h2 class="font-display text-3xl md:text-4xl mb-4">{{ pricing.title }}</h2>
       </div>

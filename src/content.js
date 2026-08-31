@@ -89,8 +89,6 @@ export const nav = [
 ]
 
 export const hero = {
-  eyebrow: 'SKIP INTRO',
-  eyebrowTime: '00:00',
   title: 'André Melinda\nLife- és Business Coach,\nkommunikációs specialista',
   paragraph: 'A Skip Intro Coaching jóLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies tellus. Sed ipsum elit, bibendum a eros quis, cursus venenatis leo. Donec ac diam ut velit ullamcorper dignissim. Aenean commodo efficitur suscipit. Vivamus feugiat lacus sed elit suscipit, quis facilisis orci laoreet. In hac habitasse platea dictumst.',
   primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
@@ -101,7 +99,6 @@ export const hero = {
 }
 
 export const audience = {
-  chapterMark: '01:12',
   title: 'Mire számíthatsz a közös munka során?',
   intro:
     'A coaching nem csodaszer, de cserébe jó. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
@@ -113,7 +110,6 @@ export const audience = {
 }
 
 export const pricing = {
-  chapterMark: '02:30',
   title: 'Szolgáltatások és árak',
   intro: 'Az alábbi árak és időtartamok tájékoztatók.',
   plans: [
@@ -143,7 +139,6 @@ export const pricing = {
 }
 
 export const about = {
-  chapterMark: '03:45',
   title: 'Rólam',
   paragraphs: [
     'Szia, André Melinda vagyok, a Skip Intro Coaching megalkotója. Ember vagyok',
@@ -160,7 +155,6 @@ export const about = {
 }
 
 export const faq = {
-  chapterMark: '04:50',
   title: 'Ha még maradt kérdésed',
   items: [
     {
@@ -236,7 +230,6 @@ export const privacyPolicy = {
 }
 
 export const contact = {
-  chapterMark: '05:59',
   title: 'Foglalj időpontot',
   intro:
     'Töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
