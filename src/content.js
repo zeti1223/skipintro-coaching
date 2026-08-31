@@ -105,8 +105,6 @@ export const audience = {
     'A coaching nem csodaszer, de cserébe jó. Nézzük meg őszintén, kinek segíthet valóban ez a program.',
   forTitle: 'Amiben támogatni tudlak',
   for: ['Petike', 'Janika', 'Zsoltika', 'Pistike', 'Lillácska'],
-  notForTitle: 'Ami kizáró ok a coachingban',
-  notFor: ['Gáborka', 'Gergőke', 'Dórácska'],
   disclaimer: 'Ami kizáró ok a coaching folyamat során',
 }
 
