@@ -34,7 +34,7 @@ import { pricing } from '../content.js'
             :class="
               plan.featured
                 ? 'bg-ink text-paper hover:bg-ink-soft'
-                : 'bg-paper/10 hover:bg-paper/20 border border-paper/15'
+                : 'bg-gold-soft text-ink hover:brightness-105 hover:shadow-lg hover:shadow-gold-soft/20'
             "
           >
             Foglalok időpontot
