@@ -7,7 +7,6 @@ import { process } from '../content.js'
     <div class="max-w-6xl mx-auto px-6">
       <div class="md:max-w-2xl mb-14">
         <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ process.title }}</h2>
-        <p class="text-body/80 leading-relaxed">{{ process.intro }}</p>
       </div>
 
       <div class="space-y-6">

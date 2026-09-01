@@ -26,7 +26,7 @@ export const colors = theme.colors
 export const site = {
   brandName: 'Skip Intro',
   brandSuffix: 'Coaching',
-  contactEmail: 'kapcsolat@skipintrocoaching.hu',
+  contactEmail: 'email',
   // ------------------------------------------------------------
   // EMAILJS BEÁLLÍTÁSOK
   // ------------------------------------------------------------
@@ -91,7 +91,6 @@ export const nav = [
   { label: 'Rólam', href: '/#rolam' },
   { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
   { label: 'GYIK', href: '/#gyik' },
-  { label: 'Így haladunk', href: '/#haladas' },
 ]
 
 export const hero = {
@@ -126,11 +125,10 @@ export const audience = {
 
 export const process = {
   title: 'Így haladunk a céljaid felé',
-  intro: 'A coaching folyamat egy 0. alkalommal, azaz egy akvizíciós beszélgetéssel kezdődik, amikor megismerkedünk, megnézzük, milyen dilemmával érkeztél, és felmérjük egymást, hogy tudunk-e együtt dolgozni.',
   steps: [
     {
       title: 'Akvizíciós beszélgetés',
-      description: 'Ha ezt követően mindketten igent mondunk a közös munkára, akkor leszerződünk, és megbeszéljük az első ülés időpontját. A kitűzött cél elérése általában 5-10 alkalom, attól függően, hogyan haladsz. Minden eset más és más, ezért előre ettől pontosabban nem lehet megmondani.'
+      description: 'A coaching folyamat egy 0. alkalommal, azaz egy akvizíciós beszélgetéssel kezdődik, amikor megismerkedünk, megnézzük, milyen dilemmával érkeztél, és felmérjük egymást, hogy tudunk-e együtt dolgozni. Ha ezt követően mindketten igent mondunk a közös munkára, akkor leszerződünk, és megbeszéljük az első ülés időpontját. A kitűzött cél elérése általában 5-10 alkalom, attól függően, hogyan haladsz. Minden eset más és más, ezért előre ettől pontosabban nem lehet megmondani.'
     },
     {
       title: 'Ülések és házi feladatok',
@@ -141,7 +139,7 @@ export const process = {
       description: 'A szakmai szabályok szerint maximum 10 alkalom lehet a találkozásaink száma, legkésőbb akkor lezárjuk az ülést.'
     }
   ],
-  note: 'Gyakran megkapják a coachok a laikusoktól azt a nem túl jószándékú kommentet, hogy „A tízezer coach országa lettünk. Most akkor az összes pszichológus eldobhatja a diplomáját, amiért éveken át tanult?" Én is kaptam már meg.<br><br>Nos az igazság az, hogy ez egy súlyos tévedés. A pszichológus más területekkel foglalkozik és más módszerekkel, mint a coach. A kettő remekül megfér egymás mellett, és szépen kiegészítik egymást. Míg a pszichológia sok esetben analizál és a múltat térképezi fel, a coaching, azaz a lélek edzése az erőforrásokra és a jövőre koncentrál, lépésről-lépésre építkezve. Vannak benne nyilván átfedések, de nem azonos úton halad. A létjogosultágát pedig mi sem bizonyítja jobban, mint hogy komoly nemzetközi világcégek hosszú idő óta alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit, valamint az, hogy egyre több gyakorló pszichológus is elvégzi a life coach képzés, mert így az ügyfeleire szabva tudják ötvözni mindkét módszertant.'
+  note: '<strong>Mi a különbség a life coach és a pszichológus között?</strong><br><br>Gyakran megkapják a coachok a laikusoktól azt a nem túl jószándékú kommentet, hogy „A coachok országa lettünk. Most akkor az összes pszichológus eldobhatja a diplomáját, amiért éveken át tanult?” Nekem is szegezték már ezt a kérdést, ezért szeretném gyorsan tisztázni.<br>Nos az igazság az, hogy a két szakterületet összemosni súlyos tévedés. A pszichológus analizál, a múltat térképezi fel, korábbi traumákat gyógyít, a pszichiáter diagnosztizál, gyógyszert ír fel, ha kell és más módszerekkel dolgoznak, mint a life- és business coachok.<br><br>A coach egy lelki edző, aki a mentális erőnlétben, az érzelmi rugalmasságban támogat, az önismeretet és a tudatosságot fejleszti. Segít tisztázni az élethelyzeteket, hogy az ügyfele megtanuljon az erőforrásaira támaszkodni, lépésről-lépésre építve a jövőjét. De nem terapeuta! Nem diagnosztizál, nem gyógyít és nem is életvezetési tanácsadó, aki megmondja, mit kell tenned. Abban vezet, hogy megtaláld a saját utadat.<br><br>A coaching létjogosultágát pedig mi sem bizonyítja jobban, mint hogy komoly világcégek hosszú idő óta alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit, valamint az, hogy egyre több gyakorló pszichológus is elvégzi a life coach képzés, mert így az ügyfeleire szabva tudják ötvözni mindkét módszertant.'
 }
 
 export const pricing = {
@@ -228,11 +226,11 @@ export const privacyPolicy = {
   title: 'Adatkezelési tájékoztató',
   intro:
     'Az alábbi tájékoztató azt mutatja be, hogy a Skip Intro Coaching honlapján keresztül megadott személyes adatokat hogyan kezelem. A tájékoztatót bármikor frissítem, amennyiben a szolgáltatás vagy a jogszabályi környezet ezt indokolja.',
-  lastUpdated: '2026. augusztus',
+  lastUpdated: '2026. szeptember',
   sections: [
     {
       heading: 'Az adatkezelő adatai',
-      body: `Adatkezelő: ${site.brandName} ${site.brandSuffix}<br><br>Kapcsolat: ${site.contactEmail}`,
+      body: `Adatkezelő: ${site.brandName} ${site.brandSuffix}\nKapcsolat: ${site.contactEmail}`,
     },
     {
       heading: 'Milyen adatokat kezelek?',
