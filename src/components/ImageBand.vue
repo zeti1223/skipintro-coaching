@@ -3,6 +3,7 @@ defineProps({
   url: { type: String, default: '' },
   alt: { type: String, default: '' },
   quote: { type: String, default: '' },
+  quoteAuthor: { type: String, default: '' },
 })
 </script>
 
@@ -26,12 +27,15 @@ defineProps({
 
     <template v-if="url">
       <div class="absolute inset-0 bg-ink/35" />
-      <p
+      <div
         v-if="quote"
-        class="absolute inset-0 flex items-center justify-center text-center px-6 font-display italic text-xl md:text-3xl lg:text-4xl text-paper max-w-2xl mx-auto"
+        class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 max-w-2xl mx-auto"
       >
-        „{{ quote }}”
-      </p>
+        <p class="font-display italic text-xl md:text-3xl lg:text-4xl text-paper">
+          „{{ quote }}"
+        </p>
+        <cite v-if="quoteAuthor" class="mt-4 text-sm text-paper/80 not-italic font-body">— {{ quoteAuthor }}</cite>
+      </div>
     </template>
   </div>
 </template>

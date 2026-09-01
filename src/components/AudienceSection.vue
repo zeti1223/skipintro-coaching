@@ -7,7 +7,7 @@ import { audience } from '../content.js'
     <div class="max-w-6xl mx-auto px-6">
       <div class="md:max-w-2xl mb-14">
         <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ audience.title }}</h2>
-        <p class="text-body/80 leading-relaxed">{{ audience.intro }}</p>
+        <p class="text-body/80 leading-relaxed" v-html="audience.intro"></p>
       </div>
 
       <div class="rounded-card bg-aqua/25 border border-aqua/40 p-7 md:p-8">

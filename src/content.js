@@ -70,18 +70,18 @@ export const images = {
   },
   divider1: {
     url: '/flower.jpg',
-    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
-    quote: 'A felfedezés igazi varázsa nem abból áll, hogy új helyeket ismerjünk meg, hanem hogy más szemmel nézzünk. — Marcel Proust',
+    alt: 'Ideiglenes kép',
   },
   divider2: {
-    url: '/stairs.jpg',
-    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
-    quote: 'A felfedezés igazi varázsa nem abból áll, hogy új helyeket ismerjünk meg, hanem hogy más szemmel nézzünk. — Marcel Proust',
+    url: '/flower.jpg',
+    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
+    quote: 'Bármi, aminek hatalma van feletted, valójában arra tanít, hogyan nyerheted vissza a hatalmad',
   },
   divider3: {
     url: '/stairs.jpg',
-    alt: 'Ideiglenes képcsík',
-    quote: 'Le vagy fel?',
+    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
+    quote: 'A felfedezés igazi varázsa nem abból áll, hogy új helyeket ismerjünk meg, hanem hogy más szemmel nézzünk.',
+    quoteAuthor: 'Marcel Proust',
   },
 }
 
@@ -109,7 +109,7 @@ export const hero = {
 export const audience = {
   title: 'Mire számíthatsz a közös munka során?',
   intro:
-    'Értő figyelemre, megértésre, célzott kérdésekre, diszkrécióra, ítélkezésmentes közegre. És természetesen mentális edzésre.\n\nHogy miért Skip Intro lett a módszerem neve? Mert az a tapasztalatom, hogy úgy lehet a leghatékonyabban együtt dolgozni, ha nincs mellébeszélés, ha a lényegre koncentrálunk. Ha az unalomig ismételt önsegítő közhelyek helyett, a te személyes fejlődésedre fektetjük a hangsúlyt. Igen, többes számban, mert a coaching folyamat egy közös munka. Te hozod a dilemmádat, a megoldandódat és az őszinteségedet – hiszen az üléseket nyílt lapokkal lehet igazán jól végezni – én pedig a maximális figyelmemet, tudásomat, tapasztalatomat adom egy biztonságos közegben. A szakma szabályai szerint szerződünk.\n\nA coaching tehát nem egy kedves baráti beszélgetés, ahol te panaszkodsz, és pedig megértően bólogatok. Ez egy hetven éve útjára indult, szerteágazó, tényeken, évtizedes kutatásokon alapuló mentális edzésmódszer, ami napjainkban is folyamatosan fejlődik.\n\nNekem a coaching azért lett szerelem, mert a jövőre fókuszál, azt alakítja a jelenlegi, még ki nem aknázott lehetőségeiddel együtt. Mert mérhetők az eredményei (ugye mondtam már, hogy nincs mellébeszélés? 😊), mert időben jól körülhatárolt, rád szabott, elérhető célokat tűzünk ki, amik után magabiztosabb leszel, és az üléseken szerzett tapasztalatokat később is bármikor fel tudod használni.',
+    'Értő figyelemre, megértésre, célzott kérdésekre, diszkrécióra, ítélkezésmentes közegre. És természetesen mentális edzésre.<br><br>Hogy miért Skip Intro lett a módszerem neve? <strong>Mert az a tapasztalatom, hogy úgy lehet a leghatékonyabban együtt dolgozni, ha nincs mellébeszélés, ha a lényegre koncentrálunk.</strong> Ha az unalomig ismételt önsegítő közhelyek helyett, a te személyes fejlődésedre fektetjük a hangsúlyt. Igen, többes számban, mert a coaching folyamat egy közös munka. Te hozod a dilemmádat, a megoldandódat és az őszinteségedet – hiszen az üléseket nyílt lapokkal lehet igazán jól végezni – én pedig a maximális figyelmemet, tudásomat, tapasztalatomat adom egy biztonságos közegben. A szakma szabályai szerint szerződünk.<br><br>A coaching tehát nem egy kedves baráti beszélgetés, ahol te panaszkodsz, és pedig megértően bólogatok. Ez egy hetven éve útjára indult, szerteágazó, tényeken, évtizedes kutatásokon alapuló mentális edzésmódszer, ami napjainkban is folyamatosan fejlődik.<br><br>Nekem a coaching azért lett szerelem, mert <strong>a jövőre fókuszál, azt alakítja a jelenlegi, még ki nem aknázott lehetőségeiddel együtt.</strong> Mert mérhetők az eredményei (ugye mondtam már, hogy nincs mellébeszélés? 😊), mert időben jól körülhatárolt, rád szabott, elérhető célokat tűzünk ki, amik után magabiztosabb leszel, és az üléseken szerzett tapasztalatokat később is bármikor fel tudod használni.',
   forTitle: 'Amiben támogatni tudlak',
   for: [
     'Családi kapcsolatok, körülmények változása: hogyan kezdhetsz új életet a szakítás után, hogyan dolgozd fel a válás sebeit, hogyan alkalmazkodj a megváltozott szerepkörökhöz, új házasságot kötnél, de vannak félelmeid vel kapcsolatban',
@@ -121,7 +121,7 @@ export const audience = {
     'Stresszlevezetés: A feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele',
     'Kommunikációs problémák: Nehezen fejezed ki magad, nem tudsz mások előtt beszélni, pedig a munkádhoz szükséges lenne, folyton félreértitek egymást a pároddal, mert elbeszéltek egymás mellett'
   ],
-  disclaimer: 'Ha pszichiátriai kezelése alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak, akkor nem a coaching a te terápiád. Nem vállalhatlak el.',
+  disclaimer: 'Ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak, akkor nem a coaching a te terápiád. Nem vállalhatlak el.',
 }
 
 export const process = {
@@ -134,14 +134,14 @@ export const process = {
     },
     {
       title: 'Ülések és házi feladatok',
-      description: 'Az órák végén személyre szabott házi feladatot kapsz, ami közelebb visz a céljaid eléréséhez, és ami segít elmélyülni. Vallom, hogy sok esetben a két ülés között történnek a csodák, akkor érik be az ülésen megszerzett tudás és jön el az "aha" élmény.'
+      description: 'Az órák végén személyre szabott házi feladatot kapsz, ami közelebb visz a céljaid eléréséhez, és ami segít elmélyülni. Vallom, hogy sok esetben a két ülés között történnek a csodák, akkor érik be az ülésen megszerzett tudás és jön el az „aha” élmény.'
     },
     {
       title: 'Lezárás',
       description: 'A szakmai szabályok szerint maximum 10 alkalom lehet a találkozásaink száma, legkésőbb akkor lezárjuk az ülést.'
     }
   ],
-  note: 'Gyakran megkapják a coachok a laikusoktól azt a nem túl jószándékú kommentet, hogy "A tízezer coach országa lettünk. Most akkor az összes pszichológus eldobhatja a diplomáját, amiért éveken át tanult?" Én is kaptam már meg.<br><br><br><br>Nos az igazság az, hogy ez egy súlyos tévedés. A pszichológus más területekkel foglalkozik és más módszerekkel, mint a coach. A kettő remekül megfér egymás mellett, és szépen kiegészítik egymást. Míg a pszichológia sok esetben analizál és a múltat térképezi fel, a coaching, azaz a lélek edzése az erőforrásokra és a jövőre koncentrál, lépésről-lépésre építkezve. Vannak benne nyilván átfedések, de nem azonos úton halad. A létjogosultágát pedig mi sem bizonyítja jobban, mint hogy komoly nemzetközi világcégek hosszú idő óta alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit, valamint az, hogy egyre több gyakorló pszichológus is elvégzi a life coach képzés, mert így az ügyfeleire szabva tudják ötvözni mindkét módszertant.'
+  note: 'Gyakran megkapják a coachok a laikusoktól azt a nem túl jószándékú kommentet, hogy „A tízezer coach országa lettünk. Most akkor az összes pszichológus eldobhatja a diplomáját, amiért éveken át tanult?" Én is kaptam már meg.<br><br>Nos az igazság az, hogy ez egy súlyos tévedés. A pszichológus más területekkel foglalkozik és más módszerekkel, mint a coach. A kettő remekül megfér egymás mellett, és szépen kiegészítik egymást. Míg a pszichológia sok esetben analizál és a múltat térképezi fel, a coaching, azaz a lélek edzése az erőforrásokra és a jövőre koncentrál, lépésről-lépésre építkezve. Vannak benne nyilván átfedések, de nem azonos úton halad. A létjogosultágát pedig mi sem bizonyítja jobban, mint hogy komoly nemzetközi világcégek hosszú idő óta alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit, valamint az, hogy egyre több gyakorló pszichológus is elvégzi a life coach képzés, mert így az ügyfeleire szabva tudják ötvözni mindkét módszertant.'
 }
 
 export const pricing = {
@@ -179,7 +179,8 @@ export const about = {
     'Szia, André Melinda vagyok, a Skip Intro Coaching megalkotója. Ember vagyok',
     'Ember vagyok, még mindig',
   ],
-  quote: 'Dönthetünk úgy, hogy felelőséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk. — Edith Eva Eger',
+  quote: 'Dönthetünk úgy, hogy felelőséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk.',
+  quoteAuthor: 'Edith Eva Eger',
   credentialsTitle: 'Szakmai hátterem',
   credentials: [
     'Emberként végeztem',

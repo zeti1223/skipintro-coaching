@@ -17,8 +17,7 @@ import { process } from '../content.js'
         </div>
       </div>
 
-      <div class="mt-8 border border-dashed border-gold/70 bg-gold/15 rounded-card px-6 py-5 text-sm text-ink/70 leading-relaxed">
-        {{ process.note }}
+      <div class="mt-8 border border-dashed border-gold/70 bg-gold/15 rounded-card px-6 py-5 text-sm text-ink/70 leading-relaxed" v-html="process.note">
       </div>
     </div>
   </section>
