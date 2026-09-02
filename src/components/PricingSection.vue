@@ -17,15 +17,15 @@ import { pricing } from '../content.js'
           class="rounded-card p-6 flex flex-col"
           :class="plan.featured ? 'bg-gradient-primary text-ink' : 'bg-paper/6 border border-paper/10'"
         >
+          <h3 class="font-display text-lg mb-2 leading-snug">{{ plan.name }}</h3>
+          <p class="text-sm mb-4 leading-relaxed flex-1" :class="plan.featured ? 'text-ink/70' : 'text-paper/60'">
+            {{ plan.description }}
+          </p>
           <p
-            class="chapter-mark text-xs uppercase tracking-[0.12em] mb-6"
-            :class="plan.featured ? 'text-ink/60' : 'text-paper/40'"
+            class="font-display text-xl mb-5 font-semibold"
+            :class="plan.featured ? 'text-ink' : 'text-gold'"
           >
             {{ plan.duration }}
-          </p>
-          <h3 class="font-display text-lg mb-2 leading-snug">{{ plan.name }}</h3>
-          <p class="text-sm mb-6 leading-relaxed flex-1" :class="plan.featured ? 'text-ink/70' : 'text-paper/60'">
-            {{ plan.description }}
           </p>
           <p class="font-display text-2xl mb-5">{{ plan.price }}</p>
           <a

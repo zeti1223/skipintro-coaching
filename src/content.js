@@ -69,16 +69,16 @@ export const images = {
     alt: 'André Melinda',
   },
   divider1: {
-    url: '/flower.jpg',
-    alt: 'Ideiglenes kép',
+    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
+    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
   },
   divider2: {
-    url: '/flower.jpg',
+    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
     alt: 'Virágok bújnak elő egy fa deszkapadló résein',
     quote: 'Bármi, aminek hatalma van feletted, valójában arra tanít, hogyan nyerheted vissza a hatalmad',
   },
   divider3: {
-    url: '/stairs.jpg',
+    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
     alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
     quote: 'A felfedezés igazi varázsa nem abból áll, hogy új helyeket ismerjünk meg, hanem hogy más szemmel nézzünk.',
     quoteAuthor: 'Marcel Proust',
@@ -103,6 +103,8 @@ export const hero = {
   photoCaption: 'Portré',
   coachName: 'André Melinda',
   coachRole: 'Life- és Business Coach',
+  quote: 'Dönthetünk úgy, hogy felelőséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk.',
+  quoteAuthor: 'Edith Eva Eger',
 }
 
 export const audience = {
@@ -150,29 +152,25 @@ export const pricing = {
       name: 'Online akvizíciós beszélgetés és tájékoztatás',
       duration: '30 perc',
       price: 'Ingyenes',
-      description:
-        'Online akvizíciós beszélgetés és tájékoztatás',
       featured: false,
     },
     {
-      name: 'Online coaching alkalom',
+      name: 'Online coaching',
       duration: '80-90 perc',
       price: '20 000 Ft',
-      description: 'Online coaching alkalom',
       featured: true,
     },
     {
-      name: 'Online coaching alkalom',
+      name: 'Online coaching',
       duration: '60 perc',
       price: '17 000 Ft',
-      description: 'Online coaching alkalom',
       featured: false,
     },
     {
-      name: 'Személyes coaching alkalom',
+      name: 'Személyes coaching',
       duration: '70 perc',
       price: '19 000 Ft',
-      description: 'Személyes coaching alkalom. Helyszín: Érd',
+      description: 'Helyszín: Érd',
       featured: false,
     }
   ],
@@ -183,8 +181,6 @@ export const about = {
   paragraphs: [
     'Leírás magamról',
   ],
-  quote: 'Dönthetünk úgy, hogy felelőséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk.',
-  quoteAuthor: 'Edith Eva Eger',
   credentialsTitle: 'Szakmai hátterem',
   credentials: [
     'Több mint 25 éves kommunikációs szakmai tapasztalat',

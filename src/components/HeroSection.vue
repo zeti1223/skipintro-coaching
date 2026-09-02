@@ -46,12 +46,10 @@ import NatureImage from './NatureImage.vue'
 
       <div class="relative">
         <NatureImage :url="images.hero.url" :alt="hero.photoCaption || images.hero.alt" variant="dark" />
-        <div
-          class="absolute -bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 bg-paper text-ink rounded-2xl shadow-xl px-5 py-4 w-max max-w-[85%]"
-        >
-          <p class="font-display text-sm font-medium leading-tight">{{ hero.coachName }}</p>
-          <p class="text-xs text-ink/60 mt-0.5">{{ hero.coachRole }}</p>
-        </div>
+        <blockquote v-if="hero.quote" class="mt-6 border-l-2 border-gold pl-5 font-display italic text-lg md:text-xl text-paper/90">
+          „{{ hero.quote }}"
+          <cite v-if="hero.quoteAuthor" class="block mt-3 text-sm text-paper/60 not-italic font-body">— {{ hero.quoteAuthor }}</cite>
+        </blockquote>
       </div>
     </div>
   </section>
