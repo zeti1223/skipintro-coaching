@@ -4,11 +4,12 @@ defineProps({
   alt: { type: String, default: '' },
   quote: { type: String, default: '' },
   quoteAuthor: { type: String, default: '' },
+  aspectRatio: { type: String, default: '' },
 })
 </script>
 
 <template>
-  <div class="relative w-full aspect-video sm:aspect-21/9 md:aspect-3/1 overflow-hidden">
+  <div :class="['relative w-full overflow-hidden', aspectRatio || 'aspect-video sm:aspect-21/9 md:aspect-3/1']">
     <img
       v-if="url"
       :src="url"

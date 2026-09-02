@@ -22,7 +22,7 @@ const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/adatkez
     <template v-else>
       <HeroSection />
       <AudienceSection />
-      <ImageBand :url="images.divider1.url" :alt="images.divider1.alt"/>
+      <ImageBand :url="images.divider1.url" :alt="images.divider1.alt" aspectRatio="aspect-[3/2] sm:aspect-[21/9] md:aspect-[2/1]"/>
       <ProcessSection />
       <ImageBand :url="images.divider2.url" :alt="images.divider2.alt" :quote="images.divider2.quote"/>
       <AboutSection />
