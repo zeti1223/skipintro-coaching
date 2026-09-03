@@ -123,6 +123,14 @@ export const audience = {
     'Stresszlevezetés: A feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele'
   ],
   disclaimer: 'Ami kizáró ok: Nem a coaching a te utad, és nem vállalhatom az ügyedet, ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak.',
+  image: {
+    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
+    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
+  },
+  sidebarImage: {
+    url: '/Prev/AdobeStock_48286286_Preview.jpeg',
+    alt: 'Természet',
+  },
 }
 
 export const process = {
