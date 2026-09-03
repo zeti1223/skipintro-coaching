@@ -74,7 +74,7 @@ async function submit() {
 
     <form
       id="booking-form"
-      class="rounded-card bg-rose/25 border border-rose/50 p-8 md:p-10 shadow-lg shadow-rose/10"
+      class="rounded-card bg-gold/25 border border-gold/50 p-8 md:p-10 shadow-lg shadow-gold/10"
       @submit.prevent="submit"
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">
@@ -86,7 +86,7 @@ async function submit() {
             name="name"
             type="text"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
           />
         </div>
         <div>
@@ -97,7 +97,7 @@ async function submit() {
             name="email"
             type="email"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
           />
         </div>
       </div>
@@ -109,7 +109,7 @@ async function submit() {
           v-model="form.message"
           name="message"
           rows="4"
-          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose resize-none"
+          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold resize-none"
         />
       </div>
 
@@ -118,11 +118,11 @@ async function submit() {
           v-model="form.consent"
           type="checkbox"
           required
-          class="mt-0.5 rounded border-ink/30 text-rose-deep focus:ring-rose"
+          class="mt-0.5 rounded border-ink/30 text-gold-deep focus:ring-gold"
         />
         <span>
           Elfogadom az
-          <a :href="site.privacyPolicyUrl" class="underline decoration-rose underline-offset-2">adatkezelési tájékoztatót</a>
+          <a :href="site.privacyPolicyUrl" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
           és hozzájárulok adataim feldolgozásához.<span class="text-rose-700">*</span>
         </span>
       </label>
@@ -130,13 +130,13 @@ async function submit() {
       <button
         type="submit"
         :disabled="status === 'sending'"
-        class="inline-flex items-center gap-2 bg-rose text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 transition disabled:opacity-50 cursor-pointer"
+        class="inline-flex items-center gap-2 bg-gold text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition disabled:opacity-50 cursor-pointer"
       >
         {{ status === 'sending' ? 'Küldés…' : 'Elküldöm' }}
       </button>
 
-      <p v-if="status === 'success'" class="mt-4 text-sm text-rose-deep">{{ contact.successMessage }}</p>
-      <p v-if="status === 'error'" class="mt-4 text-sm text-rose-deep">{{ contact.errorMessage }}</p>
+      <p v-if="status === 'success'" class="mt-4 text-sm text-gold-deep">{{ contact.successMessage }}</p>
+      <p v-if="status === 'error'" class="mt-4 text-sm text-gold-deep">{{ contact.errorMessage }}</p>
     </form>
   </section>
 </template>
