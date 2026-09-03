@@ -127,6 +127,10 @@ export const audience = {
 
 export const process = {
   title: 'Így haladunk a céljaid felé',
+  image: {
+    url: '/Prev/AdobeStock_1760337244_Preview.jpeg',
+    alt: 'Haladás'
+  },
   steps: [
     {
       title: 'Akvizíciós beszélgetés',

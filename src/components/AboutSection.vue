@@ -16,11 +16,6 @@ import NatureImage from './NatureImage.vue'
             {{ p }}
           </p>
 
-          <blockquote class="border-l-2 border-gold pl-5 my-8 font-display text-xl text-ink/90 max-w-xl">
-            „{{ about.quote }}"
-            <cite class="block mt-3 text-sm text-ink/60 not-italic font-body">— {{ about.quoteAuthor }}</cite>
-          </blockquote>
-
           <h3 class="text-sm font-semibold uppercase tracking-widest text-ink/50 mb-4">
             {{ about.credentialsTitle }}
           </h3>
