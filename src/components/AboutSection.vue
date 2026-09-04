@@ -7,7 +7,10 @@ import NatureImage from './NatureImage.vue'
   <section id="rolam" class="relative py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-[minmax(0,280px)_1fr] gap-12 md:gap-16 items-start">
-        <NatureImage :url="images.about.url" :alt="images.about.alt" rounded="rounded-card" />
+        <div>
+          <NatureImage :url="images.about.url" :alt="images.about.alt" rounded="rounded-card" />
+          <p class="mt-4 text-center font-display text-xl text-ink">{{ about.motto }}</p>
+        </div>
 
         <div>
           <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl" v-html="p">
@@ -22,15 +25,6 @@ import NatureImage from './NatureImage.vue'
               {{ c }}
             </li>
           </ul>
-
-          <div class="mt-8">
-            <a
-              href="#kapcsolat"
-              class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
-            >
-              Vedd fel velem a kapcsolatot a részletekért
-            </a>
-          </div>
         </div>
       </div>
     </div>

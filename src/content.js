@@ -54,7 +54,7 @@ export const site = {
   emailjsClientTemplateId: 'YOUR_EMAILJS_CLIENT_TEMPLATE_ID',
   emailjsPublicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
   creatorUrl: 'https://zeteny.cigoria.eu',
-  creatorLabel: 'zeteny.cigoria.eu',
+  creatorLabel: 'Botyánszki Zétény',
   facebookUrl: '#',
   privacyPolicyUrl: '/adatkezeles',
 }
@@ -73,7 +73,6 @@ export const images = {
 export const nav = [
   { label: 'Főoldal', href: '/#hero' },
   { label: 'Skip Intro', href: '/#skipintro' },
-  { label: 'Szolgáltatások', href: '/#kiknek' },
   { label: 'Rólam', href: '/#rolam' },
   { label: 'Árak', href: '/#szolgaltatasok' },
   { label: 'Kapcsolat', href: '/#kapcsolat' },
@@ -85,8 +84,8 @@ export const hero = {
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
   greeting: 'Jó, hogy itt vagy!',
   paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
-  primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
-  secondaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
+  primaryCta: { label: 'Érdekel a módszer', href: '#skipintro' },
+  secondaryCta: { label: 'Szeretném az ingyenes konzultációt', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
   coachName: 'André Melinda',
   coachRole: 'Life- és Business Coach',
@@ -102,6 +101,7 @@ export const notAlone = {
     url: '/Prev/AdobeStock_48286286_Preview.jpeg',
     alt: 'xxx',
   },
+  cta: { label: 'Jelenkezem az ingyenes konzultációra', href: '#szolgaltatasok' },
 }
 
 export const support = {
@@ -125,17 +125,17 @@ export const support = {
 }
 
 export const skipIntro = {
-  title: 'Miért Skip Intro a programom neve?',
+  title: 'Miért Skip Intro a program?',
   intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, mellébeszélés nélkül. És éppen ez az, amit a legjobban szeretek a life coachingban. A <strong>te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyeket később is bármikor fel tudsz használni.</strong> A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
+  image: {
+    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
+    alt: 'Skip Intro coaching',
+  },
 }
 
 export const process = {
-  title: 'Erre számíthatsz a közös munka során',
-  image: {
-    url: '/Prev/AdobeStock_1760337244_Preview.jpeg',
-    alt: 'Közös munka'
-  },
+  title: 'Erre számíthatsz',
   items: [
     'A mentális edzéseim partneri együttműködések',
     'Értő figyelemmel, empátiával hallgatlak',
@@ -146,10 +146,6 @@ export const process = {
     'Teljes diszkrécióra szerződünk'
   ],
   titleSteps: 'Így haladunk a céljaid felé',
-  stepsImage: {
-    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
-    alt: 'Haladás'
-  },
   steps: [
     {
       title: 'Ingyenes online konzultáció',
@@ -168,6 +164,7 @@ export const process = {
       description: 'Az utolsó alkalomra, amikorra eléred a célodat, és tartós lesz a változás, lezárjuk a közös munkát.'
     }
   ],
+  cta: { label: 'Vágjunk bele', href: '#szolgaltatasok' },
 }
 
 export const pricing = {
@@ -222,10 +219,10 @@ export const footer = {
 export const about = {
   paragraphs: [
     '2003-ban végeztem a Szegedi Tudomány Egyetemen. Újságíróként, szerkesztőként 23 évet töltöttem vállalati kultúrában. Több, mint ezer interjút és riportot írtam nyomtatott és online magazinokba - elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat a maximális empátia és odafigyelés jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek. Ilyenkor is mindig az összefüggéseket, a több oldalról való megvilágítást keresem.',
-    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését, ezért Life- és Business Coaching képzést szereztem. Ha megtisztelsz a bizalmaddal, akkor közösen dolgozunk majd azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetésünk hatására jobban érzed magad, és megszületik benned az „aha” élmény, ami beindítja a változást.',
-    '<strong class="text-gold">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>',
-    'Mottóm: A változás legyen az energiád!'
+    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését, ezért Life- és Business Coaching képzést szereztem. Ha megtisztelsz a bizalmaddal, akkor közösen dolgozunk majd azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetésünk hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami beindítja a változást.',
+    '<strong class="text-gold">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>'
   ],
+  motto: 'A változás legyen az energiád!',
   credentialsTitle: 'Szakmai képesítések:',
   credentials: [
     'Kommunikációs szakember – diplomámat a Szegedi Tudomány Egyetemen szereztem',
@@ -255,8 +252,8 @@ export const faq = {
         'Ez tőled függ, ahogy neked kényelmesebb. Hatékonyságában nincs különbség a kettő között. Az online-hoz csak jó internetkapcsolatra és zavartalan, nyugodt körülményekre van szükséged. Rugalmasabb, és nem kell hozzá utaznod. A személyes találkozásra Érd-Parkvárosban van lehetőség, előre egyeztetett helyszínen, jól megközelíthető helyen. Kérlek csak egészségesen gyere.',
     },
     {
-      question: 'Mit jelent az, hogy 80-90, 60-70 és 50-60 percesek az alkalmak? Most akkor mennyi?',
-      answer: 'Idősávokban dolgozom, és a magasabb szám a maximális időt jelenti, amit közösen töltünk el az adott alkalommal. És mivel figyelek arra, hogy megfelelő módon zárhassuk le a beszélgetéseinket, szeretném, ha nem éreznéd azt, hogy az idő szűke miatt rohanva kellett elköszönnünk egymástól. ',
+      question: 'Miért 80-90, 60-70 és 50-60 percesek az alkalmak?',
+      answer: 'Idősávokban dolgozom. A magasabb szám a maximális időt jelenti, amit közösen töltünk el az adott alkalommal. És mivel figyelek arra, hogy megfelelő módon zárhassuk le a beszélgetéseinket, szeretném, ha nem éreznéd azt, hogy az idő szűke miatt rohanva kellett elköszönnünk egymástól. ',
     },
     {
       question: 'Mitől függ, hogy hány alkalmas lesz a coaching program?',

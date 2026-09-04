@@ -15,7 +15,7 @@ import { support } from '../content.js'
         </div>
 
         <div class="rounded-card bg-aqua/25 border border-aqua/40 p-7 md:p-8 flex flex-col">
-          <h3 class="font-display text-xl text-ink mb-5">{{ support.title }}</h3>
+          <h3 class="font-display text-3xl md:text-4xl text-ink mb-5">{{ support.title }}</h3>
           <ul class="space-y-4 flex-grow">
             <li v-for="(item, i) in support.items" :key="i" class="flex gap-3">
               <span class="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-ink/15 text-ink flex items-center justify-center">
@@ -34,7 +34,7 @@ import { support } from '../content.js'
           href="#szolgaltatasok"
           class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
         >
-          LÉPJ egy szintet előre!
+          Lépj egy szintet előre!
         </a>
       </div>
     </div>
