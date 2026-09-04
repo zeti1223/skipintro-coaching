@@ -83,8 +83,8 @@ export const nav = [
 export const hero = {
   name: 'André Melinda',
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
-  greeting: 'Szeretettel köszöntelek!',
-  paragraph: 'Körülöttünk minden gyorsabban alakul át, mint valaha. Ami ma még igaz, biztosnak tűnik és működik, holnap talán már semmit nem ér. És aki szeretné harmóniában élni az életét, megtartva a lelki és fizikai egészségét, annak meg kell tanulnia rugalmasan hozzáállni a változásokhoz. Még nehezebb, amikor elveszted a kapaszkodóidat, a biztonságosnak hitt körülményeidet - legyen az a családod, a munkahelyed, az egészéged. Mert ilyenkor úgy kell meghoznod a döntések sorait, hogy közben egy érzelmi viharban próbálsz (túl)élni, és több a kérdésed, mint a válaszod. Fontos, hogy ebben a helyzetben ne maradj egyedül.<br><br> Ha már eddig eljutottál az oldalamon, az azt jelenti, hogy valamin változtatni szeretnél. Sőt, talán már bele is kezdtél, de megakadtál. Coachként és kommunikációs szakemberként ezen az úton tudlak támogatni. Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat az erőforrásokat, amikkel rendelkezel, és együtt megtaláljuk azokat az utakat, amik most még akadályoznak. <br><br><strong class="text-gold">A Skip Intro Coaching célja, hogy megtanulj pont annyit, pont úgy és pont akkor változtatni magadon, hogy önmagad legjobb kiadása lehess.</strong> Ha elkezdjük a közös munkát, arra törekszem majd, hogy a folyamat végére könnyebbnek, szabadabbnak érezd magad, ne forgolódj álmatlanul a problémáidon rágódva, hogy többet mosolyogj a tükörben és a világra és hogy bátrabban, határozottabban nézz szembe az új kihívásokkal.',
+  greeting: 'Jó, hogy itt vagy!',
+  paragraph: 'Hogy érzed magad mostanában… valójában? És ha azt mondanám, hogy ma megváltoztathatsz egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot önmagadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kitalálnod az érzelmi káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
   primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
   secondaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
   photoCaption: 'Portré',
@@ -94,26 +94,30 @@ export const hero = {
   quoteAuthor: 'Edith Eva Eger',
 }
 
-export const audience = {
-  title: 'Mire számíthatsz a közös munka során',
+export const notAlone = {
+  title: 'Nem vagy egyedül',
   intro:
-    'A mentális edzéseim partneri együttműködések, az általad választott ülésformán értő figyelemmel, megértéssel, kérdésekkel támogatlak, összefüggéseket keresek, és segítek rávilágítani arra, amit még nem látsz egy diszkrét, biztonságos és ítélkezésmentes közegben.<br><br>Hogy miért Skip Intro lett a módszerem neve? A név a streaming világából lehet ismerős, amikor sorozatdaráláskor az új rész kezdete elején dönthetsz úgy, hogy átugrod a főcímet, így minél előbb belevágva az új történetbe. És hogyan kapcsolódik ez a munkámhoz? <strong>Mert tapasztalataim szerint úgy lehet a leghatékonyabban együtt dolgozni, ha a lényegre koncentrálunk, ha a te személyes fejlődésedre fektetjük a hangsúlyt, ha nincs mellébeszélés.</strong> Ez persze nem azt jelenti, hogy rohannunk kell. A te tempódban haladunk, de sallangmentesen.<br><br>Több mint 25 éves kommunikációs szakmai tapasztalat után nekem a coaching éppen azért lett szerelem, mert <strong>a jövőre fókuszál, azt alakítja a jelenlegi, még ki nem aknázott lehetőségeiddel együtt.</strong> Mert mérhetők az eredményei, mert időben jól körülhatárolt, rád szabott, elérhető célokat tűzünk ki, amik után magabiztosabb leszel, és az üléseken szerzett tapasztalatokat később is bármikor fel tudod használni.',
-  forTitle: 'Amiben támogatni tudlak',
-  for: [
-    'Családi kapcsolatok, körülmények feldolgozása: hogyan kezdhetsz új életet a szakítás után, hogyan dolgozd fel a válás sebeit, hogyan alkalmazkodj a megváltozott szerepkörökhöz',
-    'Anyaság, apaság hozta változások: gyermeked született és minden felborult, nyakadon a dackorszak, a kamaszkor, és nem tudsz megbirkózni vele, kirepültek a gyerekek, és nem találod a helyed, vagy csak másként képzelted a szülőséget',
-    'Nőiesség megélése: támogatlak a testi-lelki változások elfogadásában, a női szerepek megélésében',
-    'Munkahelyi változások, döntések: ha nem érzed magad a helyeden a karrieredben, váltanál, de nincs meg az erőd hozzá, vagy nem tudod merre indulj, ha úgy érzed, kezdesz kiégni',
-    'Önbizalom-, önértékeléshiány: Ha gyakran úgy érzed, neked semmi nem sikerül. Ha nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz, ha nem érzed jól magad a bőrödben. Nem tudod, mi a baj veled',
-    'Kapcsolati elakadások: Ha nem találod a közös hangot a pároddal, ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta, ha keresed mellette a régi önmagadat',
-    'Kommunikációs problémák: Ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért. Nehezen fejezed ki magad, nem tudsz mások előtt beszélni, folyton félreértenek',
-    'Stresszlevezetés: A feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele'
-  ],
-  disclaimer: 'Ami kizáró ok: Nem a coaching a te utad, és nem vállalhatom az ügyedet, ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak.',
+    '<strong>Coachként és kommunikációs szakemberként abban támogatlak, hogy tisztábban lásd a saját helyzetedet, visszavedd az irányítást a saját utadon és nézz szembe bátrabban az új kihívásokkal. </strong>Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat a belső erőforrásokat, amikkel rendelkezel, és megfontolt, tudatos döntéseket hozz, amik után jólesően dőlhetsz hátra.<br><br><strong>Ha elkezdjük a közös munkát, arra törekszem, hogy újra harmóniában, kiegyensúlyozottan élhesd az életed, és közben egyre könnyedebbnek, szabadabbnak érezd magad. </strong>Hogy letehesd végre a nyomasztó súlyokat, és magabiztosan mosolyoghass többet a világra és a saját tükörképedre.',
   image: {
     url: '/Prev/AdobeStock_48286286_Preview.jpeg',
     alt: 'xxx',
   },
+}
+
+export const support = {
+  title: 'Amiben támogatni tudlak',
+  items: [
+    '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el testi-lelki változásadat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
+    '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, neked semmi nem sikerül, nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz',
+    '<strong>Egy élhetőbb élet a törések után </strong> <br> találj magadra a csalódás, szakítás, válás, környezetváltozás után, hogyan alkalmazkodj a megváltozott szerepekhez',
+    '<strong>Alkalmazkodj rugalmasan a gyerekek hozta változásokhoz </strong> <br> úgy érzed, nem olyan anya/apa vagy, amilyen lenni szeretnél, nehezen birkózol meg az éppen rád váró feladatokkal, másként képzelted a szülőséget',
+    '<strong>Kapcsolatok tudatos átalakítása elakadás után </strong> <br> ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta, ha keresed mellette a régi önmagadat',
+    '<strong>Munkahelyi döntések támogatása </strong> <br> ha nem érzed magad a helyeden a karrieredben, váltanál, de nincs meg az erőd hozzá, vagy nem tudod merre indulj',
+    '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, nehezen fejezed ki magad, nem tudsz mások előtt beszélni, folyton félreértenek',
+    '<strong>Stresszlevezetés </strong> <br> ha a feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele',
+    '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
+  ],
+  disclaimer: 'Ami kizáró ok: Nem a coaching a te utad, és nem vállalhatom az ügyedet, ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak.',
   sidebarImage: {
     url: '/Prev/AdobeStock_323829712_Preview.jpeg',
     alt: 'xxx',
@@ -122,8 +126,8 @@ export const audience = {
 
 export const skipIntro = {
   title: 'Hogy miért Skip Intro a programom neve?',
-  intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, a ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
-  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, és hagyjuk a mellébeszélést. És éppen ez az, amit a legjobban szeretek a life coachingban. A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyekt később is bármikor fel tudsz használni. A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
+  intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
+  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, mellébeszélés nélkül. És éppen ez az, amit a legjobban szeretek a life coachingban. A <strong>te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyeket később is bármikor fel tudsz használni.</strong> A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
 }
 
 export const process = {

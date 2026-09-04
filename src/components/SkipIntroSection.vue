@@ -7,13 +7,9 @@ import { skipIntro } from '../content.js'
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">{{ skipIntro.title }}</h2>
       
-      <p class="text-body/85 leading-relaxed mb-8 max-w-2xl">
-        {{ skipIntro.intro }}
-      </p>
+      <p class="text-body/85 leading-relaxed mb-8 max-w-2xl" v-html="skipIntro.intro"></p>
       
-      <p class="text-body/85 leading-relaxed mb-8 max-w-2xl">
-        {{ skipIntro.conclusion }}
-      </p>
+      <p class="text-body/85 leading-relaxed mb-8 max-w-2xl" v-html="skipIntro.conclusion"></p>
       
       <a
         href="#szolgaltatasok"

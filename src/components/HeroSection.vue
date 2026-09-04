@@ -19,9 +19,9 @@ import NatureImage from './NatureImage.vue'
           }}</span>
         </div>
 
-        <h1 class="font-display font-medium text-4xl md:text-5xl lg:text-6xl leading-[1.08] mb-6">
+        <h1 class="font-display font-medium text-3xl md:text-4xl lg:text-5xl leading-[1.08] mb-6">
           {{ hero.name }}
-          <span class="font-thin block text-2xl md:text-3xl lg:text-4xl whitespace-pre-line">{{ hero.subtitle }}</span>
+          <span class="font-thin block text-1xl md:text-2xl lg:text-3xl whitespace-pre-line">{{ hero.subtitle }}</span>
         </h1>
 
         <p class="text-gold text-3xl md:text-4xl font-handwriting mb-4">{{ hero.greeting }}</p>

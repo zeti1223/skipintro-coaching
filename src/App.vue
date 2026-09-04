@@ -1,7 +1,8 @@
 <script setup>
 import TheNav from './components/TheNav.vue'
 import HeroSection from './components/HeroSection.vue'
-import AudienceSection from './components/AudienceSection.vue'
+import NotAloneSection from './components/NotAloneSection.vue'
+import SupportSection from './components/SupportSection.vue'
 import SkipIntroSection from './components/SkipIntroSection.vue'
 import ProcessSection from './components/ProcessSection.vue'
 import PricingSection from './components/PricingSection.vue'
@@ -20,7 +21,8 @@ const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/adatkez
     <PrivacyPolicyPage v-if="isPrivacyPage" />
     <template v-else>
       <HeroSection />
-      <AudienceSection />
+      <NotAloneSection />
+      <SupportSection />
       <SkipIntroSection />
       <ProcessSection />
       <AboutSection />
