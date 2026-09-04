@@ -25,7 +25,7 @@ const parsedItems = computed(() => {
           <p class="text-body/80 leading-relaxed" v-html="audience.intro"></p>
         </div>
 
-        <div v-if="audience.image" class="rounded-card overflow-hidden border border-aqua/40 mt-30">
+        <div v-if="audience.image" class="rounded-card overflow-hidden border border-aqua/40 mt-10">
           <img 
             :src="audience.image.url" 
             :alt="audience.image.alt"
@@ -61,6 +61,15 @@ const parsedItems = computed(() => {
 
       <div class="mt-8 border border-dashed border-gold/70 bg-gold/15 rounded-card px-6 py-5 text-sm text-ink/70 leading-relaxed">
         {{ audience.disclaimer }}
+      </div>
+
+      <div class="mt-8 text-center">
+        <a
+          href="#szolgaltatasok"
+          class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
+        >
+          LÉPJ egy szintet előre!
+        </a>
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <script setup>
-import { site } from '../content.js'
+import { site, footer } from '../content.js'
 
 const year = new Date().getFullYear()
 </script>
@@ -33,6 +33,12 @@ const year = new Date().getFullYear()
     </div>
 
     <div class="mt-8 pt-6 border-t border-paper/5">
+      <p class="text-center text-xs text-paper/30 mb-2">
+        {{ footer.credits }}
+      </p>
+      <p class="text-center text-xs text-paper/30 mb-2">
+        {{ footer.copyright }}
+      </p>
       <p class="text-center text-xs text-paper/30">
         A weboldalt a
         <a

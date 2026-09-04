@@ -28,16 +28,16 @@ import NatureImage from './NatureImage.vue'
 
         <p class="text-paper/70 text-lg leading-relaxed mb-10 max-w-lg" v-html="hero.paragraph"></p>
 
-        <div class="flex flex-wrap items-center gap-4">
+        <div class="flex flex-col sm:flex-row items-center gap-4">
           <a
             :href="hero.primaryCta.href"
-            class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
+            class="inline-flex items-center justify-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition whitespace-nowrap"
           >
             {{ hero.primaryCta.label }}
           </a>
           <a
             :href="hero.secondaryCta.href"
-            class="inline-flex items-center gap-2 bg-rose text-ink font-medium px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 transition"
+            class="inline-flex items-center justify-center gap-2 bg-rose text-ink font-medium px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 transition whitespace-nowrap"
           >
             {{ hero.secondaryCta.label }}
           </a>

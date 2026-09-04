@@ -12,8 +12,7 @@ import NatureImage from './NatureImage.vue'
         <div>
           <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">{{ about.title }}</h2>
 
-          <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl">
-            {{ p }}
+          <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl" v-html="p">
           </p>
 
           <h3 class="text-sm font-semibold uppercase tracking-widest text-ink/50 mb-4">
@@ -25,6 +24,15 @@ import NatureImage from './NatureImage.vue'
               {{ c }}
             </li>
           </ul>
+
+          <div class="mt-8">
+            <a
+              href="#kapcsolat"
+              class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
+            >
+              Vedd fel velem a kapcsolatot a részletekért
+            </a>
+          </div>
         </div>
       </div>
     </div>

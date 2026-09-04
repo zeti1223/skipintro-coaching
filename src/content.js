@@ -67,29 +67,16 @@ export const images = {
   about: {
     url: '/Melinda_2.jpg',
     alt: 'André Melinda',
-  },
-  divider1: {
-    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
-    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
-  },
-  divider2: {
-    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
-    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
-    quote: 'Bármi, aminek hatalma van feletted, valójában arra tanít, hogyan nyerheted vissza a hatalmad',
-  },
-  divider3: {
-    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
-    alt: 'Csigavonalban felfelé kanyargó lépcsősor felülnézetből',
-    quote: 'A felfedezés igazi varázsa nem abból áll, hogy új helyeket ismerjünk meg, hanem hogy más szemmel nézzünk.',
-    quoteAuthor: 'Marcel Proust',
-  },
+  }
 }
 
 export const nav = [
-  { label: 'Kezdőlap', href: '/#hero' },
-  { label: 'Kinek szól', href: '/#kiknek' },
+  { label: 'Főoldal', href: '/#hero' },
+  { label: 'Skip Intro', href: '/#skipintro' },
+  { label: 'Szolgáltatások', href: '/#kiknek' },
   { label: 'Rólam', href: '/#rolam' },
-  { label: 'Szolgáltatások', href: '/#szolgaltatasok' },
+  { label: 'Árak', href: '/#szolgaltatasok' },
+  { label: 'Kapcsolat', href: '/#kapcsolat' },
   { label: 'GYIK', href: '/#gyik' },
 ]
 
@@ -124,66 +111,89 @@ export const audience = {
   ],
   disclaimer: 'Ami kizáró ok: Nem a coaching a te utad, és nem vállalhatom az ügyedet, ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak.',
   image: {
-    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
-    alt: 'Virágok bújnak elő egy fa deszkapadló résein',
+    url: '/Prev/AdobeStock_48286286_Preview.jpeg',
+    alt: 'xxx',
   },
   sidebarImage: {
-    url: '/Prev/AdobeStock_48286286_Preview.jpeg',
-    alt: 'Természet',
+    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
+    alt: 'xxx',
   },
 }
 
+export const skipIntro = {
+  title: 'Hogy miért Skip Intro a programom neve?',
+  intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, a ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
+  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, és hagyjuk a mellébeszélést. És éppen ez az, amit a legjobban szeretek a life coachingban. A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyekt később is bármikor fel tudsz használni. A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
+}
+
 export const process = {
-  title: 'Így haladunk a céljaid felé',
+  title: 'Erre számíthatsz a közös munka során',
+  intro: 'A mentális edzéseim partneri együttműködések',
   image: {
     url: '/Prev/AdobeStock_1760337244_Preview.jpeg',
+    alt: 'Közös munka'
+  },
+  items: [
+    'Értő figyelemmel, empátiával hallgatlak',
+    'Célzott kérdésekkel és belső munkát igénylő gyakorlati feladatokkal támogatlak',
+    'Összefüggéseket keresünk, és segítek rávilágítani arra, amit még nem látsz',
+    'Biztonságos és ítélkezésmentes közegben dolgozunk együtt',
+    'A te tempódban haladunk, arról beszélünk, amire készen állsz',
+    'Teljes diszkrécióra szerződünk'
+  ],
+  titleSteps: 'Így haladunk a céljaid felé',
+  stepsImage: {
+    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
     alt: 'Haladás'
   },
   steps: [
     {
-      title: 'Akvizíciós beszélgetés',
-      description: 'A coaching folyamat egy rövid ismerkedéssel, úgynevezett akvizíciós beszélgetéssel kezdődik, amikor elmondod, mit vársz tőlem és felmérjük egymást, hogy tudunk-e együtt dolgozni.'
+      title: 'A coaching folyamat első lépése',
+      description: 'A Skip Intro coaching program első lépése egy 30 perces, ingyenes online konzultáció, amikor megbeszéljük, mit vársz tőlem, és felvázolom a lehetőségeket. Ez téged még semmire nem kötelez, de ez alapján el tudod dönteni, hogy belevágsz-e.'
     },
     {
-      title: 'Alkalmak megvitatása',
-      description: 'Ha ezután kölcsönösen igent mondunk a közös munkára, akkor megbeszéljük az ülések időpontját. Mivel minden eset más és más, a kitűzött cél elérése általában 5-10 alkalom, attól függően, hogyan haladunk.'
+      title: 'A közös munka megkezdése',
+      description: 'Ha úgy döntesz, hogy igent mondasz a közös munkára, akkor tisztázzuk az ülések időpontját, hogy online vagy személyesen szeretnéd-e, esetleg váltakozva a kettőt.'
     },
     {
-      title: 'Ülések és házi feladatok',
-      description: 'Az órák végén személyre szabott házi feladatot is kaphatsz, ami segít elmélyülni a témádban. Vallom, hogy sok esetben a két ülés között történnek a csodák, akkor érik be a találkozásaink során megszerzett tudás és jön meg az „aha” élmény.'
+      title: 'A coaching folyamat',
+      description: 'A folyamat általában 6-10 coaching alkalomból áll, attól függően, hogyan haladunk, illetve, hogy hány perces találkozókat kérsz. A munka során coaching eszközökkel dolgozunk, melybe az elmélyülést, önvizsgálatot segítő gyakorlatok és izgalmas, játékos tesztek is tartoznak.'
+    },
+    {
+      title: 'A lezárás',
+      description: 'Az utolsó alkalomra, amikorra eléred a célodat, és tartós lesz a változás, lezárjuk a közös munkát.'
     }
   ],
-  note: '<strong>Mi a különbség a life coach és a pszichológus között?</strong><br><br>Gyakran megkapják a coachok a laikusoktól azt a nem túl jószándékú kommentet, hogy „A coachok országa lettünk. Most akkor a pszichológusok eldobhatják a diplomájukat, amiért éveken át tanulták?” Szeretném ezt gyorsan tisztázni: a két szakterületet összemosni súlyos tévedés. <strong>A life coach egy lelki edző, aki a mentális erőnlétben, az érzelmi rugalmasságban támogat, az önismeretet és a tudatosságot fejleszti. Segít tisztázni az élethelyzeteket, feloldani az elakadásokat, meghozni a döntéseket, hogy megtaláld a saját utadat.</strong> De nem terapeuta! Nem diagnosztizál, nem analizál és nem gyógyít (ez továbbra is pszichológusok és pszichiáterek feladata).<br><br>A coaching létjogosultágát pedig mi sem bizonyítja jobban, mint hogy komoly világcégek hosszú idő óta alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit, valamint az, hogy egyre több gyakorló pszichológus is elvégzi a life coach képzés, mert így ötvözni tudják mindkét módszertant az ügyfeleikhez igazítva.'
 }
 
 export const pricing = {
   title: 'Szolgáltatások és árak',
-  intro: 'Az alábbi árak és időtartamok tájékoztatók.',
+  intro: 'Választhatsz videóhívásban online vagy helyszíni személyes coachingot is, ahogy neked kényelmesebb. Sőt, az élethelyzetedhez igazítva váltogathatod is az alkalmakat a folyamat a során, természetesen velem előre egyeztetve. Vagyis például megbeszélhetjük azt, hogy alapvetően videóhívásban szeretnél dolgozni velem, de az utolsó alkalmak egyikén személyesen. Fizetni alkalmanként tudsz, banki utalással az időpontfoglalás visszaigazolásakor, melyről számlát kapsz e-mailben. Kérlek személyes alkalmakra csak teljesen egészséges állapotban gyere. Én is így megyek – vigyázzunk egymásra. Ha lebetegedtél, áttehetjük az alkalmat online-ra, ha 48 órával előbb jelzed.',
   plans: [
     {
-      name: 'Online akvizíciós beszélgetés és tájékoztatás',
+      name: 'Online tájékoztatás és konzultáció',
       duration: '30 perc',
       price: 'Ingyenes',
       featured: false,
     },
     {
-      name: 'Online coaching',
+      name: 'Skip intro coaching online',
       duration: '80-90 perc',
       price: '20 000 Ft',
       perSession: true,
       featured: true,
     },
     {
-      name: 'Online coaching',
-      duration: '60 perc',
-      price: '17 000 Ft',
+      name: 'Skip intro coaching online',
+      duration: '50-60 perc',
+      price: '15 000 Ft',
       perSession: true,
       featured: false,
     },
     {
-      name: 'Személyes coaching',
-      duration: '70 perc',
-      price: '19 000 Ft',
+      name: 'Skip intro coaching személyesen',
+      duration: '60-70 perc',
+      price: '20 000 Ft',
       perSession: true,
       description: 'Helyszín: Érd',
       featured: false,
@@ -191,17 +201,35 @@ export const pricing = {
   ],
 }
 
+export const contact = {
+  title: 'Foglalj időpontot',
+  intro:
+    'Töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
+  successMessage: 'Köszönöm a jelentkezést! Hamarosan jelentkezem a megadott elérhetőségen.',
+  errorMessage:
+    'Hoppá, valami félrement a küldés közben. Próbáld újra, vagy írj közvetlenül emailt.',
+}
+
+export const footer = {
+  credits: 'Fotó kredit: Első oldal: Bognár Bogi, saját, …..',
+  copyright: 'Szerzői jogok: Az oldalon található írás a saját szellemi termékem. Annak bármilyen nemű megosztása, másolása csak a forrás megjelölésével lehetséges.',
+}
+
 export const about = {
-  title: 'Rólam',
+  title: 'Ki vagyok én?',
   paragraphs: [
-    'Leírás magamról',
+    'Diplomás kommunikációs szakember vagyok 2003 óta, valamint life- és business coachként végeztem. Újságíróként, szerkesztőként 23 évet töltöttem vállalati kultúrában. Több, mint ezer interjút és riportot írtam printben és online elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat mindig a maximális empátia és odafigyelés jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek. Ilyenkor is mindig az összefüggéseket, a több oldalról való megvilágítást keresem.',
+    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését. Ha megtisztelsz a bizalmaddal, akkor közösen dolgozunk majd azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetésünk hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami szikrát gyújt és beindítja a változást.',
+    '<strong class="text-gold">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>',
+    'Mottóm: A változás legyen az energiád!'
   ],
-  credentialsTitle: 'Szakmai hátterem',
+  credentialsTitle: 'Szakmai képzettségek:',
   credentials: [
-    'Több mint 25 éves kommunikációs szakmai tapasztalat',
-    'Life és Business Coach',
-    'Szerkesztő',
-    'Újságíró',
+    'Diploma: Kommunikációs szakember – Szegedi Tudomány Egyetem',
+    'Life- és business coaching képzés',
+    'Tréneri hatásgyakorlás képzés',
+    'Access Bars',
+    'Reiki'
   ],
 }
 
@@ -278,13 +306,4 @@ export const privacyPolicy = {
       body: 'Amennyiben úgy ítéled meg, hogy adataid kezelése nem megfelelő, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH), vagy bírósághoz fordulhatsz.',
     },
   ],
-}
-
-export const contact = {
-  title: 'Foglalj időpontot',
-  intro:
-    'Töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
-  successMessage: 'Köszönöm a jelentkezést! Hamarosan jelentkezem a megadott elérhetőségen.',
-  errorMessage:
-    'Hoppá, valami félrement a küldés közben. Próbáld újra, vagy írj közvetlenül emailt.',
 }
