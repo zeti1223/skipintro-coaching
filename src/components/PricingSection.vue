@@ -27,7 +27,9 @@ import { pricing } from '../content.js'
           >
             {{ plan.duration }}
           </p>
-          <p class="font-display text-2xl mb-5">{{ plan.price }}</p>
+          <p class="font-display text-2xl mb-5">
+            {{ plan.price }}<span v-if="plan.perSession" class="text-sm ml-1">/alkalom</span>
+          </p>
           <a
             href="#kapcsolat"
             class="inline-flex items-center justify-center text-sm font-semibold px-4 py-2.5 rounded-full transition-colors"

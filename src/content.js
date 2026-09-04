@@ -170,18 +170,21 @@ export const pricing = {
       name: 'Online coaching',
       duration: '80-90 perc',
       price: '20 000 Ft',
+      perSession: true,
       featured: true,
     },
     {
       name: 'Online coaching',
       duration: '60 perc',
       price: '17 000 Ft',
+      perSession: true,
       featured: false,
     },
     {
       name: 'Személyes coaching',
       duration: '70 perc',
       price: '19 000 Ft',
+      perSession: true,
       description: 'Helyszín: Érd',
       featured: false,
     }
