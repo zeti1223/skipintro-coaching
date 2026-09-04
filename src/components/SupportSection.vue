@@ -3,7 +3,7 @@ import { support } from '../content.js'
 </script>
 
 <template>
-  <section class="relative py-20 md:py-28">
+  <section id="support" class="relative py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-stretch">
         <div v-if="support.sidebarImage" class="rounded-card overflow-hidden border border-aqua/40">
@@ -28,15 +28,6 @@ import { support } from '../content.js'
       </div>
 
       <div class="mt-8 border border-dashed border-gold/70 bg-gold/15 rounded-card px-6 py-5 text-sm text-ink/70 leading-relaxed" v-html="support.disclaimer"></div>
-
-      <div class="mt-8 text-center">
-        <a
-          href="#szolgaltatasok"
-          class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
-        >
-          Lépj egy szintet előre!
-        </a>
-      </div>
     </div>
   </section>
 </template>

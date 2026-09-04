@@ -23,8 +23,8 @@ const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/adatkez
       <HeroSection />
       <NotAloneSection />
       <SkipIntroSection />
-      <ProcessSection />
       <SupportSection />
+      <ProcessSection />
       <PricingSection />
       <AboutSection />
       <ContactSection />

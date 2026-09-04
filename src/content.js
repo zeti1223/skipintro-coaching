@@ -84,7 +84,7 @@ export const hero = {
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
   greeting: 'Jó, hogy itt vagy!',
   paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
-  primaryCta: { label: 'Érdekel a módszer', href: '#skipintro' },
+  primaryCta: { label: 'Érdekel a módszer', href: '#process' },
   secondaryCta: { label: 'Szeretném az ingyenes konzultációt', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
   coachName: 'André Melinda',
@@ -96,12 +96,11 @@ export const hero = {
 export const notAlone = {
   title: 'Nem vagy egyedül',
   intro:
-    '<strong>Coachként és kommunikációs szakemberként abban támogatlak, hogy tisztábban lásd a saját helyzetedet, visszavedd az irányítást a saját utadon és nézz szembe bátrabban az új kihívásokkal. </strong>Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat a belső erőforrásokat, amikkel rendelkezel, és megfontolt, tudatos döntéseket hozz, amik után jólesően dőlhetsz hátra.<br><br><strong>Ha elkezdjük a közös munkát, arra törekszem, hogy újra harmóniában, kiegyensúlyozottan élhesd az életed, és közben egyre könnyedebbnek, szabadabbnak érezd magad. </strong>Hogy letehesd végre a nyomasztó súlyokat, és magabiztosan mosolyoghass többet a világra és a saját tükörképedre.',
+    '<strong>Coachként és kommunikációs szakemberként abban támogatlak, hogy tisztábban lásd a saját helyzetedet, visszavedd az irányítást a saját utadon és nézz szembe bátrabban az új kihívásokkal. </strong>Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat a belső erőforrásokat, amikkel rendelkezel, és megfontolt, tudatos döntéseket hozz, amik után jólesően dőlhetsz hátra.<br><br><strong>Ha elkezdjük a közös munkát, arra törekszem, hogy újra harmóniában, kiegyensúlyozottan élhesd az életed, és közben könnyedebbnek, szabadabbnak érezd magad. </strong>Hogy letehesd a nyomasztó súlyokat, és magabiztosan mosolyoghass a világra és a saját tükörképedre.',
   image: {
     url: '/Prev/AdobeStock_48286286_Preview.jpeg',
     alt: 'xxx',
   },
-  cta: { label: 'Jelenkezem az ingyenes konzultációra', href: '#szolgaltatasok' },
 }
 
 export const support = {
@@ -110,11 +109,10 @@ export const support = {
     '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el testi-lelki változásadat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
     '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, neked semmi nem sikerül, nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz',
     '<strong>Egy élhetőbb élet a törések után </strong> <br> találj magadra a csalódás, szakítás, válás, környezetváltozás után, hogyan alkalmazkodj a megváltozott szerepekhez',
-    '<strong>Alkalmazkodj rugalmasan a gyerekek hozta változásokhoz </strong> <br> úgy érzed, nem olyan anya/apa vagy, amilyen lenni szeretnél, nehezen birkózol meg az éppen rád váró feladatokkal, másként képzelted a szülőséget',
+    '<strong>Alkalmazkodj a gyerekek hozta változásokhoz </strong> <br> úgy érzed, nem olyan anya/apa vagy, amilyen lenni szeretnél, nehezen birkózol meg az éppen rád váró feladatokkal',
     '<strong>Kapcsolatok tudatos átalakítása elakadás után </strong> <br> ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta, ha keresed mellette a régi önmagadat',
     '<strong>Munkahelyi döntések támogatása </strong> <br> ha nem érzed magad a helyeden a karrieredben, váltanál, de nincs meg az erőd hozzá, vagy nem tudod merre indulj',
-    '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, nehezen fejezed ki magad, nem tudsz mások előtt beszélni, folyton félreértenek',
-    '<strong>Stresszlevezetés </strong> <br> ha a feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele',
+    '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, gyakran félreértenek',
     '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
   ],
   disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, mentális betegséged van, ha szenvedélybetegséggel küzdesz. Coachként nem diagnosztizálok és szolgáltatásom nem helyettesíti az egészségügyi ellátásokat, csak kiegészíti azt.',
@@ -164,7 +162,7 @@ export const process = {
       description: 'Az utolsó alkalomra, amikorra eléred a célodat, és tartós lesz a változás, lezárjuk a közös munkát.'
     }
   ],
-  cta: { label: 'Vágjunk bele', href: '#szolgaltatasok' },
+  cta: { label: 'Lépj egy szintet előre', href: '#szolgaltatasok' },
 }
 
 export const pricing = {

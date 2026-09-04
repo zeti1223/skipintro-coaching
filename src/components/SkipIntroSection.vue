@@ -3,7 +3,7 @@ import { skipIntro } from '../content.js'
 </script>
 
 <template>
-  <section id="skipintro" class="relative py-20 md:py-28">
+  <section id="skipintro" class="relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-start mb-14">
         <div>
@@ -28,8 +28,8 @@ import { skipIntro } from '../content.js'
           href="#szolgaltatasok"
           class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
         >
-          Szeretném a személyre szabott coaching programot
-        </a>
+          Kérem a részleteket
+      </a>
       </div>
     </div>
   </section>

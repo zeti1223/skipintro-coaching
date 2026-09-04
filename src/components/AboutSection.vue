@@ -25,6 +25,14 @@ import NatureImage from './NatureImage.vue'
               {{ c }}
             </li>
           </ul>
+          <div class="mt-8">
+            <a
+              href="#support"
+              class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition"
+            >
+              Mutass többet a módszerről
+            </a>
+          </div>
         </div>
       </div>
     </div>
