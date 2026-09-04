@@ -10,15 +10,13 @@ import NatureImage from './NatureImage.vue'
         <NatureImage :url="images.about.url" :alt="images.about.alt" rounded="rounded-card" />
 
         <div>
-          <h2 class="font-display text-3xl md:text-4xl text-ink mb-6">{{ about.title }}</h2>
-
           <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl" v-html="p">
           </p>
 
           <h3 class="text-sm font-semibold uppercase tracking-widest text-ink/50 mb-4">
             {{ about.credentialsTitle }}
           </h3>
-          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+          <ul class="flex flex-col gap-y-3">
             <li v-for="(c, i) in about.credentials" :key="i" class="flex items-start gap-2.5 text-sm text-body">
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-rose-deep shrink-0" />
               {{ c }}

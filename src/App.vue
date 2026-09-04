@@ -22,11 +22,11 @@ const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/adatkez
     <template v-else>
       <HeroSection />
       <NotAloneSection />
-      <SupportSection />
       <SkipIntroSection />
       <ProcessSection />
-      <AboutSection />
+      <SupportSection />
       <PricingSection />
+      <AboutSection />
       <ContactSection />
       <FaqSection />
     </template>

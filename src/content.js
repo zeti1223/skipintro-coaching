@@ -84,13 +84,13 @@ export const hero = {
   name: 'André Melinda',
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
   greeting: 'Jó, hogy itt vagy!',
-  paragraph: 'Hogy érzed magad mostanában… valójában? És ha azt mondanám, hogy ma megváltoztathatsz egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot önmagadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kitalálnod az érzelmi káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
+  paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
   primaryCta: { label: 'A Skip Intro Coachingról', href: '#kiknek' },
   secondaryCta: { label: 'Időpontfoglalás', href: '#kapcsolat' },
   photoCaption: 'Portré',
   coachName: 'André Melinda',
   coachRole: 'Life- és Business Coach',
-  quote: 'Dönthetünk úgy, hogy felelőséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk.',
+  quote: 'Dönthetünk úgy, hogy felelősséget vállalunk a nehézségeinkért és a gyógyulásunkért. Dönthetünk úgy, hogy szabadok leszünk.',
   quoteAuthor: 'Edith Eva Eger',
 }
 
@@ -105,7 +105,7 @@ export const notAlone = {
 }
 
 export const support = {
-  title: 'Amiben támogatni tudlak',
+  title: 'Amit együtt elérhetünk',
   items: [
     '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el testi-lelki változásadat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
     '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, neked semmi nem sikerül, nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz',
@@ -117,7 +117,7 @@ export const support = {
     '<strong>Stresszlevezetés </strong> <br> ha a feszültség már tapintható az életedben, de nem tudod, mihez kezdj vele',
     '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
   ],
-  disclaimer: 'Ami kizáró ok: Nem a coaching a te utad, és nem vállalhatom az ügyedet, ha pszichiátriai kezelés alatt állsz, olyan gyógyszert szedsz, ami befolyásolja a döntési képességeidet, ha szenvedélybetegséggel küzdesz, vagy ha szuicid hajlamaid vannak.',
+  disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, mentális betegséged van, ha szenvedélybetegséggel küzdesz. Coachként nem diagnosztizálok és szolgáltatásom nem helyettesíti az egészségügyi ellátásokat, csak kiegészíti azt.',
   sidebarImage: {
     url: '/Prev/AdobeStock_323829712_Preview.jpeg',
     alt: 'xxx',
@@ -125,22 +125,22 @@ export const support = {
 }
 
 export const skipIntro = {
-  title: 'Hogy miért Skip Intro a programom neve?',
+  title: 'Miért Skip Intro a programom neve?',
   intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, mellébeszélés nélkül. És éppen ez az, amit a legjobban szeretek a life coachingban. A <strong>te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyeket később is bármikor fel tudsz használni.</strong> A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
 }
 
 export const process = {
   title: 'Erre számíthatsz a közös munka során',
-  intro: 'A mentális edzéseim partneri együttműködések',
   image: {
     url: '/Prev/AdobeStock_1760337244_Preview.jpeg',
     alt: 'Közös munka'
   },
   items: [
+    'A mentális edzéseim partneri együttműködések',
     'Értő figyelemmel, empátiával hallgatlak',
-    'Célzott kérdésekkel és belső munkát igénylő gyakorlati feladatokkal támogatlak',
-    'Összefüggéseket keresünk, és segítek rávilágítani arra, amit még nem látsz',
+    'Célzott kérdésekkel és belső munkát igénylő feladatokkal támogatlak',
+    'Összefüggéseket keresünk, és segítek rávilágítani arra, amit nem látsz',
     'Biztonságos és ítélkezésmentes közegben dolgozunk együtt',
     'A te tempódban haladunk, arról beszélünk, amire készen állsz',
     'Teljes diszkrécióra szerződünk'
@@ -152,19 +152,19 @@ export const process = {
   },
   steps: [
     {
-      title: 'A coaching folyamat első lépése',
-      description: 'A Skip Intro coaching program első lépése egy 30 perces, ingyenes online konzultáció, amikor megbeszéljük, mit vársz tőlem, és felvázolom a lehetőségeket. Ez téged még semmire nem kötelez, de ez alapján el tudod dönteni, hogy belevágsz-e.'
+      title: 'Ingyenes online konzultáció',
+      description: 'A Skip Intro coaching program első lépése egy 30 perces, ingyenes online konzultáció, amikor megbeszéljük, mit vársz tőlem, és felvázolom a lehetőségeket. Ez téged még nem kötelez semmire, de ez alapján el tudod dönteni, hogy belevágsz-e.'
     },
     {
-      title: 'A közös munka megkezdése',
-      description: 'Ha úgy döntesz, hogy igent mondasz a közös munkára, akkor tisztázzuk az ülések időpontját, hogy online vagy személyesen szeretnéd-e, esetleg váltakozva a kettőt.'
+      title: 'Egyeztetés',
+      description: 'Ha úgy döntesz, hogy igent mondasz a közös munkára, akkor tisztázzuk az ülések időpontját, és hogy online vagy személyesen szeretnéd-e a találkozásokat, esetleg váltakozva a kettőt. '
     },
     {
-      title: 'A coaching folyamat',
-      description: 'A folyamat általában 6-10 coaching alkalomból áll, attól függően, hogyan haladunk, illetve, hogy hány perces találkozókat kérsz. A munka során coaching eszközökkel dolgozunk, melybe az elmélyülést, önvizsgálatot segítő gyakorlatok és izgalmas, játékos tesztek is tartoznak.'
+      title: 'Coaching program',
+      description: 'A folyamat általában 6-10 alkalomból áll, attól függően, hogyan haladunk. A munka során coaching eszközökkel dolgozunk, melybe az elmélyülést, önvizsgálatot segítő gyakorlatok és izgalmas, játékos tesztek is tartoznak.'
     },
     {
-      title: 'A lezárás',
+      title: 'Lezárás',
       description: 'Az utolsó alkalomra, amikorra eléred a célodat, és tartós lesz a változás, lezárjuk a közös munkát.'
     }
   ],
@@ -172,7 +172,7 @@ export const process = {
 
 export const pricing = {
   title: 'Szolgáltatások és árak',
-  intro: 'Választhatsz videóhívásban online vagy helyszíni személyes coachingot is, ahogy neked kényelmesebb. Sőt, az élethelyzetedhez igazítva váltogathatod is az alkalmakat a folyamat a során, természetesen velem előre egyeztetve. Vagyis például megbeszélhetjük azt, hogy alapvetően videóhívásban szeretnél dolgozni velem, de az utolsó alkalmak egyikén személyesen. Fizetni alkalmanként tudsz, banki utalással az időpontfoglalás visszaigazolásakor, melyről számlát kapsz e-mailben. Kérlek személyes alkalmakra csak teljesen egészséges állapotban gyere. Én is így megyek – vigyázzunk egymásra. Ha lebetegedtél, áttehetjük az alkalmat online-ra, ha 48 órával előbb jelzed.',
+  intro: 'Választhatsz videóhívásban online vagy személyes coachingot is, ahogy neked kényelmesebb. Sőt, váltogathatod is az alkalmakat a program során, természetesen előre egyeztetve. Vagyis például megbeszélhetjük azt, hogy alapvetően videóhívásban szeretnél dolgozni velem, de az első alkalmak egyikén személyesen.<br>Fizetni alkalmanként tudsz, banki utalással az időpontfoglalás visszaigazolásakor, melyről számlát kapsz e-mailben.<br>Kérlek személyes alkalmakra csak teljesen egészségesen gyere. Én is így várlak – vigyázzunk egymásra!',
   plans: [
     {
       name: 'Online tájékoztatás és konzultáció',
@@ -215,25 +215,24 @@ export const contact = {
 }
 
 export const footer = {
-  credits: 'Fotó kredit: Első oldal: Bognár Bogi, saját, …..',
+  credits: 'Fotó kredit: Első oldal: Bognár Bogi, saját, …',
   copyright: 'Szerzői jogok: Az oldalon található írás a saját szellemi termékem. Annak bármilyen nemű megosztása, másolása csak a forrás megjelölésével lehetséges.',
 }
 
 export const about = {
-  title: 'Ki vagyok én?',
   paragraphs: [
-    'Diplomás kommunikációs szakember vagyok 2003 óta, valamint life- és business coachként végeztem. Újságíróként, szerkesztőként 23 évet töltöttem vállalati kultúrában. Több, mint ezer interjút és riportot írtam printben és online elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat mindig a maximális empátia és odafigyelés jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek. Ilyenkor is mindig az összefüggéseket, a több oldalról való megvilágítást keresem.',
-    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését. Ha megtisztelsz a bizalmaddal, akkor közösen dolgozunk majd azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetésünk hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami szikrát gyújt és beindítja a változást.',
+    '2003-ban végeztem a Szegedi Tudomány Egyetemen. Újságíróként, szerkesztőként 23 évet töltöttem vállalati kultúrában. Több, mint ezer interjút és riportot írtam nyomtatott és online magazinokba - elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat a maximális empátia és odafigyelés jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek. Ilyenkor is mindig az összefüggéseket, a több oldalról való megvilágítást keresem.',
+    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését, ezért Life- és Business Coaching képzést szereztem. Ha megtisztelsz a bizalmaddal, akkor közösen dolgozunk majd azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetésünk hatására jobban érzed magad, és megszületik benned az „aha” élmény, ami beindítja a változást.',
     '<strong class="text-gold">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>',
     'Mottóm: A változás legyen az energiád!'
   ],
-  credentialsTitle: 'Szakmai képzettségek:',
+  credentialsTitle: 'Szakmai képesítések:',
   credentials: [
-    'Diploma: Kommunikációs szakember – Szegedi Tudomány Egyetem',
+    'Kommunikációs szakember – diplomámat a Szegedi Tudomány Egyetemen szereztem',
     'Life- és business coaching képzés',
     'Tréneri hatásgyakorlás képzés',
     'Access Bars',
-    'Reiki'
+    'Reiki',
   ],
 }
 
@@ -246,27 +245,37 @@ export const faq = {
         'Emailben a kapcsolat@skipintro.hu címen vagy az oldalon található űrlap segítségével. A megadott elérhetőségeden veszem fel veled a kapcsolatot, és megbeszéljük a folytatást, az alkalmas időpontokat.',
     },
     {
-      question: 'Online vagy személyesen találkozzunk?',
+      question: 'Hogyan fizethetem ki a szolgáltatást?',
       answer:
-        'Ez tőled függ, ahogy neked kényelmesebb. Hatékonyságában nincs különbség a kettő között. Az online-hoz csak jó internet kapcsolatra van szükséged, és természetesen rugalmasabb, nem kell hozzá utaznod, plusz időt rászánni. A saját kényelmedből beszélgethetünk, ha neked úgy komfortosabb. A személyes találkozásra Érden van lehetőség, biztonságos környezetben.',
+        'A megadott bankszámlaszámra tudsz utalni a jelentkezéskor. Az összeg beérkezését követően 48 órán belül küldöm a számlát emailben.',
     },
     {
-      question: 'Mitől függ, hogy hány alkalmas lesz a coaching folyamat?',
+      question: 'Online videóhívásban vagy személyesen találkozzunk?',
       answer:
-        'Minden eset más, így a dilemmád összetettségétől és a közös munka eredményeitől függ. Általában 5-10 alkalom. Az utolsó ülésen lezárjuk a folyamatot.',
+        'Ez tőled függ, ahogy neked kényelmesebb. Hatékonyságában nincs különbség a kettő között. Az online-hoz csak jó internetkapcsolatra és zavartalan, nyugodt körülményekre van szükséged. Rugalmasabb, és nem kell hozzá utaznod. A személyes találkozásra Érd-Parkvárosban van lehetőség, előre egyeztetett helyszínen, jól megközelíthető helyen. Kérlek csak egészségesen gyere.',
+    },
+    {
+      question: 'Mit jelent az, hogy 80-90, 60-70 és 50-60 percesek az alkalmak? Most akkor mennyi?',
+      answer: 'Idősávokban dolgozom, és a magasabb szám a maximális időt jelenti, amit közösen töltünk el az adott alkalommal. És mivel figyelek arra, hogy megfelelő módon zárhassuk le a beszélgetéseinket, szeretném, ha nem éreznéd azt, hogy az idő szűke miatt rohanva kellett elköszönnünk egymástól. ',
+    },
+    {
+      question: 'Mitől függ, hogy hány alkalmas lesz a coaching program?',
+      answer: 'Minden eset más és más, így a helyzeted összetettségétől és a közös munka eredményeitől függ. A te tempódhoz igazodom, tapasztalataim szerint 6-10 alkalom az ideális. Az utolsó ülésen lezárjuk a folyamatot.',
     },
     {
       question: 'Milyen gyakran tartjuk az üléseket?',
-      answer: 'Az ülések között legalább egy-két hétnek kell eltelnie, hogy leülepedjenek a megszerzett információk, kipróbálhasd élesben az elsajátítottakat és elvégezd a kapott házi feladatot, ami elmélyülést, gyakran önvizsgálatot igényel. Természetesen ha elutazol, vagy egyéb elfoglaltságod akad, akkor eltelhet hosszabb idő is a két alkalom között, de az egy-két hét az optimális.',
-    },
-    {
-      question: 'Mi történik, ha nem tudok részt venni a korábban megbeszélt alkalmon?',
-      answer: 'A leegyeztetett alkalmat 48 órával a megbeszélt időpont előtt lemondhatod díjmentesen. Ha viszont nem jelensz meg az ülésen, vagy 48 órán belül mondod le, akkor az óradíj 50%-át meg kell fizetned, mivel az nekem kiesett idő lesz a naptáramban. Köszönöm szépen a megértést!',
-    },
-    {
-      question: 'Hogyan fizethetem ki a szolgáltatást?',
       answer:
-        'A megadott bankszámlaszámon tudsz utalni az ülésünk napjáig. A beérkezése után a számlát emailben kapod meg a szamlazz.hu-n keresztül.',
+        'Két alkalom között optimális esetben egy-két hetet tartunk, hogy leülepedjenek a megszerzett információk, kipróbálhasd élesben az elsajátítottakat. Természetesen, ha elutazol, vagy egyéb elfoglaltságod akad, akkor eltelhet hosszabb idő is a két alkalom között – ez nem kizáró ok.',
+    },
+    {
+      question: 'Mi történik, ha nem tudok részt venni a megbeszélt alkalmon?',
+      answer:
+        'Ha a korábban leegyeztetett alkalmat 48 órával a megbeszélt időpont előtt mondod le, akkor a kifizetett összeget teljes egészében visszatérítem, vagy kérhetsz helyette új időpontot. Ha 48-24 órán belül mondod le az időpontodat, akkor a befizetett összeg 50%-át térítem vissza. Amennyiben 24 órán belül mondod le, vagy nem jelensz meg az időpontodon, a befizetett díj nem kerül visszatérítésre. Természetesen kivételt képeznek a vis major esetek. Köszönöm szépen a megértésed!Amennyiben én nem tudok megjelenni a megbeszélt alkalmon, az adott időpontra befizetett árat teljes egészében visszautalom neked.',
+    },
+    {
+      question: 'Mi a különbség a life coach és a pszichológus között?',
+      answer:
+        'A life coach egy lelki edző, aki a mentális erőnlétben, az érzelmi rugalmasságban támogat, az önismeretet és a tudatosságot fejleszti. Segít tisztázni az élethelyzeteket, feloldani az elakadásokat, hogy megtaláld a saját utadat. De nem terapeuta! Nem diagnosztizál, nem analizál és nem gyógyít (ez továbbra is pszichológusok, pszichiáterek és orvosok feladata).A coaching létjogosultságát mi sem bizonyítja jobban, mint hogy nagy nemzetközi cégek is alkalmaznak coachokat, hogy növeljék a hatékonyságukat, támogassák a munkavállalók sikereit, eredményeit. A coachingnak és a pszichológiának léteznek határterületei, ezért egyre több praktizáló pszichológus is elvégzi a life coach képzést, mert így ötvözni tudják mindkét módszertant az ügyfeleikhez igazítva.',
     },
   ],
 }

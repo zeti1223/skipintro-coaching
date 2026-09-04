@@ -17,7 +17,6 @@ import NatureImage from './NatureImage.vue'
 
         <div class="rounded-card bg-aqua/25 border border-aqua/40 p-7 md:p-8 flex flex-col">
           <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ process.title }}</h2>
-          <p class="text-body/80 leading-relaxed mb-6">{{ process.intro }}</p>
           
           <ul class="grid sm:grid-cols-1 gap-x-8 gap-y-3">
             <li v-for="(item, i) in process.items" :key="i" class="flex items-start gap-2.5 text-sm text-body">

@@ -8,7 +8,7 @@ import { pricing } from '../content.js'
       <div class="md:max-w-2xl mb-4">
         <h2 class="font-display text-3xl md:text-4xl mb-4">{{ pricing.title }}</h2>
       </div>
-      <p class="text-paper/50 text-sm mb-14">{{ pricing.intro }}</p>
+      <p class="text-paper/50 text-sm mb-14" v-html=" pricing.intro"></p>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div
