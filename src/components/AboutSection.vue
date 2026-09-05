@@ -4,7 +4,7 @@ import NatureImage from './NatureImage.vue'
 </script>
 
 <template>
-  <section id="rolam" class="relative py-20 md:py-28">
+  <section id="rolam" class="relative py-12 md:py-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-[minmax(0,280px)_1fr] gap-12 md:gap-16 items-start">
         <div>

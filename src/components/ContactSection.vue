@@ -68,7 +68,7 @@ async function submit() {
 </script>
 
 <template>
-  <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-10 pb-20 md:pt-14 md:pb-28">
+  <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16">
     <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ contact.title }}</h2>
     <p class="text-body/80 leading-relaxed mb-10 max-w-xl">{{ contact.intro }}</p>
 

@@ -10,7 +10,7 @@ function toggle(i) {
 </script>
 
 <template>
-  <section id="gyik" class="relative pt-20 pb-10 md:pt-28 md:pb-14">
+  <section id="gyik" class="relative pt-12 pb-8 md:pt-16 md:pb-10">
     <div class="max-w-3xl mx-auto px-6">
       <h2 class="font-display text-3xl md:text-4xl text-ink mb-10">{{ faq.title }}</h2>
 

@@ -3,7 +3,7 @@ import { notAlone } from '../content.js'
 </script>
 
 <template>
-  <section id="kiknek" class="relative py-5 md:py-7">
+  <section id="kiknek" class="relative py-8 md:py-10">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-start mb-14">
         <div v-if="notAlone.image" class="rounded-card overflow-hidden border border-aqua/40">

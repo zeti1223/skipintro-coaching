@@ -3,7 +3,7 @@ import { process } from '../content.js'
 </script>
 
 <template>
-  <section id="process" class="relative py-20 md:py-28">
+  <section id="process" class="relative py-12 md:py-16">
     <div class="absolute inset-0 z-0">
       <img 
         src="/Prev/AdobeStock_1760337244_Preview.jpeg" 

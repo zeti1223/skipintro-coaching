@@ -3,7 +3,7 @@ import { pricing } from '../content.js'
 </script>
 
 <template>
-  <section id="szolgaltatasok" class="relative bg-ink text-paper py-20 md:py-28">
+  <section id="szolgaltatasok" class="relative bg-ink text-paper py-12 md:py-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="md:max-w-2xl mb-4">
         <h2 class="font-display text-3xl md:text-4xl mb-4">{{ pricing.title }}</h2>

@@ -3,7 +3,7 @@ import { support } from '../content.js'
 </script>
 
 <template>
-  <section id="support" class="relative py-20 md:py-28">
+  <section id="support" class="relative py-12 md:py-16">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-stretch">
         <div v-if="support.sidebarImage" class="rounded-card overflow-hidden border border-aqua/40">
