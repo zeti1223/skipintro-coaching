@@ -69,13 +69,14 @@ async function submit() {
 
 <template>
   <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16">
-    <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ contact.title }}</h2>
-    <p class="text-body/80 leading-relaxed mb-10 max-w-xl">{{ contact.intro }}</p>
+    <h2 class="font-display text-3xl md:text-4xl text-ink mb-4" v-reveal>{{ contact.title }}</h2>
+    <p class="text-body/80 leading-relaxed mb-10 max-w-xl" v-reveal="80">{{ contact.intro }}</p>
 
     <form
       id="booking-form"
-      class="rounded-card bg-gold/25 border border-gold/50 p-8 md:p-10 shadow-lg shadow-gold/10"
+      class="rounded-card bg-gold/25 border border-gold/50 p-8 md:p-10 shadow-lg shadow-gold/10 transition-shadow duration-300 hover:shadow-xl hover:shadow-gold/20"
       @submit.prevent="submit"
+      v-reveal="150"
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">
         <div>
@@ -130,13 +131,18 @@ async function submit() {
       <button
         type="submit"
         :disabled="status === 'sending'"
-        class="inline-flex items-center gap-2 bg-gold text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 transition disabled:opacity-50 cursor-pointer"
+        class="inline-flex items-center gap-2 bg-gold text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 hover:scale-105 active:scale-95 transition disabled:opacity-50 disabled:hover:scale-100 cursor-pointer"
       >
+        <i v-if="status === 'sending'" class="fa-solid fa-circle-notch animate-spin text-xs" />
         {{ status === 'sending' ? 'Küldés…' : 'Elküldöm' }}
       </button>
 
-      <p v-if="status === 'success'" class="mt-4 text-sm text-gold-deep">{{ contact.successMessage }}</p>
-      <p v-if="status === 'error'" class="mt-4 text-sm text-gold-deep">{{ contact.errorMessage }}</p>
+      <Transition name="fade-slide">
+        <p v-if="status === 'success'" class="mt-4 text-sm text-gold-deep">{{ contact.successMessage }}</p>
+      </Transition>
+      <Transition name="fade-slide">
+        <p v-if="status === 'error'" class="mt-4 text-sm text-gold-deep">{{ contact.errorMessage }}</p>
+      </Transition>
     </form>
   </section>
 </template>

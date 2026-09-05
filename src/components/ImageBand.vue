@@ -9,13 +9,13 @@ defineProps({
 </script>
 
 <template>
-  <div :class="['relative w-full overflow-hidden', aspectRatio || 'aspect-video sm:aspect-21/9 md:aspect-3/1']">
+  <div :class="['relative w-full overflow-hidden group', aspectRatio || 'aspect-video sm:aspect-21/9 md:aspect-3/1']">
     <img
       v-if="url"
       :src="url"
       :alt="alt"
       loading="lazy"
-      class="absolute inset-0 w-full h-full object-cover"
+      class="absolute inset-0 w-full h-full object-cover img-zoom"
     />
     <div
       v-else

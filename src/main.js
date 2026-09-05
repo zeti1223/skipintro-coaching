@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { colors, theme } from './content.js'
+import { reveal } from './directives/reveal.js'
 
 function applyTheme(config) {
   if (typeof document === 'undefined') return
@@ -24,5 +25,7 @@ function applyTheme(config) {
 
 applyTheme(theme)
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.directive('reveal', reveal)
+app.mount('#app')
 

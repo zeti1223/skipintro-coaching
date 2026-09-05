@@ -7,7 +7,7 @@ const year = new Date().getFullYear()
 <template>
   <footer class="bg-ink text-paper/60 pt-16 pb-8">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-paper/10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-paper/10" v-reveal>
         <div>
           <p class="font-display text-xl text-paper mb-1">
             {{ site.brandName }}<span class="text-gold">.</span>
@@ -19,7 +19,7 @@ const year = new Date().getFullYear()
           <a
             :href="site.facebookUrl"
             aria-label="Facebook"
-            class="w-9 h-9 rounded-full bg-paper/10 flex items-center justify-center hover:bg-paper/20 transition-colors text-paper"
+            class="w-9 h-9 rounded-full bg-paper/10 flex items-center justify-center hover:bg-paper/20 hover:scale-110 active:scale-95 transition text-paper"
           >
             <i class="fa-brands fa-facebook-f text-sm" />
           </a>
@@ -28,7 +28,7 @@ const year = new Date().getFullYear()
 
       <div class="pt-8 flex flex-col sm:flex-row justify-between gap-3 text-xs text-paper/40">
         <p>&copy; {{ year }} {{ site.brandName }} {{ site.brandSuffix }}. Minden jog fenntartva.</p>
-        <a :href="site.privacyPolicyUrl" class="underline underline-offset-2">Adatkezelési tájékoztató</a>
+        <a :href="site.privacyPolicyUrl" class="underline underline-offset-2 hover:text-paper transition-colors">Adatkezelési tájékoztató</a>
       </div>
     </div>
 

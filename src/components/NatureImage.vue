@@ -6,17 +6,18 @@ defineProps({
   variant: { type: String, default: 'light' },
   aspect: { type: String, default: 'aspect-[4/5]' },
   rounded: { type: String, default: 'rounded-[1.75rem]' },
+  imgClass: { type: String, default: 'img-zoom' },
 })
 </script>
 
 <template>
-  <div :class="[aspect, rounded, 'relative overflow-hidden']">
+  <div :class="[aspect, rounded, 'relative overflow-hidden group']">
     <img
       v-if="url"
       :src="url"
       :alt="alt"
       loading="lazy"
-      class="absolute inset-0 w-full h-full object-cover"
+      :class="['absolute inset-0 w-full h-full object-cover', imgClass]"
     />
     <div
       v-else
