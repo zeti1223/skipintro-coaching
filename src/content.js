@@ -269,7 +269,7 @@ export const privacyPolicy = {
   sections: [
     {
       heading: '1. Az Adatkezelőre vonatkozó információk',
-      body: `Név: André Melinda egyéni vállalkozó\nSzékhely: 2030 Érd Betonozó utca 21. \nTelephely: 2030 Érd Betonozó utca 21.\nKépviseli: André Melinda\nNyilvántartási szám: 62746883\nBejegyző hatóság neve: Pest Vármegyei és Érdi Kereskedelmi és Iparkamara\nSzámlavezető bank neve: MBH Bank Nyrt.\nAdószám: 92328583-1-33\nEmail címe: kapcsolat@skipintro.hu\nHonlap: www.skipintro.hu\nAdatvédelmi tisztviselő neve: a GDPR 37. cikk szerint nem alkalmaz.`,
+      body: `Név: André Melinda egyéni vállalkozó\nSzékhely: 2030 Érd Betonozó utca 21.\nKépviseli: André Melinda\nNyilvántartási szám: 62746883\nBejegyző hatóság neve: Pest Vármegyei és Érdi Kereskedelmi és Iparkamara\nSzámlavezető bank neve: MBH Bank Nyrt.\nAdószám: 92328583-1-33\nEmail címe: kapcsolat@skipintro.hu\nHonlap: www.skipintro.hu\nAdatvédelmi tisztviselő neve: a GDPR 37. cikk szerint nem alkalmaz.`,
     },
     {
       heading: '2. Milyen adatokat kezelek?',
