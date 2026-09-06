@@ -83,7 +83,7 @@ export const hero = {
   name: 'André Melinda',
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
   greeting: 'Jó, hogy itt vagy!',
-  paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal. Vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad. És csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
+  paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal, vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad, és csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
   primaryCta: { label: 'Érdekel a módszer', href: '#process' },
   secondaryCta: { label: 'Szeretném az ingyenes konzultációt', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
@@ -115,7 +115,7 @@ export const support = {
     '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, gyakran félreértenek',
     '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
   ],
-  disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, mentális betegséged van, ha szenvedélybetegséggel küzdesz. Coachként nem diagnosztizálok és szolgáltatásom nem helyettesíti az egészségügyi ellátásokat, csak kiegészíti azt.',
+  disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, ha mentális betegséged van, ha szenvedélybetegséggel, epilepsziával vagy depresszióval küzdesz, ha tudatmódosító szereket használsz. Coachként nem diagnosztizálok és nem folytatok pszichoterápiás tevékenységet, szolgáltatásom nem helyettesíti az egészségügyi kezeléseket, csak kiegészíti azt.<br><br>Folyamatban lévő kezelésről, fennálló pszichiátrai betegségekről minden bejelentkező köteles tájékoztatni.',
   sidebarImage: {
     url: '/Prev/AdobeStock_323829712_Preview.jpeg',
     alt: 'xxx',
@@ -123,9 +123,9 @@ export const support = {
 }
 
 export const skipIntro = {
-  title: 'Miért Skip Intro a program?',
-  intro: 'Mert szerintem hasonlóan zsonglőrködhetünk a döntéseinkkel az élet minden területén, mint ahogy a Skip Intro gombbal, amikor sorozatokat streamelünk. Van, amikor a lehetőséget látjuk benne, hogy hozzánk került az irányítás és kedvünk szerint akár át is léphetünk a kötelezőkön. Máskor azonnal rányomunk, mert nem akarjuk vesztegetni az időt, belevágunk az új fejezetbe. És van, amikor nem foglalkozunk a felkínált lehetőséggel, mert éppen a lassabb tempóra, ráhangolódásra vágyunk. Látod, mennyi nézőpont? Pedig valójában ez csak egy gomb, ami a főcím átugrálására szolgál, és mindenki maga dönti el, hogy éppen akkor és ott mihez kezd vele…',
-  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy csakis a lényegre koncentrálunk, mellébeszélés nélkül. És éppen ez az, amit a legjobban szeretek a life coachingban. A <strong>te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a program során megszerzett tapasztalatok tartós változást hoznak, melyeket később is bármikor fel tudsz használni.</strong> A coaching programommal időt nyerhetsz magadnak, hogy ne teljenek el évek a sötétben tapogatózva.',
+  title: '<strong>Skip Intro</strong>: <br> nálad az irányítás, te döntesz',
+  intro: 'A programom neve azért lett Skip Intro, mert arra emlékeztet, hogy hasonlóan választunk az élet minden területén, mint ahogy a Skip Intro gombot, a főcím átugrást használjuk sorozatnézés közben. Amikor nem tudod, merre tovább, valójában hozzád kerül a döntési joga, az irányítás lehetősége, rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy éppen lassabb tempóra, ráhangolódásra vágysz, és nem sietetted az időt? Egyáltalán örülsz annak, hogy ott az a gomb?',
+  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a közös munka során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
     url: '/Prev/AdobeStock_442197339_Preview.jpeg',
     alt: 'Skip Intro coaching',
@@ -170,29 +170,37 @@ export const pricing = {
   intro: 'Választhatsz videóhívásban online vagy személyes coachingot is, ahogy neked kényelmesebb. Sőt, váltogathatod is az alkalmakat a program során, természetesen előre egyeztetve. Vagyis például megbeszélhetjük azt, hogy alapvetően videóhívásban szeretnél dolgozni velem, de az első alkalmak egyikén személyesen.<br>Fizetni alkalmanként tudsz, banki utalással az időpontfoglalás visszaigazolásakor, melyről számlát kapsz e-mailben.<br>Kérlek személyes alkalmakra csak teljesen egészségesen gyere. Én is így várlak – vigyázzunk egymásra!',
   plans: [
     {
-      name: 'Online tájékoztatás és konzultáció',
+      name: 'Tájékoztatás és konzultáció',
       duration: '30 perc',
       price: 'Ingyenes',
       featured: false,
     },
     {
-      name: 'Skip intro coaching online',
-      duration: '80-90 perc',
-      price: '20 000 Ft',
-      perSession: true,
-      featured: true,
-    },
-    {
-      name: 'Skip intro coaching online',
-      duration: '50-60 perc',
-      price: '15 000 Ft',
+      name: 'Online coaching',
+      duration: '60 perc',
+      price: '19 000 Ft',
       perSession: true,
       featured: false,
     },
     {
-      name: 'Skip intro coaching személyesen',
+      name: 'Személyes coaching',
       duration: '60-70 perc',
-      price: '20 000 Ft',
+      price: '22 000 Ft',
+      perSession: true,
+      description: 'Helyszín: Érd',
+      featured: false,
+    },
+    {
+      name: 'Online coaching',
+      duration: '90 perc',
+      price: '25 000 Ft',
+      perSession: true,
+      featured: true,
+    },
+    {
+      name: 'Személyes coaching',
+      duration: '90-100 perc',
+      price: '28 000 Ft',
       perSession: true,
       description: 'Helyszín: Érd',
       featured: false,
@@ -250,7 +258,7 @@ export const faq = {
         'Ez tőled függ, ahogy neked kényelmesebb. Hatékonyságában nincs különbség a kettő között. Az online-hoz csak jó internetkapcsolatra és zavartalan, nyugodt körülményekre van szükséged. Rugalmasabb, és nem kell hozzá utaznod. A személyes találkozásra Érd-Parkvárosban van lehetőség, előre egyeztetett helyszínen, jól megközelíthető helyen. Kérlek csak egészségesen gyere.',
     },
     {
-      question: 'Miért 80-90, 60-70 és 50-60 percesek az alkalmak?',
+      question: 'Miért 60-70 és 90-100 percesek a személyes alkalmak?',
       answer: 'Idősávokban dolgozom. A magasabb szám a maximális időt jelenti, amit közösen töltünk el az adott alkalommal. És mivel figyelek arra, hogy megfelelő módon zárhassuk le a beszélgetéseinket, szeretném, ha nem éreznéd azt, hogy az idő szűke miatt rohanva kellett elköszönnünk egymástól. ',
     },
     {
@@ -279,38 +287,38 @@ export const privacyPolicy = {
   title: 'Adatkezelési tájékoztató',
   intro:
     'Az alábbi tájékoztató azt mutatja be, hogy a Skip Intro Coaching honlapján keresztül megadott személyes adatokat hogyan kezelem. A tájékoztatót bármikor frissítem, amennyiben a szolgáltatás vagy a jogszabályi környezet ezt indokolja.',
-  lastUpdated: '2026. szeptember',
+  lastUpdated: '2026. szeptember 7.',
   sections: [
     {
       heading: 'Az adatkezelő adatai',
       body: `Adatkezelő: ${site.brandName} ${site.brandSuffix}\nKapcsolat: ${site.contactEmail}`,
     },
     {
-      heading: 'Milyen adatokat kezelek?',
+      heading: '2. Milyen adatokat kezelek?',
       body: 'A kapcsolatfelvételi űrlap kitöltésekor megadott nevet, email címet, telefonszámot és az üzenetben megadott egyéb adatokat kezelem.',
     },
     {
-      heading: 'Az adatkezelés célja',
+      heading: '3. Az adatkezelés célja',
       body: 'A megadott adatokat kizárólag a kapcsolatfelvétel, az időpont-egyeztetés és a coaching szolgáltatás nyújtásával kapcsolatos kommunikáció céljából használom fel.',
     },
     {
-      heading: 'Az adatkezelés jogalapja',
+      heading: '4. Az adatkezelés jogalapja',
       body: 'Az adatkezelés az érintett önkéntes hozzájárulásán alapul, amelyet az űrlap kitöltésével és elküldésével ad meg.',
     },
     {
-      heading: 'Az adatok tárolásának időtartama',
+      heading: '5. Az adatok tárolásának időtartama',
       body: 'A megadott adatokat a kapcsolatfelvételtől, illetve az együttműködés lezárultától számított ésszerű ideig, de legfeljebb a jogszabályi kötelezettségek (pl. számlázás) által előírt ideig őrzöm meg.',
     },
     {
-      heading: 'Adatfeldolgozók',
+      heading: '6. Adatfeldolgozók',
       body: 'Az űrlap elküldését és az email értesítéseket az EmailJS szolgáltatás továbbítja. Az adatok kezelése és tárolása során az adatfeldolgozók mindenkori adatvédelmi szabályzata is irányadó.',
     },
     {
-      heading: 'Az érintett jogai',
+      heading: '7. Az érintett jogai',
       body: 'Bármikor kérheted a rád vonatkozó adatok helyesbítését, törlését vagy az adatkezelés korlátozását, valamint tájékoztatást kérhetsz a kezelt adatok köréről. Kéréseidet a fent megadott email címen jelezheted.',
     },
     {
-      heading: 'Jogorvoslat',
+      heading: '8. Jogorvoslat',
       body: 'Amennyiben úgy ítéled meg, hogy adataid kezelése nem megfelelő, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH), vagy bírósághoz fordulhatsz.',
     },
   ],

@@ -1,9 +1,10 @@
-export function buildOwnerEmail({ name, email, message }) {
+export function buildOwnerEmail({ name, email, phone, message }) {
   return {
     subject: `Új jelentkezés: ${name}`,
     message: [
       `Jelentkezett: ${name}`,
       `Email: ${email}`,
+      `Telefon: ${phone}`,
       '',
       'Üzenet:',
       message,

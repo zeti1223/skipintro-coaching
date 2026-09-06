@@ -7,6 +7,7 @@ import { buildClientEmail } from '../email-templates/clientConfirmation.js'
 const form = reactive({
   name: '',
   email: '',
+  phone: '',
   message: '',
   consent: false,
 })
@@ -34,6 +35,7 @@ async function submit() {
     const data = {
       name: form.name,
       email: form.email,
+      phone: form.phone || '(nincs megadva)',
       message: form.message || '(nincs kísérő üzenet)',
     }
 
@@ -56,6 +58,7 @@ async function submit() {
       status.value = 'success'
       form.name = ''
       form.email = ''
+      form.phone = ''
       form.message = ''
       form.consent = false
     } else {
@@ -101,6 +104,17 @@ async function submit() {
             class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
           />
         </div>
+      </div>
+
+      <div class="mb-5">
+        <label for="phone" class="block text-sm font-medium text-ink/70 mb-1.5">Telefonszám (nem kötelező)</label>
+        <input
+          id="phone"
+          v-model="form.phone"
+          name="phone"
+          type="tel"
+          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
+        />
       </div>
 
       <div class="mb-5">
