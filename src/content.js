@@ -101,7 +101,7 @@ export const support = {
 }
 
 export const skipIntro = {
-  title: '<strong>Skip Intro</strong>: <br> nálad az irányítás, te döntesz',
+  title: '<strong><span class="text-[1.125em]">S</span>kip Intro</strong>: <br> nálad az irányítás, te döntesz',
   intro: 'A programom neve azért lett Skip Intro, mert arra emlékeztet, hogy hasonlóan választunk az élet minden területén, mint ahogy a Skip Intro gombot, a főcím átugrást használjuk sorozatnézés közben. Amikor nem tudod, merre tovább, valójában hozzád kerül a döntési joga, az irányítás lehetősége, rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy éppen lassabb tempóra, ráhangolódásra vágysz, és nem sietetted az időt? Egyáltalán örülsz annak, hogy ott az a gomb?',
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a közös munka során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
@@ -144,7 +144,7 @@ export const process = {
 }
 
 export const pricing = {
-  title: 'Szolgáltatások és árak',
+  title: '<span class="text-[1.125em]">S</span>zolgáltatások és árak',
   intro: 'Választhatsz videóhívásban online vagy személyes coachingot is, ahogy neked kényelmesebb. Sőt, váltogathatod is az alkalmakat a program során, természetesen előre egyeztetve. Vagyis például megbeszélhetjük azt, hogy alapvetően videóhívásban szeretnél dolgozni velem, de az első alkalmak egyikén személyesen.<br>Fizetni alkalmanként tudsz, banki utalással az időpontfoglalás visszaigazolásakor, melyről számlát kapsz e-mailben.<br>Kérlek személyes alkalmakra csak teljesen egészségesen gyere. Én is így várlak – vigyázzunk egymásra!',
   plans: [
     {

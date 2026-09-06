@@ -9,7 +9,7 @@ const open = ref(false)
   <header class="sticky top-0 z-40 bg-paper/90 backdrop-blur-sm border-b border-ink/10">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="/#hero" class="font-display text-xl tracking-tight text-ink">
-        {{ site.brandName }}<span class="text-gold">.</span
+        <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span
         ><span class="hidden sm:inline text-body font-body text-sm ml-1 opacity-70">{{
           site.brandSuffix
         }}</span>

@@ -6,7 +6,7 @@ import { pricing } from '../content.js'
   <section id="szolgaltatasok" class="relative bg-ink text-paper py-12 md:py-16">
     <div class="max-w-7xl mx-auto px-4">
       <div class="md:max-w-2xl mb-4" v-reveal>
-        <h2 class="font-display text-3xl md:text-4xl mb-4">{{ pricing.title }}</h2>
+        <h2 class="font-display text-3xl md:text-4xl mb-4" v-html=" pricing.title"></h2>
       </div>
       <p class="text-paper/50 text-sm mb-14" v-html=" pricing.intro" v-reveal="80"></p>
 

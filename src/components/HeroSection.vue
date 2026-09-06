@@ -13,7 +13,7 @@ import NatureImage from './NatureImage.vue'
     <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-start">
       <div>
         <div class="font-display text-2xl md:text-4xl tracking-tight text-paper mb-10" v-reveal>
-          {{ site.brandName }}<span class="text-gold">.</span
+          <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span
           ><span class="hidden sm:inline text-paper font-body text-sm md:text-2xl ml-1 opacity-70">{{
             site.brandSuffix
           }}</span>

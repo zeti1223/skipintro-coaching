@@ -10,7 +10,7 @@ const year = new Date().getFullYear()
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-paper/10" v-reveal>
         <div>
           <p class="font-display text-xl text-paper mb-1">
-            {{ site.brandName }}<span class="text-gold">.</span>
+            <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span>
           </p>
           <p class="text-sm">{{ site.contactEmail }}</p>
         </div>
