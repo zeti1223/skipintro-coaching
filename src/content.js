@@ -39,11 +39,11 @@ export const site = {
 
 export const images = {
   hero: {
-    url: '/Melinda.jpg',
+    url: '/Melinda.webp',
     alt: 'André Melinda',
   },
   about: {
-    url: '/Melinda_2.jpg',
+    url: '/Melinda_2.webp',
     alt: 'André Melinda',
   }
 }
@@ -76,8 +76,8 @@ export const notAlone = {
   intro:
     '<strong>Coachként és kommunikációs szakemberként abban támogatlak, hogy tisztábban lásd a saját helyzetedet, visszavedd az irányítást a saját utadon és nézz szembe bátrabban az új kihívásokkal. </strong>Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat a belső erőforrásokat, amikkel rendelkezel, és megfontolt, tudatos döntéseket hozz, amik után jólesően dőlhetsz hátra.<br><br><strong>Ha elkezdjük a közös munkát, arra törekszem, hogy újra harmóniában, kiegyensúlyozottan élhesd az életed, és közben könnyedebbnek, szabadabbnak érezd magad. </strong>Hogy letehesd a nyomasztó súlyokat, és magabiztosan mosolyoghass a világra és a saját tükörképedre.',
   image: {
-    url: '/Prev/AdobeStock_48286286_Preview.jpeg',
-    alt: 'xxx',
+    url: '/AdobeStock_48286286.webp',
+    alt: 'Világítótorony',
   },
 }
 
@@ -95,8 +95,8 @@ export const support = {
   ],
   disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, ha mentális betegséged van, ha szenvedélybetegséggel, epilepsziával vagy depresszióval küzdesz, ha tudatmódosító szereket használsz. Coachként nem diagnosztizálok és nem folytatok pszichoterápiás tevékenységet, szolgáltatásom nem helyettesíti az egészségügyi kezeléseket, csak kiegészíti azt.<br><br>Folyamatban lévő kezelésről, fennálló pszichiátrai betegségekről minden bejelentkező köteles tájékoztatni.',
   sidebarImage: {
-    url: '/Prev/AdobeStock_323829712_Preview.jpeg',
-    alt: 'xxx',
+    url: '/AdobeStock_323829712.webp',
+    alt: 'Virág',
   },
 }
 
@@ -105,8 +105,8 @@ export const skipIntro = {
   intro: 'A programom neve azért lett Skip Intro, mert arra emlékeztet, hogy hasonlóan választunk az élet minden területén, mint ahogy a Skip Intro gombot, a főcím átugrást használjuk sorozatnézés közben. Amikor nem tudod, merre tovább, valójában hozzád kerül a döntési joga, az irányítás lehetősége, rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy éppen lassabb tempóra, ráhangolódásra vágysz, és nem sietetted az időt? Egyáltalán örülsz annak, hogy ott az a gomb?',
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a közös munka során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
-    url: '/Prev/AdobeStock_442197339_Preview.jpeg',
-    alt: 'Skip Intro coaching',
+    url: '/AdobeStock_442197339.webp',
+    alt: 'Csigalépcső',
   },
 }
 
@@ -196,7 +196,7 @@ export const contact = {
 }
 
 export const footer = {
-  credits: 'Fotó kredit: Első oldal: Bognár Bogi, saját, …',
+  credits: 'Fotó kredit: Bognár Bogi, saját, Adobe Stock',
   copyright: 'Szerzői jogok: Az oldalon található írás a saját szellemi termékem. Annak bármilyen nemű megosztása, másolása csak a forrás megjelölésével lehetséges.',
 }
 
