@@ -32,15 +32,20 @@ function sendEmail(templateId, templateParams) {
 async function submit() {
   status.value = 'sending'
   try {
-    const data = {
+    const ownerData = {
       name: form.name,
       email: form.email,
       phone: form.phone || '(nincs megadva)',
       message: form.message || '(nincs kísérő üzenet)',
     }
+    const clientData = {
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+    }
 
-    const ownerEmail = buildOwnerEmail(data)
-    const clientEmail = buildClientEmail(data)
+    const ownerEmail = buildOwnerEmail(ownerData)
+    const clientEmail = buildClientEmail(clientData)
 
     const [ownerRes, clientRes] = await Promise.all([
       sendEmail(site.emailjsOwnerTemplateId, {
