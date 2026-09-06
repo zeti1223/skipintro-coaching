@@ -35,7 +35,7 @@ import NatureImage from './NatureImage.vue'
               href="#support"
               class="inline-flex items-center gap-2 bg-gradient-primary text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 hover:scale-105 active:scale-95 transition"
             >
-              Mutass többet a módszerről
+              Vágjunk bele
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@ import NatureImage from './NatureImage.vue'
           <span class="font-thin block text-1xl md:text-2xl lg:text-3xl whitespace-pre-line">{{ hero.subtitle }}</span>
         </h1>
 
-        <p class="text-gold text-3xl md:text-4xl font-handwriting mb-4" v-reveal="160">{{ hero.greeting }}</p>
+        <p class="text-gold text-3xl md:text-4xl font-display font-bold mb-4" v-reveal="160">{{ hero.greeting }}</p>
 
         <p class="text-paper/70 text-lg leading-relaxed mb-10 max-w-lg" v-html="hero.paragraph" v-reveal="240"></p>
 

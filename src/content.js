@@ -61,7 +61,7 @@ export const hero = {
   name: 'André Melinda',
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
   greeting: 'Jó, hogy itt vagy!',
-  paragraph: 'Hogy érzed magad valójában? És ha ma megváltoztathatnál egy dolgot az életedben, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal, vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad, és csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad az első két kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
+  paragraph: 'Lenne egy kérdésem hozzád: ha ma megváltoztathatnál egy dolgot az életedben, hogy boldogabb legyél, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha időnként azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal, vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad, és csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>A jó hírem az, hogy azzal, hogy megválaszoltad a fenti kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra. <br> <strong> Azért vagyok itt, hogy ne egyedül kelljen kijutnod a káoszból, amikor több benned a kérdés, mint a válasz.</strong>',
   primaryCta: { label: 'Érdekel a módszer', href: '#process' },
   secondaryCta: { label: 'Szeretném az ingyenes konzultációt', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
@@ -84,16 +84,16 @@ export const notAlone = {
 export const support = {
   title: 'Amit együtt elérhetünk',
   items: [
-    '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el testi-lelki változásadat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
-    '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, neked semmi nem sikerül, nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz',
-    '<strong>Egy élhetőbb élet a törések után </strong> <br> találj magadra a csalódás, szakítás, válás, környezetváltozás után, hogyan alkalmazkodj a megváltozott szerepekhez',
-    '<strong>Alkalmazkodj a gyerekek hozta változásokhoz </strong> <br> úgy érzed, nem olyan anya/apa vagy, amilyen lenni szeretnél, nehezen birkózol meg az éppen rád váró feladatokkal',
-    '<strong>Kapcsolatok tudatos átalakítása elakadás után </strong> <br> ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta, ha keresed mellette a régi önmagadat',
+    '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el a testi-lelki változásaidat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
+    '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, hogy neked semmi nem sikerül, nem tudod miért akadtak el a dolgaid, és egyhelyben toporogsz',
+    '<strong>Egy élhetőbb élet a törések után </strong> <br> találj magadra a csalódás, szakítás, válás, környezetváltozás után, és alkalmazkodj a megváltozott szerepekhez',
+    '<strong>Alkalmazkodj a szülőséggel járó változásokhoz </strong> <br> ha nehezen birkózol meg az éppen rád váró feladatokkal',
+    '<strong>Kapcsolatok tudatos átalakítása elakadás után </strong> <br> ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta',
     '<strong>Munkahelyi döntések támogatása </strong> <br> ha nem érzed magad a helyeden a karrieredben, váltanál, de nincs meg az erőd hozzá, vagy nem tudod merre indulj',
-    '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, gyakran félreértenek',
+    '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, és ha gyakran félreértenek',
     '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
   ],
-  disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, ha mentális betegséged van, ha szenvedélybetegséggel, epilepsziával vagy depresszióval küzdesz, ha tudatmódosító szereket használsz. Coachként nem diagnosztizálok és nem folytatok pszichoterápiás tevékenységet, szolgáltatásom nem helyettesíti az egészségügyi kezeléseket, csak kiegészíti azt.<br><br>Folyamatban lévő kezelésről, fennálló pszichiátrai betegségekről minden bejelentkező köteles tájékoztatni.',
+  disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, ha mentális betegséged van, ha szenvedélybetegséggel, epilepsziával vagy depresszióval küzdesz, ha tudatmódosító szereket használsz. Coachként nem diagnosztizálok és nem folytatok pszichoterápiás tevékenységet, szolgáltatásom nem helyettesíti az egészségügyi kezeléseket, csak kiegészíti azt.<br>Folyamatban lévő kezelésről, fennálló pszichiátrai betegségekről minden bejelentkező köteles tájékoztatni.',
   sidebarImage: {
     url: '/AdobeStock_323829712.webp',
     alt: 'Virág',
@@ -197,7 +197,7 @@ export const contact = {
 
 export const footer = {
   credits: 'Fotó kredit: Bognár Bogi, saját, Adobe Stock',
-  copyright: 'Szerzői jogok: Az oldalon található írás a saját szellemi termékem. Annak bármilyen nemű megosztása, másolása csak a forrás megjelölésével lehetséges.',
+  copyright: 'Szerzői jogok: Az oldalon található tartalom a saját szellemi termékem. Annak bármilyen nemű megosztása, másolása csak a forrás megjelölésével lehetséges.',
 }
 
 export const about = {
