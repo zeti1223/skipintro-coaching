@@ -9,7 +9,7 @@ export function buildOwnerEmail({ name, email, phone, message }) {
       'Üzenet:',
       message,
       '',
-      '- Skip Intro Coaching időpontfoglaló űrlap',
+      'Skip Intro Coaching időpontfoglaló űrlap',
     ].join('\n'),
   }
 }

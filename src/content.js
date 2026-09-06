@@ -27,32 +27,10 @@ export const site = {
   brandName: 'Skip Intro',
   brandSuffix: 'Coaching',
   contactEmail: 'kapcsolat@skipintro.hu',
-  // ------------------------------------------------------------
-  // EMAILJS BEÁLLÍTÁSOK
-  // ------------------------------------------------------------
-  // Ez a 4 érték az emailjs.com fiókodból származik (mind ingyenes):
-  // 1. Regisztrálj: https://www.emailjs.com/
-  // 2. "Email Services" -> Add New Service -> kösd be a saját email
-  //    fiókodat (Gmail/Outlook/stb) -> ez adja az emailjsServiceId-t
-  // 3. "Email Templates" -> hozz létre KÉT üres, "generikus" sablont
-  //    (a tényleges szöveg NEM itt, hanem a
-  //    src/email-templates/ownerNotification.js és
-  //    clientConfirmation.js fájlokban van, onnan szabadon átírható):
-  //    a) "Owner" sablon (neked szóló értesítő):
-  //       - Subject mező:   {{subject}}
-  //       - Body mező:      {{message}}
-  //       - To Email mező:  a saját email címed, fixen beírva
-  //       -> ez adja az emailjsOwnerTemplateId-t
-  //    b) "Client" sablon (a kliensnek szóló visszaigazolás):
-  //       - Subject mező:   {{subject}}
-  //       - Body mező:      {{message}}
-  //       - To Email mező:  {{to_email}}
-  //       -> ez adja az emailjsClientTemplateId-t
-  // 4. "Account" -> "General" -> "Public Key" -> ez az emailjsPublicKey
-  emailjsServiceId: 'YOUR_EMAILJS_SERVICE_ID',
-  emailjsOwnerTemplateId: 'YOUR_EMAILJS_OWNER_TEMPLATE_ID',
-  emailjsClientTemplateId: 'YOUR_EMAILJS_CLIENT_TEMPLATE_ID',
-  emailjsPublicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
+  emailjsServiceId: 'service_5h7tu9p',
+  emailjsOwnerTemplateId: 'template_o5nrvrl',
+  emailjsClientTemplateId: 'template_9h6d4ze',
+  emailjsPublicKey: 'XdKDEddMQrodGsYmc',
   creatorUrl: 'https://zeteny.cigoria.eu',
   creatorLabel: 'Botyánszki Zétény',
   facebookUrl: '#',
