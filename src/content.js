@@ -40,11 +40,11 @@ export const site = {
 export const images = {
   hero: {
     url: '/Melinda.webp',
-    alt: 'André Melinda',
+    alt: 'André Melinda life és business coach portréja',
   },
   about: {
     url: '/Melinda_2.webp',
-    alt: 'André Melinda',
+    alt: 'André Melinda coaching session közben',
   }
 }
 
@@ -77,7 +77,7 @@ export const notAlone = {
     '<strong>Ha szeretnéd, elkísérlek a jelenlegi elakadásodból a vágyott jövőbe, hogy tisztábban lásd a saját helyzetedet, visszavedd az irányítást a saját utadon és nézz szembe bátrabban az új kihívásokkal. </strong>Hogy meglásd azt, milyen lehetőségeid vannak, hogy felfedezd azokat a belső erőforrásokat, amikkel rendelkezel, és megfontolt, tudatos döntéseket hozz, amik után jólesően dőlhetsz hátra.<br><br><strong>Ha elkezdjük a közös munkát, arra törekszem, hogy újra harmóniában, kiegyensúlyozottan élhesd az életed, és közben könnyedebbnek, szabadabbnak érezd magad. </strong>Hogy letehesd a nyomasztó súlyokat, és magabiztosan mosolyoghass a világra és a saját tükörképedre.',
   image: {
     url: '/AdobeStock_48286286.webp',
-    alt: 'Világítótorony',
+    alt: 'Világítótorony a tengeren – jelkép az iránymutatáshoz',
   },
 }
 
@@ -96,7 +96,7 @@ export const support = {
   disclaimer: '<strong>Ami kizáró ok:</strong> Nem dolgozhatunk együtt, ha pszichiátriai kezelés alatt állsz, ha mentális betegséged van, ha szenvedélybetegséggel, epilepsziával vagy depresszióval küzdesz, ha tudatmódosító szereket használsz. Coachként nem diagnosztizálok és nem folytatok pszichoterápiás tevékenységet, szolgáltatásom nem helyettesíti az egészségügyi kezeléseket, csak kiegészíti azt.<br>Folyamatban lévő kezelésről, fennálló pszichiátrai betegségekről minden bejelentkező köteles tájékoztatni.',
   sidebarImage: {
     url: '/AdobeStock_323829712.webp',
-    alt: 'Virág',
+    alt: 'Virágzó virág – a személyes fejlődés jelképe',
   },
 }
 
@@ -106,7 +106,7 @@ export const skipIntro = {
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a coaching során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
     url: '/AdobeStock_442197339.webp',
-    alt: 'Csigalépcső',
+    alt: 'Csigalépcső felülről – a fejlődés és haladás jelképe',
   },
   quote: 'A változás legyen az energiád',
 }
