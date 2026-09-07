@@ -16,7 +16,7 @@ import { support } from '../content.js'
 
         <div class="rounded-card bg-aqua/25 border border-aqua/40 p-7 md:p-8 flex flex-col" v-reveal="{ type: 'right', delay: 100 }">
           <h3 class="font-display text-3xl md:text-4xl text-ink mb-5">{{ support.title }}</h3>
-          <ul class="space-y-4 flex-grow">
+          <ul class="space-y-4 grow">
             <li
               v-for="(item, i) in support.items"
               :key="i"
@@ -32,7 +32,7 @@ import { support } from '../content.js'
         </div>
       </div>
 
-      <div class="mt-8 border border-dashed border-gold/70 bg-gold/15 rounded-card px-6 py-5 text-sm text-ink/70 leading-relaxed" v-html="support.disclaimer" v-reveal></div>
+      <div class="mt-8 border border-dashed border-red-500/70 bg-red-500/15 rounded-card px-6 py-5 text-sm text-black leading-relaxed" v-html="support.disclaimer" v-reveal></div>
     </div>
   </section>
 </template>

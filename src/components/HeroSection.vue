@@ -37,7 +37,7 @@ import NatureImage from './NatureImage.vue'
           </a>
           <a
             :href="hero.secondaryCta.href"
-            class="inline-flex items-center justify-center gap-2 bg-rose text-ink font-medium px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 hover:scale-105 active:scale-95 transition whitespace-nowrap"
+            class="inline-flex items-center justify-center gap-2 bg-rose text-ink font-semibold px-6 py-3.5 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-rose/20 hover:scale-105 active:scale-95 transition whitespace-nowrap"
           >
             {{ hero.secondaryCta.label }}
           </a>
@@ -46,7 +46,7 @@ import NatureImage from './NatureImage.vue'
 
       <div class="relative group" v-reveal="{ delay: 200, type: 'scale' }">
         <NatureImage :url="images.hero.url" :alt="hero.photoCaption || images.hero.alt" variant="dark" imgClass="img-zoom" />
-        <blockquote v-if="hero.quote" class="mt-6 border-l-2 border-gold pl-5 font-display italic text-lg md:text-xl text-paper/90">
+        <blockquote v-if="hero.quote" class="mt-6 border-l-2 border-gold pl-5 font-display font-bold italic text-lg md:text-xl text-paper/90">
           „{{ hero.quote }}"
           <cite v-if="hero.quoteAuthor" class="block mt-3 text-sm text-paper/60 not-italic font-body">— {{ hero.quoteAuthor }}</cite>
         </blockquote>

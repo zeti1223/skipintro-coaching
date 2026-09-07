@@ -38,12 +38,11 @@ function toggle(i) {
             :style="{ gridTemplateRows: openIndex === i ? '1fr' : '0fr' }"
           >
             <div class="overflow-hidden">
-              <p
+                <p
                 class="text-body/80 leading-relaxed pb-5 pr-10 transition-all duration-300"
                 :class="openIndex === i ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'"
-              >
-                {{ item.answer }}
-              </p>
+                v-html="item.answer"
+              />
             </div>
           </div>
         </div>
