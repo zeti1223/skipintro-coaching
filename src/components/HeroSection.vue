@@ -14,7 +14,7 @@ import NatureImage from './NatureImage.vue'
       <div>
         <div class="font-display text-2xl md:text-4xl tracking-tight text-paper mb-10" v-reveal>
           <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span
-          ><span class="hidden sm:inline text-paper font-body text-sm md:text-2xl ml-1 opacity-70">{{
+          ><span class="inline text-paper font-body text-sm md:text-2xl ml-1 opacity-70">{{
             site.brandSuffix
           }}</span>
         </div>

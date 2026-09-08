@@ -10,7 +10,7 @@ const open = ref(false)
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="/#hero" class="font-display text-xl tracking-tight text-ink">
         <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span
-        ><span class="hidden sm:inline text-body font-body text-sm ml-1 opacity-70">{{
+        ><span class="inline text-body font-body text-sm ml-1 opacity-70">{{
           site.brandSuffix
         }}</span>
       </a>
