@@ -102,7 +102,7 @@ export const support = {
 
 export const skipIntro = {
   title: '<strong><span class="text-[1.125em]">S</span>kip Intro</strong>: <br> nálad az irányítás, te döntesz',
-  intro: 'A programom neve azért lett Skip Intro, mert arra emlékeztet, hogy hasonlóan választunk az élet minden területén, mint ahogy a Skip Intro gombot használjuk a főcím átugrásához sorozatnézés közben. Amikor nem tudod, merre tovább, valójában hozzád kerül a döntési joga, az irányítás lehetősége, rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy éppen lassabb tempóra, ráhangolódásra vágysz, és nem sietetted az időt? Egyáltalán örülsz annak, hogy ott az a gomb?',
+  intro: 'Hogy miért lett Skip Intro a programom neve? Mert a mindennapos választásaid hasonlóan működnek, mint ahogy a Skip Intro gombot használod sorozatnézéskor. A streaming szolgáltatók a kezedbe adják a döntés lehetőségét, és rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy szeretnél ráhangolódni az új részre, és nem sietetted az időt? Ezt a lehetőséget kínálják az életben az elakadásaid is: nálad a távirányító, a te döntésed, hogy mennyire gyorsan reagálsz az újra.',
   conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a coaching során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
     url: '/AdobeStock_442197339.webp',
@@ -203,15 +203,16 @@ export const footer = {
 
 export const about = {
   paragraphs: [
-    '25 éve dolgozom kommunikációs szakemberként különböző területeken az újságírástól a felelős szerkesztésen át az oktatásig. Ennek nagy részét vállalati kultúrában töltöttem. Több, mint ezer interjút és riportot írtam nyomtatott és online magazinokba - elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat a maximális empátia és odafigyelés jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek. Ilyenkor is mindig az összefüggéseket, a több oldalról való megvilágítást keresem.',
-    'Emellett elkezdtem másra is vágyni: arra, hogy coachként a gyakorlatban is támogathassam a hozzám fordulók fejlődését, ezért végeztem el a Life- és Business Coaching képzést. <br> Tapasztalataim szerint a változás akkor lesz tartós, ha közösen dolgozunk azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetéseink hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami lépéselőnyhöz juttat.',
+    '25 éve kérdezek, beszélgetek, figyelek, elemzem az összefüggéseket, utánajárok mi van a mélyben és keresem, hogyan tudok valamit több oldalról megvilágítani. Kommunikációs szakemberként különböző területeken dolgoztam az újságírástól a felelős szerkesztésen át az oktatásig. Ennek nagy részét vállalati kultúrában töltöttem. Több, mint ezer interjút és riportot írtam nyomtatott és online magazinokba - elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat mindig a maximális empátia jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek.',
+    'Az életem a harmincas éveimtől kezdve sok sorsfordulatot hozott. Költözés, válás, új házasság, anyaság, munkahelyváltások, csalódások, kinevezések, sikerek és veszteségek. Eleinte én is rettegtem a változásoktól, a bizonytalanságoktól, a komoly döntésektől, de aztán megláttam és megtapasztaltam bennük az új esélyt a boldogságra. És közben felfedeztem a saját erőmet is, hogy a romokon valóban mindig új élet kezdődik.',
+    'A több, mint húszéves önismereti munkám és az újságírás során megszerzett tapasztalataimat a Life- és Business Coaching képzéssel egészítettem ki, és így találtam meg a válaszaimat. Azóta a gyakorlatban is tudom támogatni a hozzám fordulók fejlődését a coaching eszközeivel. Tapasztalataim szerint a változás akkor lesz tartós, ha közösen dolgozunk azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetéseink hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami lépéselőnyhöz juttat.',
     '<strong class="text-rose-deep/80">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>'
   ],
   credentialsTitle: 'Szakmai képesítések:',
   credentials: [
-    'Kommunikációs szakember – diplomámat a József Attila Tudományegyetemen szereztem',
-    'Life- és business coaching képzés',
-    'Tréneri hatásgyakorlás tréning',
+    'Kommunikációs szakember – diplomámat a Szegedi Tudományegyetemen szereztem (2005)',
+    'Life- és business coaching képzés – Vintage Akadémia <br> Mentoraim voltak: Besnyi Erika és Gyuricza Anikó',
+    'Tréneri hatásgyakorlás tréning – <br> Vintage Akadémia',
     'Access Bars',
     'Gendai Reiki Ho',
   ],

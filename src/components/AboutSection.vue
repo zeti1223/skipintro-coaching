@@ -21,7 +21,7 @@ import NatureImage from './NatureImage.vue'
               v-reveal="{ delay: 150 + i * 60 }"
             >
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-rose-deep shrink-0" />
-              {{ c }}
+              <span v-html="c" />
             </li>
           </ul>
         </div>
