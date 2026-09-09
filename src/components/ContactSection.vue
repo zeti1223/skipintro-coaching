@@ -142,7 +142,7 @@ async function submit() {
         />
         <span>
           Elfogadom az
-          <a :href="site.privacyPolicyUrl" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
+          <a :href="site.privacyPolicyUrl" target="_blank" rel="noopener noreferrer" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
           és hozzájárulok adataim feldolgozásához.<span class="text-rose-700">*</span>
         </span>
       </label>

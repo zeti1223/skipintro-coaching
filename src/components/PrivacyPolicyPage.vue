@@ -1,5 +1,11 @@
 <script setup>
+import { onMounted } from 'vue'
 import { site, privacyPolicy } from '../content.js'
+
+onMounted(() => {
+  document.title = `${privacyPolicy.title} | ${site.brandName}`
+  window.scrollTo({ top: 0, behavior: 'instant' })
+})
 </script>
 
 <template>
