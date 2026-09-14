@@ -155,14 +155,14 @@ export const pricing = {
       featured: false,
     },
     {
-      name: 'Online coaching',
+      name: 'Online<br>coaching',
       duration: '60 perc',
       price: '19 000 Ft',
       perSession: true,
       featured: false,
     },
     {
-      name: 'Személyes coaching',
+      name: 'Személyes<br>coaching',
       duration: '60 perc',
       price: '22 000 Ft',
       perSession: true,
@@ -170,14 +170,14 @@ export const pricing = {
       featured: false,
     },
     {
-      name: 'Online coaching',
+      name: 'Online<br>coaching',
       duration: '90 perc',
       price: '25 000 Ft',
       perSession: true,
       featured: true,
     },
     {
-      name: 'Személyes coaching',
+      name: 'Személyes<br>coaching',
       duration: '90 perc',
       price: '28 000 Ft',
       perSession: true,

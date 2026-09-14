@@ -24,7 +24,7 @@ import { pricing } from '../content.js'
           >
             {{ plan.duration }}
           </p>
-          <h3 class="font-display text-2xl mb-2 leading-snug">{{ plan.name }}</h3>
+          <h3 class="font-display text-2xl mb-2 leading-snug" v-html="plan.name"></h3>
           <p class="text-sm mb-4 leading-relaxed flex-1" :class="plan.featured ? 'text-ink/70' : 'text-paper/60'">
             {{ plan.description }}
           </p>
