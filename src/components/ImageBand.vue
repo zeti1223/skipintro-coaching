@@ -21,7 +21,7 @@ defineProps({
       v-else
       class="absolute inset-0 flex items-center justify-center border-y-2 border-dashed border-aqua/30 bg-aqua/6 px-6"
     >
-      <p class="chapter-mark text-xs uppercase tracking-[0.15em] text-ink/35 text-center max-w-md">
+      <p class="chapter-mark text-base uppercase tracking-[0.15em] text-ink/35 text-center max-w-md">
         {{ alt || 'Fotó' }}
       </p>
     </div>
@@ -35,7 +35,7 @@ defineProps({
         <p class="font-display italic text-xl md:text-3xl lg:text-4xl text-paper">
           „{{ quote }}"
         </p>
-        <cite v-if="quoteAuthor" class="mt-4 text-sm text-paper/80 not-italic font-body">— {{ quoteAuthor }}</cite>
+        <cite v-if="quoteAuthor" class="mt-4 text-base text-paper/80 not-italic font-body">— {{ quoteAuthor }}</cite>
       </div>
     </template>
   </div>

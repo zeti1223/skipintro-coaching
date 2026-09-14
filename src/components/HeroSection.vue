@@ -26,7 +26,7 @@ import NatureImage from './NatureImage.vue'
 
         <p class="text-gold text-3xl md:text-4xl font-display font-bold mb-4" v-reveal="160">{{ hero.greeting }}</p>
 
-        <p class="text-paper/70 text-lg leading-relaxed mb-10 max-w-lg" v-html="hero.paragraph" v-reveal="240"></p>
+        <p class="text-paper/70 leading-relaxed mb-10 max-w-lg text-base" v-html="hero.paragraph" v-reveal="240"></p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4" v-reveal="320">
           <a
@@ -48,7 +48,7 @@ import NatureImage from './NatureImage.vue'
         <NatureImage :url="images.hero.url" :alt="hero.photoCaption || images.hero.alt" variant="dark" imgClass="img-zoom" />
         <blockquote v-if="hero.quote" class="mt-6 border-l-2 border-gold pl-5 font-display font-bold italic text-lg md:text-xl text-paper/90">
           „{{ hero.quote }}"
-          <cite v-if="hero.quoteAuthor" class="block mt-3 text-sm text-paper/60 not-italic font-body">— {{ hero.quoteAuthor }}</cite>
+          <cite v-if="hero.quoteAuthor" class="block mt-3 text-base text-paper/60 not-italic font-body">— {{ hero.quoteAuthor }}</cite>
         </blockquote>
       </div>
     </div>

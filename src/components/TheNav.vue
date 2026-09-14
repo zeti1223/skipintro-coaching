@@ -1,8 +1,50 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { nav, site } from '../content.js'
 
 const open = ref(false)
+const activeHref = ref(nav[0]?.href ?? '')
+
+let observer
+
+function setupScrollSpy() {
+  const sections = nav
+    .map((item) => {
+      const id = item.href.split('#')[1]
+      const el = id ? document.getElementById(id) : null
+      return el ? { href: item.href, el } : null
+    })
+    .filter(Boolean)
+
+  if (!sections.length) return
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const match = sections.find((s) => s.el === entry.target)
+          if (match) activeHref.value = match.href
+        }
+      })
+    },
+    {
+      // Treat the section as "active" once it crosses a band around
+      // the middle of the viewport, rather than needing to fill the screen.
+      rootMargin: '-45% 0px -50% 0px',
+      threshold: 0,
+    }
+  )
+
+  sections.forEach(({ el }) => observer.observe(el))
+}
+
+onMounted(() => {
+  setupScrollSpy()
+})
+
+onUnmounted(() => {
+  observer?.disconnect()
+})
 </script>
 
 <template>
@@ -20,7 +62,12 @@ const open = ref(false)
           v-for="item in nav"
           :key="item.href"
           :href="item.href"
-          class="relative text-sm font-medium text-ink/80 hover:text-ink transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1.5px] after:w-0 after:bg-ink after:transition-all after:duration-300 hover:after:w-full"
+          class="relative text-copy font-medium transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1.5px] after:bg-ink after:transition-all after:duration-300"
+          :class="
+            activeHref === item.href
+              ? 'text-ink after:w-full'
+              : 'text-ink/80 hover:text-ink after:w-0 hover:after:w-full'
+          "
         >
           {{ item.label }}
         </a>
@@ -51,7 +98,8 @@ const open = ref(false)
           v-for="(item, i) in nav"
           :key="item.href"
           :href="item.href"
-          class="text-sm font-medium text-ink/80 hover:text-ink hover:translate-x-1 transition-all"
+          class="text-copy font-medium hover:translate-x-1 transition-all"
+          :class="activeHref === item.href ? 'text-ink font-semibold' : 'text-ink/80 hover:text-ink'"
           v-reveal="i * 60"
           @click="open = false"
         >

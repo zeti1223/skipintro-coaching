@@ -26,13 +26,13 @@ import { support } from '../content.js'
               <span class="mt-0.5 shrink-0 w-5 h-5 rounded-full bg-ink/15 text-ink flex items-center justify-center">
                 <i class="fa-solid fa-check text-[10px]" />
               </span>
-              <span class="text-sm md:text-[15px] text-body leading-relaxed" v-html="item"></span>
+              <span class="text-base text-body leading-relaxed" v-html="item"></span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-8 border border-dashed border-red-500/70 bg-red-500/15 rounded-card px-6 py-5 text-sm text-black leading-relaxed" v-html="support.disclaimer" v-reveal></div>
+      <div class="mt-8 border border-dashed border-red-500/70 bg-red-500/15 rounded-card px-6 py-5 text-base text-black leading-relaxed" v-html="support.disclaimer" v-reveal></div>
     </div>
   </section>
 </template>

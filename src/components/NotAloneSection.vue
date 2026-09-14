@@ -16,7 +16,7 @@ import { notAlone } from '../content.js'
 
         <div v-reveal="{ type: 'right', delay: 100 }">
           <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ notAlone.title }}</h2>
-          <p class="text-body/80 leading-relaxed" v-html="notAlone.intro"></p>
+          <p class="text-body/80 leading-relaxed text-base" v-html="notAlone.intro"></p>
         </div>
 
         

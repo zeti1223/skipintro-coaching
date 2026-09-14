@@ -32,7 +32,7 @@ defineProps({
         <i class="fa-solid fa-image text-ink text-base" />
       </span>
       <p
-        class="chapter-mark text-xs uppercase tracking-[0.15em] leading-relaxed"
+        class="chapter-mark text-base uppercase tracking-[0.15em] leading-relaxed"
         :class="variant === 'dark' ? 'text-paper/50' : 'text-ink/35'"
       >
         {{ alt || 'Fotó' }}

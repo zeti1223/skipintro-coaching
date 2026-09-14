@@ -25,7 +25,7 @@ import { process } from '../content.js'
               v-reveal="{ delay: i * 100 }"
             >
               <h4 class="font-display text-lg text-gold mb-2">{{ step.title }}</h4>
-              <p class="text-white leading-relaxed">{{ step.description }}</p>
+              <p class="text-white leading-relaxed text-base">{{ step.description }}</p>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ import { process } from '../content.js'
             <li
               v-for="(item, i) in process.items"
               :key="i"
-              class="flex items-start gap-2.5 text-sm text-white"
+              class="flex items-start gap-2.5 text-base text-white"
               v-reveal="{ delay: 150 + i * 60 }"
             >
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-rose-deep shrink-0" />

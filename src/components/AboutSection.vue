@@ -17,7 +17,7 @@ import NatureImage from './NatureImage.vue'
             <li
               v-for="(c, i) in about.credentials"
               :key="i"
-              class="flex items-start gap-2.5 text-sm text-body"
+              class="flex items-start gap-2.5 text-base text-body"
               v-reveal="{ delay: 150 + i * 60 }"
             >
               <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-rose-deep shrink-0" />
@@ -27,7 +27,7 @@ import NatureImage from './NatureImage.vue'
         </div>
 
         <div v-reveal="{ type: 'right', delay: 100 }">
-          <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl" v-html="p">
+          <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl text-base" v-html="p">
           </p>
 
           <div class="mt-8">

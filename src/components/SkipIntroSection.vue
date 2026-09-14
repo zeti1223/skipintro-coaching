@@ -9,9 +9,9 @@ import { skipIntro } from '../content.js'
         <div v-reveal="{ type: 'left' }">
           <h2 class="font-display text-3xl md:text-4xl text-ink mb-6" v-html="skipIntro.title"></h2>
           
-          <p class="text-body/85 leading-relaxed mb-8 max-w-2xl" v-html="skipIntro.intro"></p>
+          <p class="text-body/85 leading-relaxed mb-8 max-w-2xl text-base" v-html="skipIntro.intro"></p>
           
-          <p class="text-body/85 leading-relaxed mb-8 max-w-2xl" v-html="skipIntro.conclusion"></p>
+          <p class="text-body/85 leading-relaxed mb-8 max-w-2xl text-base" v-html="skipIntro.conclusion"></p>
         </div>
 
         <div v-if="skipIntro.image" v-reveal="{ type: 'right', delay: 100 }">

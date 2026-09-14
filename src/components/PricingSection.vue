@@ -8,7 +8,7 @@ import { pricing } from '../content.js'
       <div class="md:max-w-2xl mb-4" v-reveal>
         <h2 class="font-display text-3xl md:text-4xl mb-4" v-html=" pricing.title"></h2>
       </div>
-      <p class="text-paper/50 text-sm mb-14" v-html=" pricing.intro" v-reveal="80"></p>
+      <p class="text-paper/50 text-base mb-14" v-html=" pricing.intro" v-reveal="80"></p>
 
       <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div
@@ -24,7 +24,7 @@ import { pricing } from '../content.js'
           >
             {{ plan.duration }}
           </p>
-          <h3 class="font-display text-lg mb-2 leading-snug">{{ plan.name }}</h3>
+          <h3 class="font-display text-2xl mb-2 leading-snug">{{ plan.name }}</h3>
           <p class="text-sm mb-4 leading-relaxed flex-1" :class="plan.featured ? 'text-ink/70' : 'text-paper/60'">
             {{ plan.description }}
           </p>
