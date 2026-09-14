@@ -12,7 +12,12 @@ const year = new Date().getFullYear()
           <p class="font-display text-xl text-paper mb-1">
             <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span>
           </p>
-          <p class="text-base">{{ site.contactEmail }}</p>
+          <p class="text-base">
+            <a
+              :href="`mailto:${site.contactEmail}`"
+              class="underline underline-offset-2 hover:text-paper transition-colors"
+            >{{ site.contactEmail }}</a>
+          </p>
         </div>
 
         <div class="flex items-center gap-3">

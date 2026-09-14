@@ -78,7 +78,7 @@ async function submit() {
 <template>
   <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16">
     <h2 class="font-display text-3xl md:text-4xl text-ink mb-4" v-reveal>{{ contact.title }}</h2>
-    <p class="text-body/80 leading-relaxed mb-10 max-w-xl text-base" v-reveal="80">{{ contact.intro }}</p>
+    <p class="text-body/80 leading-relaxed mb-10 max-w-xl text-base" v-reveal="80" v-html="contact.intro"></p>
 
     <form
       id="booking-form"
