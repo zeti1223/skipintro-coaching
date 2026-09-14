@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import { contact, site } from '../content.js'
+import { renderMarkdown } from '../utils/markdown.js'
 import { buildOwnerEmail } from '../email-templates/ownerNotification.js'
 import { buildClientEmail } from '../email-templates/clientConfirmation.js'
 
@@ -38,12 +39,6 @@ async function submit() {
       phone: form.phone || '(nincs megadva)',
       message: form.message || '(nincs kísérő üzenet)',
     }
-    const clientData = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-    }
-
     const ownerEmail = buildOwnerEmail(ownerData)
     const clientEmail = buildClientEmail(clientData)
 
@@ -78,7 +73,11 @@ async function submit() {
 <template>
   <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16">
     <h2 class="font-display text-3xl md:text-4xl text-ink mb-4" v-reveal>{{ contact.title }}</h2>
-    <p class="text-body/80 leading-relaxed mb-10 max-w-xl" v-reveal="80">{{ contact.intro }}</p>
+    <div
+      class="text-body/80 leading-relaxed mb-10 max-w-xl"
+      v-reveal="80"
+      v-html="renderMarkdown(contact.intro)"
+    ></div>
 
     <form
       id="booking-form"
@@ -88,52 +87,60 @@ async function submit() {
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">
         <div>
-          <label for="name" class="block text-sm font-medium text-ink/70 mb-1.5">Név <span class="text-rose-700">*</span></label>
+          <label for="name" class="block text-base font-medium text-ink/70 mb-1.5"
+            >Név <span class="text-rose-700">*</span></label
+          >
           <input
             id="name"
             v-model="form.name"
             name="name"
             type="text"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-gold"
           />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-ink/70 mb-1.5">E-mail cím <span class="text-rose-700">*</span></label>
+          <label for="email" class="block text-base font-medium text-ink/70 mb-1.5"
+            >E-mail cím <span class="text-rose-700">*</span></label
+          >
           <input
             id="email"
             v-model="form.email"
             name="email"
             type="email"
             required
-            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
+            class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-gold"
           />
         </div>
       </div>
 
       <div class="mb-5">
-        <label for="phone" class="block text-sm font-medium text-ink/70 mb-1.5">Telefonszám (nem kötelező)</label>
+        <label for="phone" class="block text-base font-medium text-ink/70 mb-1.5"
+          >Telefonszám (nem kötelező)</label
+        >
         <input
           id="phone"
           v-model="form.phone"
           name="phone"
           type="tel"
-          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold"
+          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-gold"
         />
       </div>
 
       <div class="mb-5">
-        <label for="message" class="block text-sm font-medium text-ink/70 mb-1.5">Üzenet (nem kötelező)</label>
+        <label for="message" class="block text-base font-medium text-ink/70 mb-1.5"
+          >Üzenet (nem kötelező)</label
+        >
         <textarea
           id="message"
           v-model="form.message"
           name="message"
           rows="4"
-          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold resize-none"
+          class="w-full rounded-lg border border-ink/15 bg-paper px-3.5 py-2.5 text-base focus:outline-none focus:ring-2 focus:ring-gold resize-none"
         />
       </div>
 
-      <label class="flex items-start gap-2.5 mb-6 text-sm text-ink/70">
+      <label class="flex items-start gap-2.5 mb-6 text-base text-ink/70">
         <input
           v-model="form.consent"
           type="checkbox"
@@ -142,7 +149,13 @@ async function submit() {
         />
         <span>
           Elfogadom az
-          <a :href="site.privacyPolicyUrl" target="_blank" rel="noopener noreferrer" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
+          <a
+            :href="site.privacyPolicyUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline decoration-gold underline-offset-2"
+            >adatkezelési tájékoztatót</a
+          >
           és hozzájárulok adataim feldolgozásához.<span class="text-rose-700">*</span>
         </span>
       </label>
@@ -157,10 +170,14 @@ async function submit() {
       </button>
 
       <Transition name="fade-slide">
-        <p v-if="status === 'success'" class="mt-4 text-sm text-gold-deep">{{ contact.successMessage }}</p>
+        <p v-if="status === 'success'" class="mt-4 text-base text-gold-deep">
+          {{ contact.successMessage }}
+        </p>
       </Transition>
       <Transition name="fade-slide">
-        <p v-if="status === 'error'" class="mt-4 text-sm text-gold-deep">{{ contact.errorMessage }}</p>
+        <p v-if="status === 'error'" class="mt-4 text-base text-gold-deep">
+          {{ contact.errorMessage }}
+        </p>
       </Transition>
     </form>
   </section>

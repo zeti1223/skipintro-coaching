@@ -30,15 +30,40 @@ function generateStaticPages() {
           '<link rel="canonical" href="https://skipintro.hu/adatkezeles" />'
         )
 
-      // Write adatkezeles.html
+      // Write adatkezeles.html & adatkezeles/index.html
       fs.writeFileSync(path.join(distDir, 'adatkezeles.html'), privacyHtml)
-
-      // Write adatkezeles/index.html
       const adatkezelesDir = path.join(distDir, 'adatkezeles')
       if (!fs.existsSync(adatkezelesDir)) {
         fs.mkdirSync(adatkezelesDir, { recursive: true })
       }
       fs.writeFileSync(path.join(adatkezelesDir, 'index.html'), privacyHtml)
+
+      // Specialized HTML for /szerkeszto and /admin
+      const adminHtml = html
+        .replace(
+          /<title>.*?<\/title>/,
+          '<title>Szerkesztő Felület | Skip Intro Coaching</title>'
+        )
+        .replace(
+          /<meta name="robots" content=".*?" \/>/,
+          '<meta name="robots" content="noindex, nofollow" />'
+        )
+
+      // Write szerkeszto.html & szerkeszto/index.html
+      fs.writeFileSync(path.join(distDir, 'szerkeszto.html'), adminHtml)
+      const szerkesztoDir = path.join(distDir, 'szerkeszto')
+      if (!fs.existsSync(szerkesztoDir)) {
+        fs.mkdirSync(szerkesztoDir, { recursive: true })
+      }
+      fs.writeFileSync(path.join(szerkesztoDir, 'index.html'), adminHtml)
+
+      // Write admin.html & admin/index.html
+      fs.writeFileSync(path.join(distDir, 'admin.html'), adminHtml)
+      const adminDir = path.join(distDir, 'admin')
+      if (!fs.existsSync(adminDir)) {
+        fs.mkdirSync(adminDir, { recursive: true })
+      }
+      fs.writeFileSync(path.join(adminDir, 'index.html'), adminHtml)
     },
   }
 }

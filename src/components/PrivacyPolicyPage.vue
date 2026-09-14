@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { site, privacyPolicy } from '../content.js'
+import { renderMarkdown } from '../utils/markdown.js'
 
 onMounted(() => {
   document.title = `${privacyPolicy.title} | ${site.brandName}`
@@ -24,18 +25,26 @@ onMounted(() => {
         Utoljára frissítve: {{ privacyPolicy.lastUpdated }}
       </p>
 
-      <p class="text-body/80 leading-relaxed mb-12">{{ privacyPolicy.intro }}</p>
+      <div
+        class="text-body/80 leading-relaxed mb-12"
+        v-html="renderMarkdown(privacyPolicy.intro)"
+      ></div>
 
       <div class="divide-y divide-ink/10 border-t border-b border-ink/10">
         <div v-for="(section, i) in privacyPolicy.sections" :key="i" class="py-6">
           <h2 class="font-display text-lg md:text-xl text-ink mb-3">{{ section.heading }}</h2>
-          <p class="text-body/80 leading-relaxed whitespace-pre-line">{{ section.body }}</p>
+          <div
+            class="text-body/80 leading-relaxed text-base whitespace-pre-line"
+            v-html="renderMarkdown(section.body)"
+          ></div>
         </div>
       </div>
 
-      <p class="text-sm text-ink/50 mt-10">
+      <p class="text-base text-ink/50 mt-10">
         Kérdésed van az adatkezeléssel kapcsolatban? Írj a
-        <a :href="`mailto:${site.contactEmail}`" class="underline underline-offset-2">{{ site.contactEmail }}</a>
+        <a :href="`mailto:${site.contactEmail}`" class="underline underline-offset-2">{{
+          site.contactEmail
+        }}</a>
         címre.
       </p>
     </div>

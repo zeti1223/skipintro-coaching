@@ -28,4 +28,3 @@ applyTheme(theme)
 const app = createApp(App)
 app.directive('reveal', reveal)
 app.mount('#app')
-

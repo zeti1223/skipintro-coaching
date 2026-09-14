@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { faq } from '../content.js'
+import { renderMarkdown } from '../utils/markdown.js'
 
 const openIndex = ref(0)
 
@@ -38,10 +39,10 @@ function toggle(i) {
             :style="{ gridTemplateRows: openIndex === i ? '1fr' : '0fr' }"
           >
             <div class="overflow-hidden">
-                <p
-                class="text-body/80 leading-relaxed pb-5 pr-10 transition-all duration-300"
+              <div
+                class="text-body/80 leading-relaxed pb-5 pr-10 transition-all duration-300 text-base"
                 :class="openIndex === i ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'"
-                v-html="item.answer"
+                v-html="renderMarkdown(item.answer)"
               />
             </div>
           </div>

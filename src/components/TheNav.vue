@@ -46,7 +46,10 @@ const open = ref(false)
     </div>
 
     <Transition name="fade-slide">
-      <div v-if="open" class="md:hidden border-t border-ink/10 bg-paper px-6 py-4 flex flex-col gap-4">
+      <div
+        v-if="open"
+        class="md:hidden border-t border-ink/10 bg-paper px-6 py-4 flex flex-col gap-4"
+      >
         <a
           v-for="(item, i) in nav"
           :key="item.href"

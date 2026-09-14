@@ -23,9 +23,7 @@ defineProps({
       v-else
       :class="[
         'absolute inset-0 flex flex-col items-center justify-center text-center px-8 gap-3 border-2 border-dashed',
-        variant === 'dark'
-          ? 'border-aqua/40 bg-paper/5'
-          : 'border-aqua/40 bg-aqua/8',
+        variant === 'dark' ? 'border-aqua/40 bg-paper/5' : 'border-aqua/40 bg-aqua/8',
       ]"
     >
       <span class="w-11 h-11 rounded-full bg-gradient-primary flex items-center justify-center">
