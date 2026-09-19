@@ -9,7 +9,12 @@ defineProps({
 </script>
 
 <template>
-  <div :class="['relative w-full overflow-hidden group', aspectRatio || 'aspect-video sm:aspect-21/9 md:aspect-3/1']">
+  <div
+    :class="[
+      'relative w-full overflow-hidden group',
+      aspectRatio || 'aspect-video sm:aspect-21/9 md:aspect-3/1',
+    ]"
+  >
     <img
       v-if="url"
       :src="url"
@@ -21,7 +26,9 @@ defineProps({
       v-else
       class="absolute inset-0 flex items-center justify-center border-y-2 border-dashed border-aqua/30 bg-aqua/6 px-6"
     >
-      <p class="chapter-mark text-base uppercase tracking-[0.15em] text-ink/35 text-center max-w-md">
+      <p
+        class="chapter-mark text-base uppercase tracking-[0.15em] text-ink/35 text-center max-w-md"
+      >
         {{ alt || 'Fotó' }}
       </p>
     </div>
@@ -32,10 +39,10 @@ defineProps({
         v-if="quote"
         class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 max-w-2xl mx-auto"
       >
-        <p class="font-display italic text-xl md:text-3xl lg:text-4xl text-paper">
-          „{{ quote }}"
-        </p>
-        <cite v-if="quoteAuthor" class="mt-4 text-base text-paper/80 not-italic font-body">— {{ quoteAuthor }}</cite>
+        <p class="font-display italic text-xl md:text-3xl lg:text-4xl text-paper">„{{ quote }}"</p>
+        <cite v-if="quoteAuthor" class="mt-4 text-base text-paper/80 not-italic font-body"
+          >— {{ quoteAuthor }}</cite
+        >
       </div>
     </template>
   </div>

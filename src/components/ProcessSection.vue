@@ -5,18 +5,14 @@ import { process } from '../content.js'
 <template>
   <section id="process" class="relative py-12 md:py-16">
     <div class="absolute inset-0 z-0">
-      <img 
-        src="/AdobeStock_1760337244.webp" 
-        alt="Erdős táj" 
-        class="w-full h-full object-cover"
-      />
+      <img src="/AdobeStock_1760337244.webp" alt="Erdős táj" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black/75" />
     </div>
     <div class="relative z-10 max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-start mb-14">
         <div v-reveal="{ type: 'left' }">
           <h3 class="font-display text-3xl md:text-4xl text-gold mb-6">{{ process.titleSteps }}</h3>
-          
+
           <div class="space-y-6">
             <div
               v-for="(step, i) in process.steps"
@@ -32,7 +28,7 @@ import { process } from '../content.js'
 
         <div v-reveal="{ type: 'right', delay: 100 }">
           <h2 class="font-display text-3xl md:text-4xl text-gold mb-4">{{ process.title }}</h2>
-          
+
           <ul class="grid sm:grid-cols-1 gap-x-8 gap-y-3">
             <li
               v-for="(item, i) in process.items"

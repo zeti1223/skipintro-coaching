@@ -6,9 +6,13 @@ import { notAlone } from '../content.js'
   <section id="kiknek" class="relative py-8 md:py-10">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-start mb-14">
-        <div v-if="notAlone.image" class="rounded-card overflow-hidden border border-aqua/40 group" v-reveal="{ type: 'left' }">
-          <img 
-            :src="notAlone.image.url" 
+        <div
+          v-if="notAlone.image"
+          class="rounded-card overflow-hidden border border-aqua/40 group"
+          v-reveal="{ type: 'left' }"
+        >
+          <img
+            :src="notAlone.image.url"
             :alt="notAlone.image.alt"
             class="w-full h-full object-cover img-zoom"
           />
@@ -18,8 +22,6 @@ import { notAlone } from '../content.js'
           <h2 class="font-display text-3xl md:text-4xl text-ink mb-4">{{ notAlone.title }}</h2>
           <p class="text-body/80 leading-relaxed text-base" v-html="notAlone.intro"></p>
         </div>
-
-        
       </div>
     </div>
   </section>

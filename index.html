@@ -14,7 +14,7 @@
     <meta property="og:title" content="Skip Intro Coaching | André Melinda Life Coach – Érd" />
     <meta property="og:description" content="André Melinda life és business coach segít visszatalálni önmagadhoz. Ingyenes konzultáció! Online és személyes coaching Érden." />
     <meta property="og:image" content="https://skipintro.hu/og-image.jpg" />
-    <meta property="og:url" content="https://skipintro.hu" />
+    <meta property="og:url" content="https://skipintro.hu/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="hu_HU" />
     <meta property="og:site_name" content="Skip Intro Coaching" />
@@ -29,70 +29,104 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Skip Intro Coaching",
-      "description": "André Melinda life és business coach – online és személyes coaching Érden. Önismereti fejlődés, elakadás, önbizalom, karrierváltás, kapcsolatok.",
-      "url": "https://skipintro.hu",
-      "email": "kapcsolat@skipintro.hu",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Érd",
-        "postalCode": "2030",
-        "addressCountry": "HU"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "André Melinda",
-        "jobTitle": "Life- és Business Coach"
-      },
-      "priceRange": "19000-28000 HUF / alkalom",
-      "currenciesAccepted": "HUF",
-      "paymentAccepted": "Banki átutalás",
-      "areaServed": ["Érd", "Budapest", "Magyarország"],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Coaching szolgáltatások",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Ingyenes konzultáció",
-            "description": "30 perces ingyenes online konzultáció",
-            "price": "0",
-            "priceCurrency": "HUF"
+      "@graph": [
+        {
+          "@type": ["ProfessionalService", "LocalBusiness"],
+          "@id": "https://skipintro.hu/",
+          "name": "Skip Intro Coaching",
+          "alternateName": "Skip Intro Coaching – André Melinda",
+          "description": "André Melinda life és business coach – online és személyes coaching Érden. Önismereti fejlődés, elakadás, önbizalom, karrierváltás, kapcsolatok.",
+          "url": "https://skipintro.hu/",
+          "logo": "https://skipintro.hu/icon.svg",
+          "image": [
+            "https://skipintro.hu/og-image.jpg",
+            "https://skipintro.hu/Melinda.webp",
+            "https://skipintro.hu/Melinda_2.webp"
+          ],
+          "email": "kapcsolat@skipintro.hu",
+          "priceRange": "19000-28000 HUF",
+          "currenciesAccepted": "HUF",
+          "paymentAccepted": "Banki átutalás",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Érd",
+            "postalCode": "2030",
+            "addressCountry": "HU"
           },
-          {
-            "@type": "Offer",
-            "name": "Online coaching",
-            "description": "60 perces online coaching alkalom",
-            "price": "19000",
-            "priceCurrency": "HUF"
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.3809,
+            "longitude": 18.9189
           },
-          {
-            "@type": "Offer",
-            "name": "Személyes coaching",
-            "description": "60 perces személyes coaching alkalom Érden",
-            "price": "22000",
-            "priceCurrency": "HUF"
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Érd"
+            },
+            {
+              "@type": "City",
+              "name": "Budapest"
+            },
+            {
+              "@type": "Country",
+              "name": "Magyarország"
+            }
+          ],
+          "founder": {
+            "@type": "Person",
+            "name": "André Melinda",
+            "jobTitle": "Life- és Business Coach",
+            "description": "Life- és Business Coach, kommunikációs szakember",
+            "image": "https://skipintro.hu/Melinda.webp"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61594221721102"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Coaching szolgáltatások",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Tájékoztatás és ingyenes online konzultáció",
+                "description": "30 perces ingyenes online konzultáció",
+                "price": "0",
+                "priceCurrency": "HUF"
+              },
+              {
+                "@type": "Offer",
+                "name": "Online coaching (60 perc)",
+                "description": "60 perces online coaching alkalom videóhívásban",
+                "price": "19000",
+                "priceCurrency": "HUF"
+              },
+              {
+                "@type": "Offer",
+                "name": "Személyes coaching Érden (60 perc)",
+                "description": "60 perces személyes coaching alkalom Érden",
+                "price": "22000",
+                "priceCurrency": "HUF"
+              },
+              {
+                "@type": "Offer",
+                "name": "Online coaching (90 perc)",
+                "description": "90 perces online coaching alkalom videóhívásban",
+                "price": "25000",
+                "priceCurrency": "HUF"
+              },
+              {
+                "@type": "Offer",
+                "name": "Személyes coaching Érden (90 perc)",
+                "description": "90 perces személyes coaching alkalom Érden",
+                "price": "28000",
+                "priceCurrency": "HUF"
+              }
+            ]
           }
-        ]
-      },
-      "sameAs": []
+        }
+      ]
     }
     </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Homemade+Apple&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <div id="app"></div>

@@ -32,7 +32,7 @@ function setupScrollSpy() {
       // the middle of the viewport, rather than needing to fill the screen.
       rootMargin: '-45% 0px -50% 0px',
       threshold: 0,
-    }
+    },
   )
 
   sections.forEach(({ el }) => observer.observe(el))
@@ -85,21 +85,27 @@ onUnmounted(() => {
         aria-label="Menü megnyitása"
         @click="open = !open"
       >
-        <i
-          class="fa-solid text-xl transition-transform duration-300"
-          :class="open ? 'fa-xmark rotate-90' : 'fa-bars rotate-0'"
+        <font-awesome-icon
+          :icon="['fas', open ? 'xmark' : 'bars']"
+          class="text-xl transition-transform duration-300"
+          :class="open ? 'rotate-90' : 'rotate-0'"
         />
       </button>
     </div>
 
     <Transition name="fade-slide">
-      <div v-if="open" class="md:hidden border-t border-ink/10 bg-paper px-6 py-4 flex flex-col gap-4">
+      <div
+        v-if="open"
+        class="md:hidden border-t border-ink/10 bg-paper px-6 py-4 flex flex-col gap-4"
+      >
         <a
           v-for="(item, i) in nav"
           :key="item.href"
           :href="item.href"
           class="text-copy font-medium hover:translate-x-1 transition-all"
-          :class="activeHref === item.href ? 'text-ink font-semibold' : 'text-ink/80 hover:text-ink'"
+          :class="
+            activeHref === item.href ? 'text-ink font-semibold' : 'text-ink/80 hover:text-ink'
+          "
           v-reveal="i * 60"
           @click="open = false"
         >

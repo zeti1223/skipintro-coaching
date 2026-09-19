@@ -13,10 +13,18 @@ import ContactSection from './components/ContactSection.vue'
 import TheFooter from './components/TheFooter.vue'
 import PrivacyPolicyPage from './components/PrivacyPolicyPage.vue'
 
+const props = defineProps({
+  url: {
+    type: String,
+    default: '/',
+  },
+})
+
 function checkPrivacyPage() {
-  return (
-    window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') === '/adatkezeles'
-  )
+  if (typeof window !== 'undefined') {
+    return window.location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') === '/adatkezeles'
+  }
+  return props.url.replace(/\.html$/, '').replace(/\/+$/, '') === '/adatkezeles'
 }
 
 const isPrivacyPage = ref(checkPrivacyPage())

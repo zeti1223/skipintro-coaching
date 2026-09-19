@@ -78,7 +78,11 @@ async function submit() {
 <template>
   <section id="kapcsolat" class="max-w-3xl mx-auto px-6 pt-8 pb-12 md:pt-10 md:pb-16">
     <h2 class="font-display text-3xl md:text-4xl text-ink mb-4" v-reveal>{{ contact.title }}</h2>
-    <p class="text-body/80 leading-relaxed mb-10 max-w-xl text-base" v-reveal="80" v-html="contact.intro"></p>
+    <p
+      class="text-body/80 leading-relaxed mb-10 max-w-xl text-base"
+      v-reveal="80"
+      v-html="contact.intro"
+    ></p>
 
     <form
       id="booking-form"
@@ -88,7 +92,9 @@ async function submit() {
     >
       <div class="grid sm:grid-cols-2 gap-5 mb-5">
         <div>
-          <label for="name" class="block text-base font-medium text-ink/70 mb-1.5">Név <span class="text-rose-700">*</span></label>
+          <label for="name" class="block text-base font-medium text-ink/70 mb-1.5"
+            >Név <span class="text-rose-700">*</span></label
+          >
           <input
             id="name"
             v-model="form.name"
@@ -99,7 +105,9 @@ async function submit() {
           />
         </div>
         <div>
-          <label for="email" class="block text-base font-medium text-ink/70 mb-1.5">E-mail cím <span class="text-rose-700">*</span></label>
+          <label for="email" class="block text-base font-medium text-ink/70 mb-1.5"
+            >E-mail cím <span class="text-rose-700">*</span></label
+          >
           <input
             id="email"
             v-model="form.email"
@@ -112,7 +120,9 @@ async function submit() {
       </div>
 
       <div class="mb-5">
-        <label for="phone" class="block text-base font-medium text-ink/70 mb-1.5">Telefonszám (nem kötelező)</label>
+        <label for="phone" class="block text-base font-medium text-ink/70 mb-1.5"
+          >Telefonszám (nem kötelező)</label
+        >
         <input
           id="phone"
           v-model="form.phone"
@@ -123,7 +133,9 @@ async function submit() {
       </div>
 
       <div class="mb-5">
-        <label for="message" class="block text-base font-medium text-ink/70 mb-1.5">Üzenet (nem kötelező)</label>
+        <label for="message" class="block text-base font-medium text-ink/70 mb-1.5"
+          >Üzenet (nem kötelező)</label
+        >
         <textarea
           id="message"
           v-model="form.message"
@@ -142,7 +154,13 @@ async function submit() {
         />
         <span>
           Elfogadom az
-          <a :href="site.privacyPolicyUrl" target="_blank" rel="noopener noreferrer" class="underline decoration-gold underline-offset-2">adatkezelési tájékoztatót</a>
+          <a
+            :href="site.privacyPolicyUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline decoration-gold underline-offset-2"
+            >adatkezelési tájékoztatót</a
+          >
           és hozzájárulok adataim feldolgozásához.<span class="text-rose-700">*</span>
         </span>
       </label>
@@ -152,15 +170,23 @@ async function submit() {
         :disabled="status === 'sending'"
         class="inline-flex items-center gap-2 bg-gold text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105 hover:shadow-lg hover:shadow-gold/20 hover:scale-105 active:scale-95 transition disabled:opacity-50 disabled:hover:scale-100 cursor-pointer"
       >
-        <i v-if="status === 'sending'" class="fa-solid fa-circle-notch animate-spin text-xs" />
+        <font-awesome-icon
+          v-if="status === 'sending'"
+          :icon="['fas', 'circle-notch']"
+          class="animate-spin text-xs"
+        />
         {{ status === 'sending' ? 'Küldés…' : 'Elküldöm' }}
       </button>
 
       <Transition name="fade-slide">
-        <p v-if="status === 'success'" class="mt-4 text-base text-gold-deep">{{ contact.successMessage }}</p>
+        <p v-if="status === 'success'" class="mt-4 text-base text-gold-deep">
+          {{ contact.successMessage }}
+        </p>
       </Transition>
       <Transition name="fade-slide">
-        <p v-if="status === 'error'" class="mt-4 text-base text-gold-deep">{{ contact.errorMessage }}</p>
+        <p v-if="status === 'error'" class="mt-4 text-base text-gold-deep">
+          {{ contact.errorMessage }}
+        </p>
       </Transition>
     </form>
   </section>

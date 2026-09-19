@@ -27,8 +27,12 @@ import NatureImage from './NatureImage.vue'
         </div>
 
         <div v-reveal="{ type: 'right', delay: 100 }">
-          <p v-for="(p, i) in about.paragraphs" :key="i" class="text-body/85 leading-relaxed mb-5 max-w-2xl text-base" v-html="p">
-          </p>
+          <p
+            v-for="(p, i) in about.paragraphs"
+            :key="i"
+            class="text-body/85 leading-relaxed mb-5 max-w-2xl text-base"
+            v-html="p"
+          ></p>
 
           <div class="mt-8">
             <a

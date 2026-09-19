@@ -6,16 +6,18 @@ import { pricing } from '../content.js'
   <section id="szolgaltatasok" class="relative bg-ink text-paper py-12 md:py-16">
     <div class="max-w-7xl mx-auto px-4">
       <div class="md:max-w-2xl mb-4" v-reveal>
-        <h2 class="font-display text-3xl md:text-4xl mb-4" v-html=" pricing.title"></h2>
+        <h2 class="font-display text-3xl md:text-4xl mb-4" v-html="pricing.title"></h2>
       </div>
-      <p class="text-paper/50 text-base mb-14" v-html=" pricing.intro" v-reveal="80"></p>
+      <p class="text-paper/50 text-base mb-14" v-html="pricing.intro" v-reveal="80"></p>
 
       <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div
           v-for="(plan, i) in pricing.plans"
           :key="plan.name"
           class="rounded-card p-6 flex flex-col"
-          :class="plan.featured ? 'bg-gradient-primary text-ink' : 'bg-paper/6 border border-paper/10'"
+          :class="
+            plan.featured ? 'bg-gradient-primary text-ink' : 'bg-paper/6 border border-paper/10'
+          "
           v-reveal="{ delay: i * 100, type: 'scale' }"
         >
           <p
@@ -25,10 +27,13 @@ import { pricing } from '../content.js'
             {{ plan.duration }}
           </p>
           <h3 class="font-display text-2xl mb-2 leading-snug" v-html="plan.name"></h3>
-          <p class="text-sm mb-4 leading-relaxed flex-1" :class="plan.featured ? 'text-ink/70' : 'text-paper/60'">
+          <p
+            class="text-sm mb-4 leading-relaxed flex-1"
+            :class="plan.featured ? 'text-ink/70' : 'text-paper/60'"
+          >
             {{ plan.description }}
           </p>
-          
+
           <p class="font-display text-2xl mb-5">
             {{ plan.price }}<span v-if="plan.perSession" class="text-sm ml-1">/alkalom</span>
           </p>

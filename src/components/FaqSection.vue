@@ -30,7 +30,7 @@ function toggle(i) {
               class="shrink-0 w-7 h-7 rounded-full border border-ink/15 flex items-center justify-center text-ink/60 transition-all duration-300 group-hover:border-gold group-hover:text-gold-deep"
               :class="{ 'rotate-45 border-gold text-gold-deep': openIndex === i }"
             >
-              <i class="fa-solid fa-plus text-xs" />
+              <font-awesome-icon :icon="['fas', 'plus']" class="text-xs" />
             </span>
           </button>
           <div
@@ -38,7 +38,7 @@ function toggle(i) {
             :style="{ gridTemplateRows: openIndex === i ? '1fr' : '0fr' }"
           >
             <div class="overflow-hidden">
-                <p
+              <p
                 class="text-body/80 leading-relaxed pb-5 pr-10 transition-all duration-300 text-base"
                 :class="openIndex === i ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'"
                 v-html="item.answer"

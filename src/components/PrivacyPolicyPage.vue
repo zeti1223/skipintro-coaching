@@ -15,7 +15,7 @@ onMounted(() => {
         href="/"
         class="inline-flex items-center gap-2 text-base font-medium text-ink/60 hover:text-ink transition-colors mb-10"
       >
-        <i class="fa-solid fa-arrow-left text-xs" />
+        <font-awesome-icon :icon="['fas', 'arrow-left']" class="text-xs" />
         Vissza a főoldalra
       </a>
 
@@ -29,13 +29,17 @@ onMounted(() => {
       <div class="divide-y divide-ink/10 border-t border-b border-ink/10">
         <div v-for="(section, i) in privacyPolicy.sections" :key="i" class="py-6">
           <h2 class="font-display text-lg md:text-xl text-ink mb-3">{{ section.heading }}</h2>
-          <p class="text-body/80 leading-relaxed whitespace-pre-line text-base">{{ section.body }}</p>
+          <p class="text-body/80 leading-relaxed whitespace-pre-line text-base">
+            {{ section.body }}
+          </p>
         </div>
       </div>
 
       <p class="text-base text-ink/50 mt-10">
         Kérdésed van az adatkezeléssel kapcsolatban? Írj a
-        <a :href="`mailto:${site.contactEmail}`" class="underline underline-offset-2">{{ site.contactEmail }}</a>
+        <a :href="`mailto:${site.contactEmail}`" class="underline underline-offset-2">{{
+          site.contactEmail
+        }}</a>
         címre.
       </p>
     </div>
