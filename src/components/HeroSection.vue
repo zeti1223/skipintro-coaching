@@ -20,26 +20,26 @@ import NatureImage from './NatureImage.vue'
       class="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-14 items-start"
     >
       <div>
-        <div class="font-display text-2xl md:text-4xl tracking-tight text-paper mb-10" v-reveal>
+        <div class="font-display text-2xl md:text-4xl tracking-tight text-paper" v-reveal>
           <span class="text-[1.125em]">S</span>kip Intro<span class="text-gold">.</span
           ><span class="inline text-paper font-body text-sm md:text-2xl ml-1 opacity-70">{{
             site.brandSuffix
           }}</span>
         </div>
 
+        <p class="text-gold text-2xl md:text-3xl font-display font-bold mb-10" v-reveal="80">
+          {{ hero.greeting }}
+        </p>
+
         <h1
           class="font-display font-medium text-3xl md:text-4xl lg:text-5xl leading-[1.08] mb-6"
-          v-reveal="80"
+          v-reveal="160"
         >
           {{ hero.name }}
           <span class="font-thin block text-1xl md:text-2xl lg:text-3xl whitespace-pre-line">{{
             hero.subtitle
           }}</span>
         </h1>
-
-        <p class="text-gold text-3xl md:text-4xl font-display font-bold mb-4" v-reveal="160">
-          {{ hero.greeting }}
-        </p>
 
         <p
           class="text-paper/70 leading-relaxed mb-10 max-w-lg text-base"

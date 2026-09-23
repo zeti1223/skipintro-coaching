@@ -60,8 +60,8 @@ export const nav = [
 export const hero = {
   name: 'André Melinda',
   subtitle: 'Life- és Business Coach,\nkommunikációs szakember',
-  greeting: 'Jó, hogy itt vagy!',
-  paragraph: 'Van egy kérdésem hozzád: ha ma megváltoztathatnál egy dolgot az életedben, hogy boldogabb legyél, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha időnként azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal, vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad, és csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>Azzal, hogy megválaszoltad a fenti kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra, amíg gondolkodtál. És ez az első lépés. Én abban tudlak támogatni, hogy ne egyedül kelljen kijutnod az érzelmi viharokból, amikor több benned a kérdés, mint a válasz.',
+  greeting: 'Nyerj időt magadnak!',
+  paragraph: 'Van egy kérdésem hozzád: ha ma megváltoztathatnál egy dolgot az életedben, hogy boldogabb legyél, mi lenne az?<br><br>A világ gyorsabban változik, mint valaha. Ami ma még biztosnak tűnik és működik, holnap talán már semmit nem ér. Ezért nem csoda, ha időnként azt érzed, hogy kicsúsztak a dolgok a kezeid közül és elakadtál a problémáddal, vagy ha nem találod helyed, és a megszokott kapaszkodóidat. Meglehet, hogy már azt sem tudod, mikor nevettél utoljára egy jóízűt, mert folyamatosan fáradtnak, túlterheltnek érzed magad, és csak sodródsz a kötelességekkel, miközben éppen arra nem jut időd, amit valójában szeretnél.<br><br>Azzal, hogy megválaszoltad a fenti kérdésemet, máris tettél magadért valami fontosat: szakítottál pár pillanatot magadra, amíg gondolkodtál. És ez az első lépés. Én abban tudlak támogatni, hogy ne egyedül kelljen kijutnod az érzelmi viharokból, és ezzel felgyorsíthatod a pozitív változásokat, vagyis időt nyerhetsz magadnak.',
   primaryCta: { label: 'Érdekel a módszer', href: '#process' },
   secondaryCta: { label: 'Szeretném az ingyenes konzultációt', href: '#szolgaltatasok' },
   photoCaption: 'Portré',
@@ -84,12 +84,12 @@ export const notAlone = {
 export const support = {
   title: 'Amit együtt elérhetünk',
   items: [
-    '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el a testi-lelki változásaidat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
-    '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, hogy neked semmi nem sikerül, nem tudod, miért akadtak el a dolgaid, és egyhelyben toporogsz',
     '<strong>Újratervezés a törések után </strong> <br> találj magadra újra a csalódás, szakítás, válás, költözés, környezetváltozás után',
     '<strong>Kapcsolatok tudatos átalakítása </strong> <br> ha megrekedt a kapcsolatotok, és szeretnél lendíteni rajta',
     '<strong>Alkalmazkodj a szülőséggel járó változásokhoz </strong> <br> ha nehezen birkózol meg az éppen rád váró feladatokkal',
     '<strong>Karrierdöntések támogatása és stresszkezelés</strong> <br> ha nem érzed magad a helyeden, váltanál, de nincs meg az erőd hozzá, vagy nem tudod merre indulj',
+    '<strong>Találj vissza a belső békédhez, egyensúlyodhoz </strong> <br> ha nehezen fogadod el a testi-lelki változásaidat, ha nem érzed jól magad a bőrödben, ha elfáradtál a túlhajszoltságban',
+    '<strong>Dolgozzunk az önbizalom- és önértékeléshiányon </strong> <br> ha úgy érzed, hogy neked semmi nem sikerül, nem tudod, miért akadtak el a dolgaid, és egyhelyben toporogsz',
     '<strong>Kommunikációs problémák kezelése </strong> <br> ha gondot okoz, hogy elmondd a véleményed, meghúzd a határaidat, kiállj magadért, és ha gyakran félreértenek',
     '<strong>Szokj le a halogatásról </strong> <br> ha csak elméletben léped meg a dolgokat, de a tényleges tettek elmaradnak, gyorsan elveszted a motivációdat'
   ],
@@ -101,9 +101,9 @@ export const support = {
 }
 
 export const skipIntro = {
-  title: '<strong><span class="text-[1.125em]">S</span>kip Intro</strong>: <br> nálad az irányítás, te döntesz',
-  intro: 'Hogy miért lett Skip Intro a programom neve? Mert a mindennapos választásaid hasonlóan működnek, mint ahogy a Skip Intro gombot használod sorozatnézéskor. A streaming szolgáltatók a kezedbe adják a döntés lehetőségét, és rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy szeretnél ráhangolódni az új részre, és nem sietetted az időt? Ezt a lehetőséget kínálják az életben az elakadásaid is: nálad a távirányító, a te döntésed, hogy mennyire gyorsan reagálsz az újra.',
-  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés, csakis a lényegre koncentrálunk a coaching során, és ezzel időt nyerhetsz, hogy ne teljenek el éveid a sötétben tapogatózva. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
+  title: '<strong><span class="text-[1.125em]">S</span>kip Intro</strong>: <br> koncentráljunk a lényegre',
+  intro: 'Hogy miért lett Skip Intro a programom neve? Mert a mindennapos választásaid hasonlóan működnek, mint ahogy a Skip Intro gombot használod sorozatnézéskor. Olyankor a kezedbe kerül a döntés lehetősége, és rajtad múlik, hogy mihez kezdesz vele. Azonnal rányomsz, hogy mihamarabb belevágj az új fejezetbe? Vagy szeretnél ráhangolódni az új részre, és nem sietetted az időt? Ezt a lehetőséget kínálják az életben az elakadásaid is: nálad a távirányító, a te döntésed, hogy mennyire gyorsan reagálsz az újra.',
+  conclusion: 'Emellett a Skip Intro azt is jelenti, hogy nincs mellébeszélés. Csakis a lényegre koncentrálunk a coaching során, és ezzel időt nyerhetsz magadnak, hogy ne teljenek el éveid a sötétben tapogatózva, vagy felesleges időhúzással, tévutakon tekeregve. <strong> A te személyes fejlődésedre fektetjük a hangsúlyt, a te tempódban haladunk és hagyjuk a sallangokat. A jelenre és a jövőre fókuszálunk, és a megszerzett tapasztalatokat később is bármikor fel tudod használni.</strong> ',
   image: {
     url: '/AdobeStock_442197339.webp',
     alt: 'Csigalépcső felülről – a fejlődés és haladás jelképe',
@@ -206,7 +206,7 @@ export const about = {
     '25 éve kérdezek, beszélgetek, figyelek, elemzem az összefüggéseket. Utánajárok, mi van a mélyben és keresem, hogyan tudok valamit több oldalról megvilágítani. Kommunikációs szakemberként különböző területeken dolgoztam az újságírástól a felelős szerkesztésen át az oktatásig. Ennek nagy részét vállalati kultúrában töltöttem. Több, mint ezer interjút és riportot írtam nyomtatott és online magazinokba - elsősorban lelki, életvezetési témákban, elakadásokban. Munkámat mindig a maximális empátia jellemzi, akár szakértőkkel, akár riportjaim szereplőivel, akár sztárokkal beszélgetek.',
     'Az életem a harmincas éveimtől kezdve sok sorsfordulatot hozott. Költözés, válás, új házasság, anyaság, munkahelyváltások, csalódások, kinevezések, sikerek és veszteségek. Eleinte én is rettegtem a változásoktól, a bizonytalanságoktól, a komoly döntésektől, de aztán megláttam és megtapasztaltam bennük az új esélyt a boldogságra. És közben felfedeztem a saját erőmet is, hogy a romokon valóban mindig új élet kezdődik.',
     'A több, mint húszéves önismereti munkám és az újságírás során megszerzett tapasztalataimat a Life- és Business Coaching képzéssel egészítettem ki, és így találtam meg a válaszaimat. Azóta a gyakorlatban is tudom támogatni a hozzám fordulók fejlődését a coaching eszközeivel. Tapasztalataim szerint a változás akkor lesz tartós, ha közösen dolgozunk azért, hogy a mostani problémáidban olyan kihívásokat láss, melyeknek a megoldására képes vagy. Boldoggá tesz, ha a beszélgetéseink hatására jobban érzed magad, és megszületik benned az „aha" élmény, ami lépéselőnyhöz juttat.',
-    '<strong class="text-rose-deep/80">A változás egyetlen döntéssel kezdődik. Belevágunk?</strong>'
+    '<strong class="text-rose-deep/80">Nyerj időt a Skip Intro programommal! Ne ragadj bele évekre egy olyan helyzetbe, amiben nem érzed jól magad. Belevágunk?</strong>'
   ],
   credentialsTitle: 'Szakmai képesítések:',
   credentials: [
