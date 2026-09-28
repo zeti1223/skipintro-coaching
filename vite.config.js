@@ -6,60 +6,6 @@ import { defineConfig, createServer } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
-function googleFontsSelfHost() {
-  async function ensureFonts() {
-    const cacheDir = fileURLToPath(new URL('./node_modules/.cache/google-fonts', import.meta.url))
-    const cssPath = path.join(cacheDir, 'fonts.css')
-    if (fs.existsSync(cssPath)) return
-
-    if (!fs.existsSync(cacheDir)) {
-      fs.mkdirSync(cacheDir, { recursive: true })
-    }
-
-    const url =
-      'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Homemade+Apple&display=swap'
-
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-      },
-    })
-    let css = await res.text()
-
-    const fontUrlRegex = /url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/g
-    let match
-    const urls = new Set()
-    while ((match = fontUrlRegex.exec(css)) !== null) {
-      urls.add(match[1])
-    }
-
-    for (const fontUrl of urls) {
-      const filename = path.basename(fontUrl).split('?')[0]
-      const destPath = path.join(cacheDir, filename)
-      if (!fs.existsSync(destPath)) {
-        const fRes = await fetch(fontUrl)
-        const buf = Buffer.from(await fRes.arrayBuffer())
-        fs.writeFileSync(destPath, buf)
-      }
-      css = css.replaceAll(fontUrl, `./${filename}`)
-    }
-
-    fs.writeFileSync(cssPath, css)
-    console.log('Google Fonts cached in node_modules/.cache/google-fonts')
-  }
-
-  return {
-    name: 'google-fonts-self-host',
-    async buildStart() {
-      await ensureFonts()
-    },
-    async configResolved() {
-      await ensureFonts()
-    },
-  }
-}
-
 function prerenderPages() {
   return {
     name: 'prerender-pages',
@@ -152,7 +98,7 @@ function prerenderPages() {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [googleFontsSelfHost(), vue(), tailwindcss(), prerenderPages()],
+  plugins: [vue(), tailwindcss(), prerenderPages()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
