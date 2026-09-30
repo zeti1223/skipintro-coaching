@@ -190,7 +190,7 @@ export const pricing = {
 export const contact = {
   title: 'Foglalj időpontot',
   intro:
-    'Írj e-mailt a <a href="mailto:kapcsolat@skipintro.hu" class="text-rose-deep underline underline-offset-2 hover:opacity-75 transition-opacity">kapcsolat@skipintro.hu</a> címre vagy töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
+    'Írj e-mailt a <a href="mailto:kapcsolat@skipintro.hu" class="text-aqua-deep underline underline-offset-2 hover:text-aqua-deep/50 font-semibold transition-colors">kapcsolat@skipintro.hu</a> címre vagy töltsd ki az űrlapot, és a megadott elérhetőségeden hamarosan jelentkezem – megbeszéljük a részleteket és egy neked megfelelő időpontot.',
   successMessage: 'Köszönöm a jelentkezést! Hamarosan jelentkezem a megadott elérhetőségen.',
   errorMessage:
     'Hoppá, valami félrement a küldés közben. Próbáld újra, vagy írj közvetlenül emailt.',
